@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="YimMenu Lua scripts collection for GTA V Online. Advanced protections, custom heists, and business management scripts.">
+    <meta name="keywords" content="YimMenu Lua scripts, GTA V YimMenu, advanced scripts, protection scripts">
+    <meta name="author" content="whatwhatboy">
+    <title>YimMenu Lua Scripts Collection - whatwhatboy</title>
+
+    <link rel="icon" href="../../../assets/images/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-brand">
+                <img src="../../../assets/images/logo.png" alt="Logo" class="sidebar-logo">
+                <span class="sidebar-title">whatwhatboy</span>
+            </div>
+            <button class="sidebar-toggle" id="sidebar-toggle">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul class="nav-list">
+                <li><a href="../../../index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a></li>
+                <li><a href="../../../profile.html" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a></li>
+                <li><a href="../../../index.html#discord" class="nav-link">
+                    <i class="fab fa-discord"></i>
+                    <span>Discord Servers</span>
+                </a></li>
+                <li><a href="../../../index.html#games" class="nav-link active">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Free Cheats</span>
+                </a></li>
+                <li><a href="../../../index.html#store" class="nav-link">
+                    <i class="fas fa-store"></i>
+                    <span>Store</span>
+                </a></li>
+                <li><a href="../../../youtube.html" class="nav-link">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a></li>
+                <li><a href="../../../index.html#tools" class="nav-link">
+                    <i class="fas fa-tools"></i>
+                    <span>Tools</span>
+                </a></li>
+                <li><a href="../../../index.html#console" class="nav-link">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Console</span>
+                </a></li>
+                <li><a href="../../../help.html" class="nav-link">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Help & FAQ</span>
+                </a></li>
+            </ul>
+
+            <div class="sidebar-social">
+                <h4>Connect With Me</h4>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/channel/UCusYWir4F6r5AY6A9Ddv7jg" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="../../../profile.html" title="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="../../../profile.html" title="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="../../../profile.html" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="../../../profile.html" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-sidebar-btn" id="mobile-sidebar-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Main Content -->
+    <div class="main-content" id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <div class="hero-image" style="margin-bottom: 2rem;">
+                    <img src="https://via.placeholder.com/400x250/1e293b/06b6d4?text=YimMenu+Lua+Scripts" alt="YimMenu Lua Scripts" style="max-width: 400px; border-radius: 1rem; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+                </div>
+                <h1 class="hero-title">YimMenu Lua Scripts</h1>
+                <p class="hero-subtitle">Advanced Lua scripts for YimMenu with enhanced protections, custom heist scripts, business management tools, and comprehensive anti-griefing features.</p>
+
+                <div class="hero-buttons">
+                    <a href="../index.html" class="btn btn-outline">
+                        <i class="fas fa-arrow-left"></i>
+                        Back to GTA V
+                    </a>
+                    <a href="#protection-scripts" class="btn btn-primary">
+                        <i class="fas fa-shield-alt"></i>
+                        Protection Scripts
+                    </a>
+                    <a href="#heist-scripts" class="btn btn-outline">
+                        <i class="fas fa-mask"></i>
+                        Heist Scripts
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>20+</h3>
+                        <p>Advanced Scripts</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Compatible</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Premium</h3>
+                        <p>Quality Scripts</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Protection Scripts Section -->
+        <section class="section" id="protection-scripts">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Protection & Anti-Grief Scripts</h2>
+                    <p class="section-subtitle">Advanced protection systems and anti-griefing tools</p>
+                </div>
+
+                <div class="cheats-grid">
+                    <div class="cheat-card featured">
+                        <div class="cheat-image">
+                            <img src="https://via.placeholder.com/300x180/1e293b/10b981?text=Protection+Suite" alt="Protection Suite Script" onclick="openImageModal(this.src)">
+                        </div>
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Ultimate Protection Suite</h3>
+                                <p>Comprehensive protection against all known griefing methods</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge detected">Active</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-features">
+                            <div class="features-grid">
+                                <div class="feature">
+                                    <i class="fas fa-ban"></i>
+                                    <span>Block Crashes</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-car-crash"></i>
+                                    <span>Vehicle Protection</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-fire-extinguisher"></i>
+                                    <span>Fire Protection</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-user-shield"></i>
+                                    <span>Player Immunity</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="#" class="btn btn-primary" onclick="downloadScript('ultimate-protection.lua')">
+                                <i class="fas fa-download"></i>
+                                Download Script
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cheat-card">
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Session Monitor</h3>
+                                <p>Real-time session monitoring and threat detection</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge safe">Safe</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="#" class="btn btn-primary" onclick="downloadScript('session-monitor.lua')">
+                                <i class="fas fa-download"></i>
+                                Download Script
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cheat-card">
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Auto-Kick Griefers</h3>
+                                <p>Automatically detects and removes known griefers</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge updating">Use Carefully</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="#" class="btn btn-primary" onclick="downloadScript('auto-kick.lua')">
+                                <i class="fas fa-download"></i>
+                                Download Script
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Heist Scripts Section -->
+        <section class="section" id="heist-scripts">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Custom Heist Scripts</h2>
+                    <p class="section-subtitle">Enhanced heist management and optimization tools</p>
+                </div>
+
+                <div class="cheats-grid">
+                    <div class="cheat-card featured">
+                        <div class="cheat-image">
+                            <img src="https://via.placeholder.com/300x180/1e293b/f59e0b?text=Heist+Manager" alt="Heist Manager Script" onclick="openImageModal(this.src)">
+                        </div>
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-mask"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Advanced Heist Manager</h3>
+                                <p>Complete heist optimization with custom cut distributions</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge updating">Use Carefully</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="#" class="btn btn-primary" onclick="downloadScript('heist-manager.lua')">
+                                <i class="fas fa-download"></i>
+                                Download Script
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cheat-card">
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-dice"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Casino Heist Tools</h3>
+                                <p>Specialized tools for Diamond Casino heists</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge updating">Use Carefully</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="#" class="btn btn-primary" onclick="downloadScript('casino-tools.lua')">
+                                <i class="fas fa-download"></i>
+                                Download Script
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Management Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Business Management Scripts</h2>
+                    <p class="section-subtitle">Automated business operations and profit optimization</p>
+                </div>
+
+                <div class="cheats-grid">
+                    <div class="cheat-card">
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Business Auto-Manager</h3>
+                                <p>Automatically manages all your businesses for maximum profit</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge safe">Safe</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="#" class="btn btn-primary" onclick="downloadScript('business-auto.lua')">
+                                <i class="fas fa-download"></i>
+                                Download Script
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cheat-card">
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Cargo Protection</h3>
+                                <p>Protects your cargo deliveries from griefers</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge safe">Safe</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="#" class="btn btn-primary" onclick="downloadScript('cargo-protection.lua')">
+                                <i class="fas fa-download"></i>
+                                Download Script
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safety Information -->
+        <section class="section">
+            <div class="container">
+                <div class="warning-card">
+                    <div class="warning-header">
+                        <i class="fas fa-info-circle"></i>
+                        <h3>YimMenu Script Installation</h3>
+                    </div>
+                    <div class="warning-content">
+                        <ol style="color: var(--text-primary); line-height: 1.8;">
+                            <li><strong>Download YimMenu</strong> - Ensure you have the latest version from official sources</li>
+                            <li><strong>Locate Scripts Folder</strong> - Find YimMenu > scripts folder</li>
+                            <li><strong>Download Scripts</strong> - Save .lua files to the scripts folder</li>
+                            <li><strong>Load in YimMenu</strong> - Use the Scripts tab to load and configure scripts</li>
+                            <li><strong>Configure Settings</strong> - Adjust protection levels and features as needed</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close" onclick="closeImageModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Full Size Image">
+        </div>
+    </div>
+
+    <script src="../../../script.js"></script>
+    <script>
+        function downloadScript(scriptName) {
+            alert(`Downloading ${scriptName}...\n\nYimMenu script would be downloaded from our repository.\nEnsure YimMenu is properly installed!`);
+        }
+
+        function openImageModal(src) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = 'block';
+            modalImg.src = src;
+
+            modal.onclick = function(event) {
+                if (event.target == modal) {
+                    closeImageModal();
+                }
+            }
+        }
+
+        function closeImageModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
