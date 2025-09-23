@@ -43,7 +43,9 @@
       "Bash(then echo \"Games/other/index.html missing dark mode\")",
       "Bash(test:*)",
       "Bash(do test -d \"$dir\")",
-      "Bash(do test -f \"$file\")"
+      "Bash(do test -f \"$file\")",
+      "Bash(node:*)",
+      "Bash(do node -c \"$jsfile\")"
     ],
     "deny": [],
     "ask": []
