@@ -45,7 +45,8 @@
       "Bash(do test -d \"$dir\")",
       "Bash(do test -f \"$file\")",
       "Bash(node:*)",
-      "Bash(do node -c \"$jsfile\")"
+      "Bash(do node -c \"$jsfile\")",
+      "Bash(do echo \"Processing: $file\")"
     ],
     "deny": [],
     "ask": []
