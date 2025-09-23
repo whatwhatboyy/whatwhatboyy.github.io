@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for file in profile.html youtube.html help.html contact.html safety.html)",
+      "Bash(do)",
+      "Bash(if [ -f \"/c/Users/whatw/Documents/GitHub/whatwhatboyy.github.io/$file\" ])",
+      "Bash(then)",
+      "Bash(echo \"✓ $file exists\")",
+      "Bash(else)",
+      "Bash(echo:*)",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(for:*)",
+      "Bash(if [ -d \"/c/Users/whatw/Documents/GitHub/whatwhatboyy.github.io/$dir\" ])",
+      "Bash(missing_files=\"\")",
+      "Bash(if [ ! -f \"$file\" ])",
+      "Bash(if [ -n \"$missing_files\" ])",
+      "Bash(images_to_check=\"logo.png gta1.png cs2.png gmod.png rdr2.png cod.png bffff.png tf2.png l4d.png otherg.png tools.png srcs.png gamemods.png xbox360.png ps3.png\")",
+      "Bash(missing_images=\"\")",
+      "Bash(if [ -f \"assets/images/$img\" ])",
+      "Bash(if [ -n \"$missing_images\" ])",
+      "Bash(if [ -d \"$dir\" ])",
+      "Bash(__NEW_LINE__ echo)",
+      "Bash(if [ -f \"other/index.html\" ])",
+      "Bash(if [ -f \"/c/Users/whatw/Documents/GitHub/whatwhatboyy.github.io/script.js\" ])",
+      "Read(//c/Users/whatw/Documents/GitHub/**)",
+      "Bash(if [ ! -d \"/c/Users/whatw/Documents/GitHub/whatwhatboyy.github.io/$dir\" ])",
+      "Bash(if [ ! -f \"/c/Users/whatw/Documents/GitHub/whatwhatboyy.github.io/safety.html\" ])",
+      "Bash(if [ ! -f \"/c/Users/whatw/Documents/GitHub/whatwhatboyy.github.io/games/other/index.html\" ])",
+      "Bash(if [ ! -f \"/c/Users/whatw/Documents/GitHub/whatwhatboyy.github.io/$file\" ])"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
