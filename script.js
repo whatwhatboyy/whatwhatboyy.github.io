@@ -550,13 +550,14 @@ function init() {
     initPerformanceMonitoring();
 }
 
-// Admin Edit Mode System
+// Admin Edit Mode System - Disabled for Security
 class AdminEditMode {
     constructor() {
         this.isEditMode = false;
         this.isAuthenticated = false;
-        this.adminPassword = "AdminEdit2024!"; // Professional password
-        this.init();
+        // Admin functionality disabled in production for security
+        console.warn('Admin mode disabled in production build');
+        return; // Disable admin functionality
     }
 
     init() {

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page not found - whatwhatboy gaming content">
+    <title>Page Not Found - whatwhatboy</title>
+
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="error-page">
+        <div class="error-container">
+            <div class="error-content">
+                <div class="error-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+
+                <h1 class="error-title">404</h1>
+                <h2 class="error-subtitle">Page Not Found</h2>
+
+                <p class="error-message">
+                    The page you're looking for seems to have vanished into the digital void.
+                    Don't worry though - our cheats are still here and working!
+                </p>
+
+                <div class="error-suggestions">
+                    <h3>Here's what you can do:</h3>
+                    <ul>
+                        <li><i class="fas fa-home"></i> Go back to the <a href="index.html">home page</a></li>
+                        <li><i class="fas fa-gamepad"></i> Check out our <a href="index.html#games">free cheats</a></li>
+                        <li><i class="fas fa-tools"></i> Browse our <a href="tools/">tools and utilities</a></li>
+                        <li><i class="fas fa-youtube"></i> Watch our <a href="youtube.html">YouTube videos</a></li>
+                        <li><i class="fas fa-search"></i> Use the search function (Ctrl+K)</li>
+                    </ul>
+                </div>
+
+                <div class="error-actions">
+                    <a href="index.html" class="btn btn-primary">
+                        <i class="fas fa-home"></i>
+                        Go Home
+                    </a>
+                    <button onclick="history.back()" class="btn btn-outline">
+                        <i class="fas fa-arrow-left"></i>
+                        Go Back
+                    </button>
+                    <button onclick="window.location.reload()" class="btn btn-outline">
+                        <i class="fas fa-refresh"></i>
+                        Reload
+                    </button>
+                </div>
+
+                <div class="error-contact">
+                    <p>Still can't find what you're looking for?</p>
+                    <a href="help.html" class="contact-link">
+                        <i class="fas fa-life-ring"></i>
+                        Get Help & Support
+                    </a>
+                </div>
+            </div>
+
+            <div class="error-background">
+                <div class="floating-icon"><i class="fas fa-gamepad"></i></div>
+                <div class="floating-icon"><i class="fas fa-bug"></i></div>
+                <div class="floating-icon"><i class="fas fa-code"></i></div>
+                <div class="floating-icon"><i class="fas fa-terminal"></i></div>
+                <div class="floating-icon"><i class="fas fa-shield-alt"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .error-page {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--bg-primary, #0f0f23) 0%, var(--bg-secondary, #1a1a2e) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .error-container {
+            max-width: 800px;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .error-content {
+            background: var(--bg-card, #1a1a1a);
+            border: 2px solid var(--primary-color, #6366f1);
+            border-radius: 20px;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        .error-icon {
+            font-size: 4rem;
+            color: var(--warning-color, #f59e0b);
+            margin-bottom: 1rem;
+            animation: pulse 2s infinite;
+        }
+
+        .error-title {
+            font-size: 6rem;
+            font-weight: 800;
+            color: var(--primary-color, #6366f1);
+            margin: 0 0 0.5rem 0;
+            line-height: 1;
+            text-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+        }
+
+        .error-subtitle {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--text-primary, #ffffff);
+            margin: 0 0 1.5rem 0;
+        }
+
+        .error-message {
+            font-size: 1.2rem;
+            color: var(--text-secondary, #cccccc);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .error-suggestions {
+            text-align: left;
+            margin: 2rem 0;
+            background: rgba(99, 102, 241, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary-color, #6366f1);
+        }
+
+        .error-suggestions h3 {
+            color: var(--text-primary, #ffffff);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .error-suggestions ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .error-suggestions li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: var(--text-secondary, #cccccc);
+        }
+
+        .error-suggestions li i {
+            color: var(--primary-color, #6366f1);
+            width: 20px;
+        }
+
+        .error-suggestions a {
+            color: var(--primary-color, #6366f1);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .error-suggestions a:hover {
+            color: var(--primary-color-light, #818cf8);
+            text-decoration: underline;
+        }
+
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .error-contact {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color, #333);
+        }
+
+        .error-contact p {
+            color: var(--text-secondary, #cccccc);
+            margin-bottom: 1rem;
+        }
+
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color, #6366f1);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--primary-color, #6366f1);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-link:hover {
+            background: var(--primary-color, #6366f1);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .error-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .floating-icon {
+            position: absolute;
+            font-size: 2rem;
+            color: rgba(99, 102, 241, 0.1);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-icon:nth-child(1) {
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-icon:nth-child(2) {
+            top: 20%;
+            right: 15%;
+            animation-delay: 1s;
+        }
+
+        .floating-icon:nth-child(3) {
+            bottom: 20%;
+            left: 20%;
+            animation-delay: 2s;
+        }
+
+        .floating-icon:nth-child(4) {
+            bottom: 30%;
+            right: 10%;
+            animation-delay: 3s;
+        }
+
+        .floating-icon:nth-child(5) {
+            top: 50%;
+            left: 5%;
+            animation-delay: 4s;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            25% { transform: translateY(-20px) rotate(90deg); }
+            50% { transform: translateY(0px) rotate(180deg); }
+            75% { transform: translateY(-10px) rotate(270deg); }
+        }
+
+        @media (max-width: 768px) {
+            .error-content {
+                padding: 2rem;
+            }
+
+            .error-title {
+                font-size: 4rem;
+            }
+
+            .error-subtitle {
+                font-size: 2rem;
+            }
+
+            .error-message {
+                font-size: 1rem;
+            }
+
+            .error-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .error-actions .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .floating-icon {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+
+    <script src="script.js"></script>
+    <script src="assets/js/language-system.js"></script>
+    <script src="assets/js/mobile-enhancements.js"></script>
+    <script src="assets/js/global-search.js"></script>
+    <script src="assets/js/error-handling.js"></script>
+    <script src="assets/js/dark-mode.js"></script>
+</body>
+</html>

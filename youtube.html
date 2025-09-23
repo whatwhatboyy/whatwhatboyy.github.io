@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="assets/js/language-system.js"></script>
 </head>
 <body>
     <!-- Sidebar Navigation -->
@@ -43,10 +44,6 @@
                 <li><a href="index.html#games" class="nav-link">
                     <i class="fas fa-gamepad"></i>
                     <span>Free Cheats</span>
-                </a></li>
-                <li><a href="index.html#store" class="nav-link">
-                    <i class="fas fa-store"></i>
-                    <span>Store</span>
                 </a></li>
                 <li><a href="youtube.html" class="nav-link active">
                     <i class="fab fa-youtube"></i>
@@ -109,6 +106,7 @@
                 <h1 class="hero-title">whatwhatboy's YouTube</h1>
                 <p class="hero-subtitle">Gaming Tutorials • Cheat Showcases • Development Insights<br>Subscribe for the latest game cheats, modding guides, and behind-the-scenes content</p>
 
+
                 <div class="hero-buttons">
                     <a href="https://www.youtube.com/channel/UCusYWir4F6r5AY6A9Ddv7jg?sub_confirmation=1" class="btn btn-youtube" target="_blank">
                         <i class="fab fa-youtube"></i>
@@ -149,7 +147,17 @@
                     <p class="section-subtitle">Check out my newest gaming content and tutorials</p>
                 </div>
 
-                <div class="videos-grid">
+                <!-- Auto YouTube Embed Container -->
+                <div id="youtube-auto-embed-container" class="videos-grid">
+                    <!-- Videos will be dynamically loaded here -->
+                    <div class="loading-container">
+                        <div class="loading-spinner"></div>
+                        <p>Loading latest videos from all channels...</p>
+                    </div>
+                </div>
+
+                <!-- Fallback videos if API fails -->
+                <div id="fallback-videos" class="videos-grid" style="display: none;">
                     <!-- Featured Video -->
                     <div class="video-card featured">
                         <div class="video-embed">
@@ -433,5 +441,9 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="assets/js/youtube-auto-embed.js"></script>
+    <script src="assets/js/error-handling.js"></script>
+    <script src="assets/js/performance-optimizer.js"></script>
+    <script src="assets/js/dark-mode.js"></script>
 </body>
 </html>

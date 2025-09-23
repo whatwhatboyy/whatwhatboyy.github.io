@@ -44,10 +44,6 @@
                     <i class="fas fa-gamepad"></i>
                     <span>Free Cheats</span>
                 </a></li>
-                <li><a href="index.html#store" class="nav-link">
-                    <i class="fas fa-store"></i>
-                    <span>Store</span>
-                </a></li>
                 <li><a href="youtube.html" class="nav-link">
                     <i class="fab fa-youtube"></i>
                     <span>YouTube</span>
@@ -97,448 +93,438 @@
     <!-- Main Content -->
     <div class="main-content" id="main-content">
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero help-hero">
             <div class="hero-bg"></div>
             <div class="hero-content">
+                <div class="help-icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
                 <h1 class="hero-title">Help & FAQ</h1>
                 <p class="hero-subtitle">Find answers to common questions, learn about cheat safety, and get support for all your gaming needs.</p>
+
+                <div class="help-stats">
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Common Questions</p>
+                    </div>
+                    <div class="stat">
+                        <h3>24/7</h3>
+                        <p>Discord Support</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Safe Downloads</p>
+                    </div>
+                </div>
+
+                <div class="quick-links">
+                    <a href="#safety" class="btn btn-primary">
+                        <i class="fas fa-shield-alt"></i>
+                        Safety Guide
+                    </a>
+                    <a href="#faq" class="btn btn-outline">
+                        <i class="fas fa-question"></i>
+                        View FAQ
+                    </a>
+                    <a href="index.html#discord" class="btn btn-outline">
+                        <i class="fab fa-discord"></i>
+                        Get Live Help
+                    </a>
+                </div>
             </div>
         </section>
 
-        <!-- Help Content -->
+        <!-- Search Section -->
         <section class="section">
             <div class="container">
-                <!-- Quick Help Search -->
-                <div class="search-container">
+                <div class="help-search">
                     <div class="search-box">
                         <i class="fas fa-search search-icon"></i>
-                        <input type="text" class="search-input" placeholder="Search help topics..." id="helpSearch">
+                        <input type="text" class="search-input" placeholder="Search for help topics..." id="helpSearch">
+                    </div>
+                    <div class="search-suggestions">
+                        <span class="suggestion-tag" onclick="searchHelp('virus')">Virus Detection</span>
+                        <span class="suggestion-tag" onclick="searchHelp('install')">Installation</span>
+                        <span class="suggestion-tag" onclick="searchHelp('ban')">Getting Banned</span>
+                        <span class="suggestion-tag" onclick="searchHelp('discord')">Discord Help</span>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Safety Assurance Section -->
-                <section class="section">
-                    <div class="container">
-                        <div class="safety-assurance">
-                            <div class="assurance-header">
-                                <i class="fas fa-shield-alt"></i>
-                                <h2>✅ Our Cheats Are 100% Safe & Verified</h2>
-                            </div>
-                            <div class="assurance-content">
-                                <div class="assurance-grid">
-                                    <div class="assurance-item">
-                                        <h4><i class="fas fa-check-circle"></i> Fully Tested</h4>
-                                        <p>Every cheat is personally tested by whatwhatboy before being featured on the website or YouTube channel.</p>
-                                    </div>
-                                    <div class="assurance-item">
-                                        <h4><i class="fas fa-virus-slash"></i> Virus-Free</h4>
-                                        <p>All cheats are scanned and verified to be completely free of viruses, malware, and trojans.</p>
-                                    </div>
-                                    <div class="assurance-item">
-                                        <h4><i class="fas fa-users"></i> Community Verified</h4>
-                                        <p>Thousands of users in our Discord communities use these cheats daily without issues.</p>
-                                    </div>
-                                    <div class="assurance-item">
-                                        <h4><i class="fas fa-update"></i> Regularly Updated</h4>
-                                        <p>We continuously monitor and update our cheat collection to ensure safety and functionality.</p>
-                                    </div>
-                                </div>
+        <!-- Safety Guidelines Section -->
+        <section class="section" id="safety">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">🛡️ Safety Guidelines</h2>
+                    <p class="section-subtitle">Essential safety practices for using game cheats</p>
+                </div>
+
+                <div class="safety-grid">
+                    <div class="safety-card critical">
+                        <div class="safety-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="safety-content">
+                            <h3>Use Alt Accounts Only</h3>
+                            <p>Never use cheats on your main gaming account. Always create alternative accounts to avoid permanent bans on your primary profiles.</p>
+                            <div class="safety-tips">
+                                <span class="tip">🎮 Create separate Steam/Epic accounts</span>
+                                <span class="tip">📧 Use different email addresses</span>
+                                <span class="tip">🔐 Don't link to main social accounts</span>
                             </div>
                         </div>
                     </div>
-                </section>
 
-                <!-- Why Cheats Are Flagged Section -->
-                <section class="section">
-                    <div class="container">
-                        <div class="virus-explanation">
-                            <div class="explanation-header">
-                                <i class="fas fa-exclamation-triangle"></i>
-                                <h2>Why Are Game Cheats Flagged as "Viruses"?</h2>
-                            </div>
-                            <div class="explanation-content">
-                                <p class="explanation-intro">If your antivirus flags our cheats as "viruses" or "threats," don't worry! This is a common FALSE POSITIVE. Here's why:</p>
-
-                                <div class="explanation-grid">
-                                    <div class="explanation-item">
-                                        <h4><i class="fas fa-memory"></i> Memory Modification</h4>
-                                        <p>Game cheats work by modifying game memory and processes, which antivirus software interprets as suspicious behavior - even though it's harmless.</p>
-                                    </div>
-                                    <div class="explanation-item">
-                                        <h4><i class="fas fa-syringe"></i> Code Injection</h4>
-                                        <p>Cheats inject code into game processes to add features. This technique is also used by malware, causing false positives.</p>
-                                    </div>
-                                    <div class="explanation-item">
-                                        <h4><i class="fas fa-file-code"></i> Packed Executables</h4>
-                                        <p>Many cheats are compressed or packed to reduce file size, which antivirus programs often flag as suspicious.</p>
-                                    </div>
-                                    <div class="explanation-item">
-                                        <h4><i class="fas fa-shield"></i> Heuristic Detection</h4>
-                                        <p>Antivirus heuristics detect behavior patterns, not actual threats. Cheat behavior patterns trigger these false alarms.</p>
-                                    </div>
-                                </div>
-
-                                <div class="explanation-bottom">
-                                    <h3><i class="fas fa-lightbulb"></i> The Solution</h3>
-                                    <p>Simply add the cheat folder to your antivirus exclusions or temporarily disable real-time protection during download and use. Our cheats are 100% safe!</p>
-                                </div>
+                    <div class="safety-card important">
+                        <div class="safety-icon">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                        <div class="safety-content">
+                            <h3>Antivirus False Positives</h3>
+                            <p>Game cheats are often flagged as viruses due to their code injection methods. This is normal and expected behavior.</p>
+                            <div class="safety-tips">
+                                <span class="tip">🛡️ Temporarily disable antivirus during download</span>
+                                <span class="tip">📁 Add exclusion folders before extracting</span>
+                                <span class="tip">✅ All our files are manually verified safe</span>
                             </div>
                         </div>
                     </div>
-                </section>
 
-                <!-- Help Categories -->
-                <div class="help-categories">
-                    <!-- Getting Started -->
-                    <div class="help-category">
-                        <div class="category-header">
-                            <div class="category-icon">
-                                <i class="fas fa-play-circle"></i>
-                            </div>
-                            <h2>Getting Started</h2>
+                    <div class="safety-card warning">
+                        <div class="safety-icon">
+                            <i class="fas fa-eye-slash"></i>
                         </div>
+                        <div class="safety-content">
+                            <h3>Stay Under the Radar</h3>
+                            <p>Use cheats subtly to avoid detection by anti-cheat systems and other players who might report you.</p>
+                            <div class="safety-tips">
+                                <span class="tip">🎯 Don't use obvious aimbots in public</span>
+                                <span class="tip">💰 Add money gradually, not millions at once</span>
+                                <span class="tip">👥 Avoid griefing other players</span>
+                            </div>
+                        </div>
+                    </div>
 
-                        <div class="help-grid">
-                            <div class="help-card" data-search="download install first time beginner">
-                                <div class="help-icon">
+                    <div class="safety-card info">
+                        <div class="safety-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="safety-content">
+                            <h3>Keep Cheats Updated</h3>
+                            <p>Always use the latest versions of cheats. Outdated cheats have higher detection rates and may not work properly.</p>
+                            <div class="safety-tips">
+                                <span class="tip">🔄 Check for updates weekly</span>
+                                <span class="tip">📺 Follow YouTube channel for announcements</span>
+                                <span class="tip">💬 Join Discord for instant notifications</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">❓ Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Get answers to the most common questions</p>
+                </div>
+
+                <div class="faq-categories">
+                    <div class="faq-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-download"></i>
+                            Download & Installation
+                        </h3>
+
+                        <div class="faq-items">
+                            <div class="faq-item" data-search="virus antivirus false positive">
+                                <div class="faq-question">
+                                    <i class="fas fa-virus"></i>
+                                    <span>My antivirus is detecting the cheat as a virus. Is it safe?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>This is a <strong>false positive</strong> and completely normal. Game cheats use code injection techniques that antivirus software flags as potentially malicious behavior, even though they're harmless.</p>
+                                    <ul>
+                                        <li>All our files are manually scanned and verified safe</li>
+                                        <li>We only host files from trusted developers</li>
+                                        <li>Temporarily disable your antivirus during download and extraction</li>
+                                        <li>Add the cheat folder to your antivirus exclusions</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="faq-item" data-search="download install setup extract">
+                                <div class="faq-question">
                                     <i class="fas fa-download"></i>
+                                    <span>How do I properly install and run the cheats?</span>
+                                    <i class="fas fa-chevron-down"></i>
                                 </div>
-                                <div class="help-content">
-                                    <h3>How to Download Cheats</h3>
-                                    <p>Step-by-step guide for downloading your first cheat safely</p>
-                                    <div class="help-steps">
-                                        <ol>
-                                            <li>Navigate to your desired game page</li>
-                                            <li>Click the download button for your chosen cheat</li>
-                                            <li>Temporarily disable Windows Defender</li>
-                                            <li>Extract files to a safe location</li>
-                                            <li>Run as administrator</li>
-                                        </ol>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="help-card" data-search="antivirus windows defender false positive">
-                                <div class="help-icon">
-                                    <i class="fas fa-shield-alt"></i>
-                                </div>
-                                <div class="help-content">
-                                    <h3>Antivirus & Windows Defender</h3>
-                                    <p>Why your antivirus flags cheats and how to handle it</p>
-                                    <div class="help-steps">
-                                        <ul>
-                                            <li><strong>False Positives:</strong> Cheats are flagged because they modify game memory</li>
-                                            <li><strong>Temporary Disable:</strong> Turn off real-time protection before downloading</li>
-                                            <li><strong>Add Exclusions:</strong> Add your cheat folder to exclusions</li>
-                                            <li><strong>Re-enable:</strong> Turn protection back on after installation</li>
-                                        </ul>
-                                    </div>
+                                <div class="faq-answer">
+                                    <p>Follow these steps for proper installation:</p>
+                                    <ol>
+                                        <li>Disable your antivirus temporarily</li>
+                                        <li>Download the cheat file to a new folder</li>
+                                        <li>Extract all files (use WinRAR or 7-Zip)</li>
+                                        <li>Run the executable as Administrator</li>
+                                        <li>Start your game and inject the cheat</li>
+                                        <li>Follow any specific instructions in the README file</li>
+                                    </ol>
                                 </div>
                             </div>
 
-                            <div class="help-card" data-search="injection dll injector process">
-                                <div class="help-icon">
-                                    <i class="fas fa-syringe"></i>
-                                </div>
-                                <div class="help-content">
-                                    <h3>Using DLL Injectors</h3>
-                                    <p>How to use injectors to load cheats into games</p>
-                                    <div class="help-steps">
-                                        <ol>
-                                            <li>Start your game first</li>
-                                            <li>Run the injector as administrator</li>
-                                            <li>Select the game process</li>
-                                            <li>Select the DLL file</li>
-                                            <li>Click inject and wait for confirmation</li>
-                                        </ol>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Safety & Security -->
-                    <div class="help-category">
-                        <div class="category-header">
-                            <div class="category-icon">
-                                <i class="fas fa-shield-virus"></i>
-                            </div>
-                            <h2>Safety & Security</h2>
-                        </div>
-
-                        <div class="help-grid">
-                            <div class="help-card" data-search="ban protection account safety vac eac">
-                                <div class="help-icon">
-                                    <i class="fas fa-user-shield"></i>
-                                </div>
-                                <div class="help-content">
-                                    <h3>Avoiding Bans</h3>
-                                    <p>Tips to minimize detection and protect your accounts</p>
-                                    <div class="help-steps">
-                                        <ul>
-                                            <li><strong>Use Alt Accounts:</strong> Never risk your main account</li>
-                                            <li><strong>Be Subtle:</strong> Don't make it obvious you're cheating</li>
-                                            <li><strong>Know Anti-Cheat:</strong> Understand what system the game uses</li>
-                                            <li><strong>Stay Updated:</strong> Use only updated cheats</li>
-                                            <li><strong>HWID Spoof:</strong> Consider hardware ID spoofing for ban protection</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="help-card" data-search="anticheat vac battleye eac ricochet vanguard">
-                                <div class="help-icon">
-                                    <i class="fas fa-exclamation-triangle"></i>
-                                </div>
-                                <div class="help-content">
-                                    <h3>Anti-Cheat Systems</h3>
-                                    <p>Understanding different anti-cheat technologies</p>
-                                    <div class="help-steps">
-                                        <ul>
-                                            <li><strong>VAC (Steam):</strong> Delayed bans, moderate detection</li>
-                                            <li><strong>BattlEye:</strong> Real-time scanning, high detection</li>
-                                            <li><strong>EasyAntiCheat:</strong> Kernel-level protection</li>
-                                            <li><strong>Riot Vanguard:</strong> Always-on, kernel access</li>
-                                            <li><strong>RICOCHET:</strong> Machine learning detection</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="help-card" data-search="hwid spoof hardware ban unban">
-                                <div class="help-icon">
-                                    <i class="fas fa-laptop"></i>
-                                </div>
-                                <div class="help-content">
-                                    <h3>Hardware ID Spoofing</h3>
-                                    <p>Protect yourself from hardware bans</p>
-                                    <div class="help-steps">
-                                        <ol>
-                                            <li>Download a reputable HWID spoofer</li>
-                                            <li>Create a system restore point</li>
-                                            <li>Run spoofer as administrator</li>
-                                            <li>Spoof all hardware IDs</li>
-                                            <li>Restart your computer</li>
-                                            <li>Verify IDs have changed</li>
-                                        </ol>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Troubleshooting -->
-                    <div class="help-category">
-                        <div class="category-header">
-                            <div class="category-icon">
-                                <i class="fas fa-tools"></i>
-                            </div>
-                            <h2>Troubleshooting</h2>
-                        </div>
-
-                        <div class="help-grid">
-                            <div class="help-card" data-search="cheat not working injection failed error">
-                                <div class="help-icon">
-                                    <i class="fas fa-bug"></i>
-                                </div>
-                                <div class="help-content">
-                                    <h3>Cheat Not Working</h3>
-                                    <p>Common solutions for when cheats fail to work</p>
-                                    <div class="help-steps">
-                                        <ul>
-                                            <li><strong>Admin Rights:</strong> Always run as administrator</li>
-                                            <li><strong>Compatibility:</strong> Check Windows compatibility mode</li>
-                                            <li><strong>Game Version:</strong> Ensure cheat matches game version</li>
-                                            <li><strong>Antivirus:</strong> Disable real-time protection</li>
-                                            <li><strong>Files:</strong> Re-extract all files</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="help-card" data-search="injection failed dll error process not found">
-                                <div class="help-icon">
+                            <div class="faq-item" data-search="not working failed injection">
+                                <div class="faq-question">
                                     <i class="fas fa-exclamation-circle"></i>
+                                    <span>The cheat isn't working or won't inject. What should I do?</span>
+                                    <i class="fas fa-chevron-down"></i>
                                 </div>
-                                <div class="help-content">
-                                    <h3>Injection Failed</h3>
-                                    <p>What to do when DLL injection doesn't work</p>
-                                    <div class="help-steps">
-                                        <ol>
-                                            <li>Make sure the game is running</li>
-                                            <li>Check if you selected the right process</li>
-                                            <li>Try a different injector</li>
-                                            <li>Restart both game and injector</li>
-                                            <li>Run everything as administrator</li>
-                                        </ol>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="help-card" data-search="game crash freeze blue screen bsod">
-                                <div class="help-icon">
-                                    <i class="fas fa-desktop"></i>
-                                </div>
-                                <div class="help-content">
-                                    <h3>Game Crashes / BSOD</h3>
-                                    <p>Fixing crashes and blue screens caused by cheats</p>
-                                    <div class="help-steps">
-                                        <ul>
-                                            <li><strong>Outdated Cheat:</strong> Check for updates</li>
-                                            <li><strong>Conflicting Software:</strong> Close other overlays</li>
-                                            <li><strong>Memory Issues:</strong> Check your RAM</li>
-                                            <li><strong>Driver Problems:</strong> Update graphics drivers</li>
-                                            <li><strong>System Restore:</strong> Restore to before the crash</li>
-                                        </ul>
-                                    </div>
+                                <div class="faq-answer">
+                                    <p>Try these troubleshooting steps:</p>
+                                    <ul>
+                                        <li><strong>Check game version compatibility</strong> - The cheat might need to be updated for the newest game version</li>
+                                        <li>Make sure you're running the cheat as Administrator</li>
+                                        <li>Check if your game version is compatible</li>
+                                        <li>Disable antivirus and Windows Defender</li>
+                                        <li>Close any overlays (Steam, Discord, NVIDIA)</li>
+                                        <li>Try running the game in Windowed mode</li>
+                                        <li>Update your cheat to the latest version</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Legal & Ethics -->
-                    <div class="help-category">
-                        <div class="category-header">
-                            <div class="category-icon">
-                                <i class="fas fa-balance-scale"></i>
-                            </div>
-                            <h2>Legal & Ethics</h2>
-                        </div>
+                    <div class="faq-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-ban"></i>
+                            Safety & Bans
+                        </h3>
 
-                        <div class="help-grid">
-                            <div class="help-card" data-search="legal illegal terms service tos">
-                                <div class="help-icon">
-                                    <i class="fas fa-gavel"></i>
+                        <div class="faq-items">
+                            <div class="faq-item" data-search="ban banned detection detected">
+                                <div class="faq-question">
+                                    <i class="fas fa-ban"></i>
+                                    <span>Will I get banned for using these cheats?</span>
+                                    <i class="fas fa-chevron-down"></i>
                                 </div>
-                                <div class="help-content">
-                                    <h3>Legal Considerations</h3>
-                                    <p>Understanding the legal aspects of game cheating</p>
-                                    <div class="help-steps">
-                                        <ul>
-                                            <li><strong>Terms of Service:</strong> Cheating violates most game ToS</li>
-                                            <li><strong>Account Bans:</strong> Companies can ban your account</li>
-                                            <li><strong>Educational Use:</strong> Our content is for educational purposes</li>
-                                            <li><strong>Responsibility:</strong> Use at your own risk</li>
-                                            <li><strong>Offline Play:</strong> Generally safer in single-player games</li>
-                                        </ul>
+                                <div class="faq-answer">
+                                    <p>There's always a risk when using cheats. We minimize this risk by:</p>
+                                    <ul>
+                                        <li>Only featuring <strong>undetected</strong> cheats</li>
+                                        <li>Testing all cheats before featuring them</li>
+                                        <li>Providing safety guidelines and best practices</li>
+                                        <li>Recommending the use of alt accounts only</li>
+                                    </ul>
+                                    <div class="warning-box">
+                                        <strong>Important:</strong> Always use alt accounts and follow our safety guidelines!
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="help-card" data-search="ethics fair play cheating morals">
-                                <div class="help-icon">
-                                    <i class="fas fa-heart"></i>
+                            <div class="faq-item" data-search="safe account protection">
+                                <div class="faq-question">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>How can I protect my account while cheating?</span>
+                                    <i class="fas fa-chevron-down"></i>
                                 </div>
-                                <div class="help-content">
-                                    <h3>Ethical Considerations</h3>
-                                    <p>Thinking about the impact of cheating on gaming</p>
-                                    <div class="help-steps">
-                                        <ul>
-                                            <li><strong>Impact on Others:</strong> Consider other players' experience</li>
-                                            <li><strong>Learning Tool:</strong> Use cheats to understand game mechanics</li>
-                                            <li><strong>Testing:</strong> Great for testing and experimenting</li>
-                                            <li><strong>Accessibility:</strong> Can help players with disabilities</li>
-                                            <li><strong>Moderation:</strong> Use responsibly and considerately</li>
-                                        </ul>
-                                    </div>
+                                <div class="faq-answer">
+                                    <p>Follow these protection strategies:</p>
+                                    <ul>
+                                        <li><strong>Use alt accounts only</strong> - Never risk your main account</li>
+                                        <li><strong>Be subtle</strong> - Don't make it obvious you're cheating</li>
+                                        <li><strong>Use private sessions</strong> - Avoid public lobbies when possible</li>
+                                        <li><strong>Don't grief</strong> - Avoid harassing other players</li>
+                                        <li><strong>Gradual progression</strong> - Don't add millions instantly</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="faq-item" data-search="online offline single player">
+                                <div class="faq-question">
+                                    <i class="fas fa-users"></i>
+                                    <span>Is it safer to use cheats in single player vs online?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p><strong>Single Player is always safer</strong> than online play:</p>
+                                    <ul>
+                                        <li><strong>Single Player:</strong> Zero ban risk, no anti-cheat detection</li>
+                                        <li><strong>Online:</strong> Higher risk but manageable with proper precautions</li>
+                                        <li>Some cheats work only in single player (like Menyoo)</li>
+                                        <li>Online cheats require more sophisticated protection systems</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Frequently Asked Questions -->
-                    <div class="help-category">
-                        <div class="category-header">
-                            <div class="category-icon">
-                                <i class="fas fa-question-circle"></i>
+                    <div class="faq-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-gamepad"></i>
+                            Game Specific
+                        </h3>
+
+                        <div class="faq-items">
+                            <div class="faq-item" data-search="gta gtav grand theft auto money recovery">
+                                <div class="faq-question">
+                                    <i class="fas fa-car"></i>
+                                    <span>Which GTA V cheat is best for money recovery?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>For GTA V money recovery, we recommend:</p>
+                                    <ul>
+                           
+                                        <li><strong>Nenyoo Mod Menu</strong> - Comprehensive all-in-one solution</li>
+                                       
+                                    </ul>
+                                    <p>All are featured in our <a href="games/gta/index.html">GTA V section</a> with video tutorials.</p>
+                                </div>
                             </div>
-                            <h2>Frequently Asked Questions</h2>
+
+                            <div class="faq-item" data-search="cs2 counter strike aimbot wallhack">
+                                <div class="faq-question">
+                                    <i class="fas fa-crosshairs"></i>
+                                    <span>Are CS2 cheats safe to use in competitive matches?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p><strong>Using cheats in competitive CS2 is very risky:</strong></p>
+                                    <ul>
+                                        <li>VAC (Valve Anti-Cheat) is very aggressive</li>
+                                        <li>Overwatch system reviews reported players</li>
+                                        <li>Use only in casual matches or alt accounts</li>
+                                        <li>External cheats are generally safer than injected ones</li>
+                                    </ul>
+                                    <div class="warning-box">
+                                        <strong>Recommendation:</strong> Practice with cheats offline or in casual matches only!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="faq-item" data-search="lua script programming">
+                                <div class="faq-question">
+                                    <i class="fas fa-code"></i>
+                                    <span>How do I install and use Lua scripts?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Lua scripts extend mod menu functionality:</p>
+                                    <ol>
+                                        <li>Download the Lua script file (.lua)</li>
+                                        <li>Place it in your menu's "scripts" or "lua" folder</li>
+                                        <li>Load the menu and navigate to "Lua Scripts"</li>
+                                        <li>Select and load your script</li>
+                                        <li>Configure settings as needed</li>
+                                    </ol>
+                                    <p>Check our <a href="games/gta/lua/">Lua Scripts section</a> for popular scripts.</p>
+                                </div>
+                            </div>
                         </div>
+                    </div>
 
-                        <div class="faq-grid">
-                            <div class="faq-item" data-search="safe cheats virus free tested">
+                    <div class="faq-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-cogs"></i>
+                            Technical Support
+                        </h3>
+
+                        <div class="faq-items">
+                            <div class="faq-item" data-search="discord community support help">
                                 <div class="faq-question">
-                                    <h4><i class="fas fa-shield-check"></i> Are your cheats really safe?</h4>
-                                    <i class="fas fa-chevron-down faq-toggle"></i>
+                                    <i class="fab fa-discord"></i>
+                                    <span>Where can I get live support and help?</span>
+                                    <i class="fas fa-chevron-down"></i>
                                 </div>
                                 <div class="faq-answer">
-                                    <p>Yes! All cheats are personally tested by whatwhatboy, scanned for viruses, and verified by our community. Any antivirus flags are false positives due to how cheats modify game memory.</p>
+                                    <p>Join our active Discord communities for 24/7 support:</p>
+                                    <ul>
+                                        <li><strong>whatwhatboy's Official</strong> - Main community server</li>
+                                        <li><strong>Infamous GTA Modding</strong> - GTA V specific help</li>
+                                        <li><strong>N3NY000 Community</strong> - Nenyoo menu support</li>
+                                        <li><strong>RIPTIDE GTA</strong> - General GTA cheating community</li>
+                                    </ul>
+                                    <p><a href="index.html#discord">View all Discord servers →</a></p>
                                 </div>
                             </div>
 
-                            <div class="faq-item" data-search="free cost money price paid">
+                            <div class="faq-item" data-search="update new version latest">
                                 <div class="faq-question">
-                                    <h4><i class="fas fa-dollar-sign"></i> Are all your cheats free?</h4>
-                                    <i class="fas fa-chevron-down faq-toggle"></i>
+                                    <i class="fas fa-sync-alt"></i>
+                                    <span>How do I know when cheats are updated?</span>
+                                    <i class="fas fa-chevron-down"></i>
                                 </div>
                                 <div class="faq-answer">
-                                    <p>Yes! All cheats featured on our website and YouTube channel are completely free. We believe in providing accessible gaming tools to everyone.</p>
+                                    <p>Stay updated through multiple channels:</p>
+                                    <ul>
+                                        <li><strong>YouTube Channel</strong> - New releases and update videos</li>
+                                        <li><strong>Discord Servers</strong> - Instant notifications</li>
+                                        <li><strong>Website</strong> - Updated download links</li>
+                                        <li><strong>Telegram</strong> - Quick update alerts</li>
+                                    </ul>
+                                    <p>Enable notifications on our YouTube channel for the fastest updates!</p>
                                 </div>
                             </div>
 
-                            <div class="faq-item" data-search="ban risk detection undetected">
+                            <div class="faq-item" data-search="request suggest new cheat game">
                                 <div class="faq-question">
-                                    <h4><i class="fas fa-user-slash"></i> Will I get banned for using these cheats?</h4>
-                                    <i class="fas fa-chevron-down faq-toggle"></i>
+                                    <i class="fas fa-plus-circle"></i>
+                                    <span>Can I request cheats for specific games?</span>
+                                    <i class="fas fa-chevron-down"></i>
                                 </div>
                                 <div class="faq-answer">
-                                    <p>There's always a risk when using cheats online. We recommend using alternative accounts, being subtle, and following our safety guidelines to minimize detection.</p>
-                                </div>
-                            </div>
-
-                            <div class="faq-item" data-search="updates working broken outdated">
-                                <div class="faq-question">
-                                    <h4><i class="fas fa-sync-alt"></i> How often are cheats updated?</h4>
-                                    <i class="fas fa-chevron-down faq-toggle"></i>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>We monitor all cheats regularly and update our collection when new versions are released. Check our Discord servers for the latest updates and announcements.</p>
-                                </div>
-                            </div>
-
-                            <div class="faq-item" data-search="support help discord contact">
-                                <div class="faq-question">
-                                    <h4><i class="fas fa-life-ring"></i> Where can I get help if something doesn't work?</h4>
-                                    <i class="fas fa-chevron-down faq-toggle"></i>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Join our Discord servers for community support, watch our YouTube tutorials, or contact whatwhatboy directly through the profile page for business inquiries.</p>
-                                </div>
-                            </div>
-
-                            <div class="faq-item" data-search="console xbox ps3 ps4 ps5">
-                                <div class="faq-question">
-                                    <h4><i class="fas fa-gamepad"></i> Do you have console cheats?</h4>
-                                    <i class="fas fa-chevron-down faq-toggle"></i>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Yes! We have sections dedicated to Xbox 360 and PS3 modifications. Console cheating usually requires hardware modifications or specific firmware.</p>
+                                    <p>Yes! We welcome game requests:</p>
+                                    <ul>
+                                        <li>Message us on Discord with your request</li>
+                                        <li>Comment on our YouTube videos</li>
+                                        <li>Popular requests get priority</li>
+                                        <li>We research and test before featuring any cheat</li>
+                                    </ul>
+                                    <p>Current popular requests: Fortnite, Apex Legends, Valorant</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Contact Support -->
-                <div class="support-section">
-                    <div class="support-card">
-                        <div class="support-content">
-                            <h3>Still Need Help?</h3>
-                            <p>Can't find what you're looking for? Get in touch with our community support or contact whatwhatboy directly for business inquiries.</p>
-                            <div class="support-buttons">
-                                <a href="index.html#discord" class="btn btn-primary">
-                                    <i class="fab fa-discord"></i>
-                                    Join Discord
-                                </a>
-                                <a href="https://www.youtube.com/channel/UCusYWir4F6r5AY6A9Ddv7jg" class="btn btn-outline" target="_blank">
-                                    <i class="fab fa-youtube"></i>
-                                    Watch Tutorials
-                                </a>
-                                <a href="profile.html" class="btn btn-outline">
-                                    <i class="fas fa-envelope"></i>
-                                    Business Contact
-                                </a>
-                            </div>
+        <!-- Quick Support Section -->
+        <section class="section">
+            <div class="container">
+                <div class="support-card">
+                    <div class="support-content">
+                        <h3><i class="fas fa-headset"></i> Need Immediate Help?</h3>
+                        <p>Can't find what you're looking for? Our community is here to help 24/7!</p>
+
+                        <div class="support-options">
+                            <a href="index.html#discord" class="support-option discord">
+                                <i class="fab fa-discord"></i>
+                                <div>
+                                    <strong>Discord Support</strong>
+                                    <span>Live chat with community experts</span>
+                                </div>
+                            </a>
+
+                            <a href="https://www.youtube.com/channel/UCusYWir4F6r5AY6A9Ddv7jg" class="support-option youtube" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                                <div>
+                                    <strong>Video Tutorials</strong>
+                                    <span>Step-by-step visual guides</span>
+                                </div>
+                            </a>
+
+                            <a href="profile.html" class="support-option contact">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>Contact Form</strong>
+                                    <span>Send us a detailed message</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -556,35 +542,46 @@
                         <h3>whatwhatboy</h3>
                     </div>
                     <p>Game Developer and Content Creator. Building gaming communities and creating educational content for YouTube.</p>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/channel/UCusYWir4F6r5AY6A9Ddv7jg" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="profile.html">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="profile.html">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4>Help Topics</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#games">Free Cheats</a></li>
-                        <li><a href="index.html#tools">Tools</a></li>
-                        <li><a href="help.html">Help & FAQ</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="help.html">Help Center</a></li>
-                        <li><a href="profile.html">Contact Us</a></li>
+                        <li><a href="#safety">Safety Guidelines</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                         <li><a href="index.html#discord">Discord Support</a></li>
                         <li><a href="youtube.html">Video Tutorials</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-section">
-                    <h4>Safety</h4>
+                    <h4>Popular Issues</h4>
                     <ul>
-                        <li><a href="#safety">Safety Guidelines</a></li>
-                        <li><a href="#virus-explanation">Virus Information</a></li>
-                        <li><a href="#safety">Antivirus Help</a></li>
-                        <li><a href="#safety">Legal Information</a></li>
+                        <li><a href="#faq">Virus Detection</a></li>
+                        <li><a href="#faq">Installation Help</a></li>
+                        <li><a href="#faq">GTA V Cheats</a></li>
+                        <li><a href="#faq">CS2 Safety</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="index.html#discord">Join Discord</a></li>
+                        <li><a href="profile.html">Contact Us</a></li>
+                        <li><a href="youtube.html">Watch Tutorials</a></li>
+                        <li><a href="safety.html">Safety Tips</a></li>
                     </ul>
                 </div>
             </div>
@@ -599,44 +596,456 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="assets/js/language-selector-enhanced.js"></script>
     <script>
-        // Help page specific search functionality
-        document.getElementById('helpSearch').addEventListener('input', function() {
-            const searchTerm = this.value.toLowerCase().trim();
-            const helpCards = document.querySelectorAll('.help-card[data-search], .faq-item[data-search]');
-
-            helpCards.forEach(card => {
-                const searchData = card.getAttribute('data-search').toLowerCase();
-                const cardTitle = card.querySelector('h3, h4').textContent.toLowerCase();
-                const cardContent = card.querySelector('p').textContent.toLowerCase();
-
-                const isMatch = searchTerm === '' ||
-                              searchData.includes(searchTerm) ||
-                              cardTitle.includes(searchTerm) ||
-                              cardContent.includes(searchTerm);
-
-                card.style.display = isMatch ? 'flex' : 'none';
-            });
+        // Help page specific functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeHelpSearch();
+            initializeFAQToggles();
         });
 
-        // FAQ Toggle functionality
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', function() {
-                const faqItem = this.parentElement;
-                const answer = faqItem.querySelector('.faq-answer');
-                const toggle = this.querySelector('.faq-toggle');
+        function initializeHelpSearch() {
+            const searchInput = document.getElementById('helpSearch');
 
-                faqItem.classList.toggle('active');
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase().trim();
+                const faqItems = document.querySelectorAll('.faq-item');
 
-                if (faqItem.classList.contains('active')) {
-                    answer.style.display = 'block';
-                    toggle.style.transform = 'rotate(180deg)';
-                } else {
-                    answer.style.display = 'none';
-                    toggle.style.transform = 'rotate(0deg)';
-                }
+                faqItems.forEach(item => {
+                    const searchData = item.getAttribute('data-search') || '';
+                    const questionText = item.querySelector('.faq-question span').textContent.toLowerCase();
+                    const answerText = item.querySelector('.faq-answer').textContent.toLowerCase();
+
+                    const isMatch = searchTerm === '' ||
+                                  searchData.includes(searchTerm) ||
+                                  questionText.includes(searchTerm) ||
+                                  answerText.includes(searchTerm);
+
+                    item.style.display = isMatch ? 'block' : 'none';
+
+                    // Show/hide parent category if no items match
+                    const category = item.closest('.faq-category');
+                    const visibleItems = category.querySelectorAll('.faq-item[style*="block"], .faq-item:not([style*="none"])');
+                    category.style.display = visibleItems.length > 0 ? 'block' : 'none';
+                });
             });
-        });
+        }
+
+        function initializeFAQToggles() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const item = this.closest('.faq-item');
+                    const answer = item.querySelector('.faq-answer');
+                    const chevron = this.querySelector('.fa-chevron-down');
+
+                    const isOpen = item.classList.contains('open');
+
+                    // Close all other FAQ items
+                    document.querySelectorAll('.faq-item.open').forEach(openItem => {
+                        if (openItem !== item) {
+                            openItem.classList.remove('open');
+                            openItem.querySelector('.faq-answer').style.maxHeight = '0';
+                            openItem.querySelector('.fa-chevron-down').style.transform = 'rotate(0deg)';
+                        }
+                    });
+
+                    if (isOpen) {
+                        item.classList.remove('open');
+                        answer.style.maxHeight = '0';
+                        chevron.style.transform = 'rotate(0deg)';
+                    } else {
+                        item.classList.add('open');
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        chevron.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+        }
+
+        function searchHelp(term) {
+            const searchInput = document.getElementById('helpSearch');
+            searchInput.value = term;
+            searchInput.dispatchEvent(new Event('input'));
+
+            // Scroll to FAQ section
+            document.getElementById('faq').scrollIntoView({ behavior: 'smooth' });
+        }
     </script>
+
+    <style>
+        /* Help page specific styles */
+        .help-hero {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+        }
+
+        .help-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .help-stats {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .quick-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .help-search {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: var(--border-radius-lg);
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .search-suggestions {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .suggestion-tag {
+            background: var(--bg-tertiary);
+            color: var(--text-secondary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease;
+        }
+
+        .suggestion-tag:hover {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .safety-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .safety-card {
+            background: var(--bg-card);
+            border-radius: var(--border-radius-lg);
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s ease;
+        }
+
+        .safety-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .safety-card.critical {
+            border-color: var(--danger-color);
+            background: rgba(239, 68, 68, 0.05);
+        }
+
+        .safety-card.important {
+            border-color: var(--warning-color);
+            background: rgba(245, 158, 11, 0.05);
+        }
+
+        .safety-card.warning {
+            border-color: #f59e0b;
+            background: rgba(245, 158, 11, 0.05);
+        }
+
+        .safety-card.info {
+            border-color: var(--primary-color);
+            background: rgba(99, 102, 241, 0.05);
+        }
+
+        .safety-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .safety-card.critical .safety-icon {
+            background: var(--danger-color);
+            color: white;
+        }
+
+        .safety-card.important .safety-icon {
+            background: var(--warning-color);
+            color: white;
+        }
+
+        .safety-card.warning .safety-icon {
+            background: #f59e0b;
+            color: white;
+        }
+
+        .safety-card.info .safety-icon {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .safety-content h3 {
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .safety-tips {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tip {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .faq-categories {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .faq-category {
+            background: var(--bg-card);
+            border-radius: var(--border-radius-lg);
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .category-title {
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            cursor: pointer;
+            padding: 0.75rem;
+            border-radius: var(--border-radius);
+            transition: background 0.2s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--bg-tertiary);
+        }
+
+        .faq-question span {
+            flex: 1;
+            font-weight: var(--font-weight-semibold);
+            color: var(--text-primary);
+        }
+
+        .faq-question .fa-chevron-down {
+            transition: transform 0.3s ease;
+            color: var(--text-muted);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 2.5rem;
+        }
+
+        .faq-item.open .faq-answer {
+            padding: 1rem 2.5rem;
+        }
+
+        .faq-answer p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .faq-answer ul, .faq-answer ol {
+            color: var(--text-secondary);
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .faq-answer li {
+            margin-bottom: 0.5rem;
+        }
+
+        .warning-box {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid var(--danger-color);
+            border-radius: var(--border-radius);
+            padding: 1rem;
+            margin-top: 1rem;
+            color: var(--text-primary);
+        }
+
+        .support-card {
+            background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 100%);
+            border-radius: var(--border-radius-lg);
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .support-content h3 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .support-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .support-option {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .support-option.discord {
+            background: rgba(88, 101, 242, 0.1);
+            border-color: #5865f2;
+        }
+
+        .support-option.youtube {
+            background: rgba(255, 0, 0, 0.1);
+            border-color: #ff0000;
+        }
+
+        .support-option.contact {
+            background: rgba(99, 102, 241, 0.1);
+            border-color: var(--primary-color);
+        }
+
+        .support-option:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .support-option i {
+            font-size: 1.5rem;
+        }
+
+        .support-option.discord i {
+            color: #5865f2;
+        }
+
+        .support-option.youtube i {
+            color: #ff0000;
+        }
+
+        .support-option.contact i {
+            color: var(--primary-color);
+        }
+
+        .support-option div {
+            text-align: left;
+        }
+
+        .support-option strong {
+            display: block;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .support-option span {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .help-stats {
+                gap: 1rem;
+            }
+
+            .quick-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .safety-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .search-suggestions {
+                gap: 0.25rem;
+            }
+
+            .faq-answer {
+                padding: 0 1rem;
+            }
+
+            .faq-item.open .faq-answer {
+                padding: 1rem;
+            }
+
+            .support-options {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <script src="script.js"></script>
+    <script src="assets/js/language-system.js"></script>
+    <script src="assets/js/mobile-enhancements.js"></script>
+    <script src="assets/js/global-search.js"></script>
+    <script src="assets/js/error-handling.js"></script>
+    <script src="assets/js/performance-optimizer.js"></script>
+    <script src="assets/js/dark-mode.js"></script>
 </body>
 </html>
