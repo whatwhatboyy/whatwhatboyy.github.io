@@ -538,13 +538,8 @@ function initPerformanceMonitoring() {
     requestAnimationFrame(countFrames);
 }
 
-// Initialize all systems
-function init() {
-    initNavigation();
-    initSearch();
-    initAnimations();
-    initScrollEffects();
-    initWireframeBackground();
+// Initialize additional systems
+function initAdditionalSystems() {
     initCardInteractions();
     initAccessibility();
     initPerformanceMonitoring();
@@ -931,10 +926,10 @@ let adminMode;
 // Auto-initialize when DOM is ready
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
-        init();
+        initAdditionalSystems();
         adminMode = new AdminEditMode();
     });
 } else {
-    init();
+    initAdditionalSystems();
     adminMode = new AdminEditMode();
 }
