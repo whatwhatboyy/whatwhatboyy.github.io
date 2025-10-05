@@ -94,7 +94,7 @@ class SiteEnhancements {
         });
     }
 
-    // 4. Recent Activity Feed
+    // 4. Recent Activity Feed - Now using real-time tracking!
     addRecentActivity() {
         const sidebar = document.querySelector('.sidebar-social');
         if (!sidebar) return;
@@ -104,56 +104,84 @@ class SiteEnhancements {
         activityFeed.innerHTML = `
             <h4>Recent Activity</h4>
             <div class="activity-list" id="activity-list">
-                <!-- Activities will be populated here -->
+                <!-- Real-time activities will be populated here -->
             </div>
         `;
         sidebar.appendChild(activityFeed);
 
-        this.generateRecentActivity();
+        this.loadRecentActivities();
+        this.listenForNewActivities();
     }
 
-    generateRecentActivity() {
-        const activities = [
-            'New GTA V mod uploaded',
-            'CS2 cheats updated',
-            'User joined Discord',
-            'Tutorial video published',
-            'Kiddions menu updated',
-            'New member in community',
-            'Bug fix released',
-            'YimMenu v2 available'
-        ];
-
+    loadRecentActivities() {
         const activityList = document.getElementById('activity-list');
         if (!activityList) return;
 
-        // Add initial activities
-        for (let i = 0; i < 3; i++) {
-            this.addActivityItem(activityList, activities[Math.floor(Math.random() * activities.length)]);
+        // Check if activity tracker is available
+        if (window.activityTracker) {
+            const activities = window.activityTracker.getActivities(5);
+            activities.forEach(activity => {
+                this.addActivityItem(activityList, activity.description, activity.icon, activity.timestamp);
+            });
         }
-
-        // Add new activity periodically
-        setInterval(() => {
-            const activity = activities[Math.floor(Math.random() * activities.length)];
-            this.addActivityItem(activityList, activity);
-
-            // Remove old activities (keep max 5)
-            const items = activityList.querySelectorAll('.activity-item');
-            if (items.length > 5) {
-                items[items.length - 1].remove();
-            }
-        }, 15000 + Math.random() * 10000);
     }
 
-    addActivityItem(container, text) {
+    listenForNewActivities() {
+        // Listen for real-time activity events
+        window.addEventListener('newActivity', (e) => {
+            const activity = e.detail;
+            const activityList = document.getElementById('activity-list');
+            if (activityList) {
+                this.addActivityItem(activityList, activity.description, activity.icon, activity.timestamp);
+
+                // Remove old activities (keep max 5)
+                const items = activityList.querySelectorAll('.activity-item');
+                if (items.length > 5) {
+                    items[items.length - 1].remove();
+                }
+            }
+        });
+    }
+
+    addActivityItem(container, text, icon = '🎮', timestamp = null) {
         const item = document.createElement('div');
         item.className = 'activity-item';
+
+        const timeAgo = this.getTimeAgo(timestamp);
+
         item.innerHTML = `
-            <span class="activity-dot"></span>
+            <span class="activity-icon">${icon}</span>
             <span class="activity-text">${text}</span>
-            <span class="activity-time">just now</span>
+            <span class="activity-time">${timeAgo}</span>
         `;
         container.insertBefore(item, container.firstChild);
+
+        // Update time every minute
+        if (timestamp) {
+            setInterval(() => {
+                const timeSpan = item.querySelector('.activity-time');
+                if (timeSpan) {
+                    timeSpan.textContent = this.getTimeAgo(timestamp);
+                }
+            }, 60000);
+        }
+    }
+
+    getTimeAgo(timestamp) {
+        if (!timestamp) return 'just now';
+
+        const now = new Date();
+        const then = new Date(timestamp);
+        const diffMs = now - then;
+        const diffMins = Math.floor(diffMs / 60000);
+        const diffHours = Math.floor(diffMs / 3600000);
+        const diffDays = Math.floor(diffMs / 86400000);
+
+        if (diffMins < 1) return 'just now';
+        if (diffMins < 60) return `${diffMins}m ago`;
+        if (diffHours < 24) return `${diffHours}h ago`;
+        if (diffDays < 7) return `${diffDays}d ago`;
+        return 'over a week ago';
     }
 
     // 5. Typing Effect for Hero Title
@@ -424,6 +452,11 @@ const enhancementStyles = `
         height: 6px;
         background: var(--primary-color);
         border-radius: 50%;
+        flex-shrink: 0;
+    }
+
+    .activity-icon {
+        font-size: 1rem;
         flex-shrink: 0;
     }
 

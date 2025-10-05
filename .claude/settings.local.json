@@ -48,7 +48,12 @@
       "Bash(do node -c \"$jsfile\")",
       "Bash(do echo \"Processing: $file\")",
       "Bash(mkdir:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(chmod:*)",
+      "Bash(./apply-site-fixes.sh:*)",
+      "Bash(/c/Users/whatw/Documents/GitHub/whatwhatboyy.github.io/add-activity-tracker.sh)",
+      "Bash(/c/Users/whatw/Documents/GitHub/whatwhatboyy.github.io/cleanup-site.sh)",
+      "Bash(/c/Users/whatw/Documents/GitHub/whatwhatboyy.github.io/update-nav-to-contact.sh)"
     ],
     "deny": [],
     "ask": []
