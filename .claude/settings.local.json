@@ -47,7 +47,8 @@
       "Bash(node:*)",
       "Bash(do node -c \"$jsfile\")",
       "Bash(do echo \"Processing: $file\")",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []
