@@ -53,7 +53,13 @@
       "Bash(./apply-site-fixes.sh:*)",
       "Bash(/c/Users/whatw/Documents/GitHub/whatwhatboyy.github.io/add-activity-tracker.sh)",
       "Bash(/c/Users/whatw/Documents/GitHub/whatwhatboyy.github.io/cleanup-site.sh)",
-      "Bash(/c/Users/whatw/Documents/GitHub/whatwhatboyy.github.io/update-nav-to-contact.sh)"
+      "Bash(/c/Users/whatw/Documents/GitHub/whatwhatboyy.github.io/update-nav-to-contact.sh)",
+      "Bash(do echo \"=== $dir ===\")",
+      "Bash(ls:*)",
+      "Bash(do echo \"Checking: $dir\")",
+      "Bash(bash:*)",
+      "Bash(curl:*)",
+      "Bash(awk:*)"
     ],
     "deny": [],
     "ask": []
