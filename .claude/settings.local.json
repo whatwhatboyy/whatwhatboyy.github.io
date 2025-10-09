@@ -59,7 +59,8 @@
       "Bash(do echo \"Checking: $dir\")",
       "Bash(bash:*)",
       "Bash(curl:*)",
-      "Bash(awk:*)"
+      "Bash(awk:*)",
+      "Bash(git log:*)"
     ],
     "deny": [],
     "ask": []
