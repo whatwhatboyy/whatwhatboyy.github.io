@@ -18,80 +18,76 @@ function initSidebarNavigation() {
     const mainContent = document.getElementById('main-content');
     const navLinks = document.querySelectorAll('.nav-link');
 
+    // Create backdrop overlay for mobile
+    let backdrop = document.querySelector('.sidebar-backdrop');
+    if (!backdrop) {
+        backdrop = document.createElement('div');
+        backdrop.className = 'sidebar-backdrop';
+        document.body.appendChild(backdrop);
+    }
+
+    // Helper function to close sidebar
+    function closeSidebar() {
+        sidebar.classList.remove('active');
+        mainContent.classList.remove('sidebar-open');
+        backdrop.classList.remove('active');
+        document.body.classList.remove('sidebar-open');
+
+        if (mobileSidebarBtn) {
+            const icon = mobileSidebarBtn.querySelector('i');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    }
+
+    // Helper function to open sidebar
+    function openSidebar() {
+        sidebar.classList.add('active');
+        mainContent.classList.add('sidebar-open');
+        backdrop.classList.add('active');
+        document.body.classList.add('sidebar-open');
+
+        if (mobileSidebarBtn) {
+            const icon = mobileSidebarBtn.querySelector('i');
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        }
+    }
+
     // Mobile sidebar toggle
     if (mobileSidebarBtn && sidebar) {
         mobileSidebarBtn.addEventListener('click', function() {
-            sidebar.classList.toggle('active');
-            mainContent.classList.toggle('sidebar-open');
-
-            const icon = this.querySelector('i');
             if (sidebar.classList.contains('active')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
+                closeSidebar();
             } else {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
+                openSidebar();
             }
         });
     }
 
+    // Close sidebar when clicking backdrop
+    if (backdrop) {
+        backdrop.addEventListener('click', closeSidebar);
+    }
+
     // Sidebar close button
     if (sidebarToggle && sidebar) {
-        sidebarToggle.addEventListener('click', function() {
-            sidebar.classList.remove('active');
-            mainContent.classList.remove('sidebar-open');
-
-            if (mobileSidebarBtn) {
-                const icon = mobileSidebarBtn.querySelector('i');
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
-        });
+        sidebarToggle.addEventListener('click', closeSidebar);
     }
 
     // Close sidebar when clicking on nav links (mobile)
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             if (window.innerWidth <= 768) {
-                sidebar.classList.remove('active');
-                mainContent.classList.remove('sidebar-open');
-
-                if (mobileSidebarBtn) {
-                    const icon = mobileSidebarBtn.querySelector('i');
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
-                }
+                closeSidebar();
             }
         });
-    });
-
-    // Close sidebar when clicking outside (mobile)
-    document.addEventListener('click', (e) => {
-        if (window.innerWidth <= 768 &&
-            !sidebar.contains(e.target) &&
-            !mobileSidebarBtn.contains(e.target)) {
-            sidebar.classList.remove('active');
-            mainContent.classList.remove('sidebar-open');
-
-            if (mobileSidebarBtn) {
-                const icon = mobileSidebarBtn.querySelector('i');
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
-        }
     });
 
     // Handle window resize
     window.addEventListener('resize', () => {
         if (window.innerWidth > 768) {
-            sidebar.classList.remove('active');
-            mainContent.classList.remove('sidebar-open');
-
-            if (mobileSidebarBtn) {
-                const icon = mobileSidebarBtn.querySelector('i');
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
+            closeSidebar();
         }
     });
 
