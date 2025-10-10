@@ -60,7 +60,11 @@
       "Bash(bash:*)",
       "Bash(curl:*)",
       "Bash(awk:*)",
-      "Bash(git log:*)"
+      "Bash(git log:*)",
+      "Bash(do if grep -q \"nav-list\" \"$file\")",
+      "Bash(then echo \"$file\")",
+      "Bash(python:*)",
+      "Bash(python3:*)"
     ],
     "deny": [],
     "ask": []
