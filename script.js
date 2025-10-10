@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initScrollEffects();
     initWireframeBackground();
 
-    console.log('🎮 Gaming website loaded successfully!');
+    // Gaming website loaded successfully
 });
 
 // Sidebar Navigation functionality
@@ -510,7 +510,7 @@ function initPerformanceMonitoring() {
     if ('performance' in window) {
         window.addEventListener('load', () => {
             const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
-            console.log(`⚡ Page loaded in ${loadTime}ms`);
+            // Page loaded in ${loadTime}ms
         });
     }
 
@@ -523,7 +523,7 @@ function initPerformanceMonitoring() {
         const currentTime = performance.now();
 
         if (currentTime - lastTime >= 1000) {
-            console.log(`🎯 FPS: ${frameCount}`);
+            // FPS: ${frameCount}
             frameCount = 0;
             lastTime = currentTime;
         }
@@ -928,4 +928,37 @@ if (document.readyState === 'loading') {
 } else {
     initAdditionalSystems();
     adminMode = new AdminEditMode();
+}
+// Back to Top Button
+function initBackToTop() {
+    // Create back to top button
+    const backToTopBtn = document.createElement("button");
+    backToTopBtn.className = "back-to-top";
+    backToTopBtn.innerHTML = `<i class="fas fa-arrow-up"></i>`;
+    backToTopBtn.setAttribute("aria-label", "Back to top");
+    document.body.appendChild(backToTopBtn);
+
+    // Show/hide button on scroll
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            backToTopBtn.classList.add("show");
+        } else {
+            backToTopBtn.classList.remove("show");
+        }
+    });
+
+    // Scroll to top on click
+    backToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}
+
+// Initialize back to top when DOM is loaded
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initBackToTop);
+} else {
+    initBackToTop();
 }
