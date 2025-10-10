@@ -873,6 +873,8 @@ body {
     background: var(--bg-secondary);
     border-top: 1px solid var(--border-color);
     margin-top: var(--spacing-2xl);
+    position: relative;
+    z-index: 1;
 }
 
 .footer-content {

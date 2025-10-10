@@ -127,6 +127,10 @@
                         <i class="fas fa-download"></i>
                         VC Runtime
                     </a>
+                    <a href="#antivirus" class="btn btn-outline">
+                        <i class="fas fa-shield-alt"></i>
+                        Antivirus Setup
+                    </a>
                     <a href="help.html" class="btn btn-outline">
                         <i class="fas fa-question-circle"></i>
                         Need Help?
@@ -149,8 +153,10 @@
                             <li><strong>"The application failed to start because .NET Framework is not installed"</strong></li>
                             <li><strong>"VCRUNTIME140.dll was not found"</strong></li>
                             <li><strong>"MSVCP140.dll is missing from your computer"</strong></li>
+                            <li><strong>"d3dx9_43.dll" or "xinput1_3.dll" was not found (DirectX errors)</strong></li>
+                            <li><strong>"The program can't start because api-ms-win-crt-runtime"</strong></li>
                         </ul>
-                        <p>Installing both packages below will ensure all our tools work flawlessly on your system.</p>
+                        <p>Installing both packages below will ensure all our tools work flawlessly on your system. For DirectX errors, see the troubleshooting section below.</p>
                     </div>
                 </div>
             </div>
@@ -339,6 +345,244 @@
             </div>
         </section>
 
+        <!-- Antivirus Configuration Section -->
+        <section class="section" id="antivirus">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><i class="fas fa-shield-alt"></i> Antivirus Configuration</h2>
+                    <p class="section-subtitle">How to disable antivirus or add exclusions for game tools</p>
+                </div>
+
+                <div class="warning-card" style="margin-bottom: 2rem;">
+                    <div class="warning-header">
+                        <i class="fas fa-info-circle"></i>
+                        <h3>Why Antivirus Blocks Game Tools</h3>
+                    </div>
+                    <div class="warning-content">
+                        <p>Game cheats and tools use code injection techniques that antivirus software flags as potentially malicious, even though they're harmless. This is called a <strong>false positive</strong>.</p>
+                        <p><strong>Two Options:</strong></p>
+                        <ul>
+                            <li><strong>Option 1:</strong> Temporarily disable your antivirus (recommended for quick testing)</li>
+                            <li><strong>Option 2:</strong> Add folder exclusions (recommended for permanent use)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Windows Defender Guide -->
+                <div class="requirement-card featured" style="margin-bottom: 2rem;">
+                    <div class="requirement-header">
+                        <div class="requirement-icon">
+                            <i class="fab fa-windows"></i>
+                        </div>
+                        <div class="requirement-info">
+                            <h3>Windows Defender (Windows 10/11)</h3>
+                            <p>Most common antivirus - built into Windows</p>
+                        </div>
+                    </div>
+
+                    <div class="requirement-install">
+                        <h4><i class="fas fa-toggle-off"></i> Method 1: Disable Real-Time Protection (Temporary)</h4>
+                        <ol>
+                            <li>Press <kbd>Windows + I</kbd> to open Windows Settings</li>
+                            <li>Click on <strong>"Privacy & Security"</strong> (Windows 11) or <strong>"Update & Security"</strong> (Windows 10)</li>
+                            <li>Click on <strong>"Windows Security"</strong></li>
+                            <li>Click on <strong>"Virus & threat protection"</strong></li>
+                            <li>Under "Virus & threat protection settings", click <strong>"Manage settings"</strong></li>
+                            <li>Toggle <strong>"Real-time protection"</strong> to OFF</li>
+                            <li>Confirm the UAC prompt if it appears</li>
+                        </ol>
+                        <div class="note-box" style="margin-top: 1rem;">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div>
+                                <strong>Note:</strong> Real-time protection will automatically turn back on after a while. This is temporary and good for quick testing.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="requirement-install">
+                        <h4><i class="fas fa-folder-plus"></i> Method 2: Add Folder Exclusion (Permanent)</h4>
+                        <ol>
+                            <li>Press <kbd>Windows + I</kbd> to open Windows Settings</li>
+                            <li>Click on <strong>"Privacy & Security"</strong> → <strong>"Windows Security"</strong></li>
+                            <li>Click on <strong>"Virus & threat protection"</strong></li>
+                            <li>Scroll down and click <strong>"Manage settings"</strong> under "Virus & threat protection settings"</li>
+                            <li>Scroll down to <strong>"Exclusions"</strong> and click <strong>"Add or remove exclusions"</strong></li>
+                            <li>Click <strong>"Add an exclusion"</strong> → <strong>"Folder"</strong></li>
+                            <li>Browse to your tools folder (e.g., <code>C:\Tools</code> or <code>C:\Cheats</code>)</li>
+                            <li>Select the folder and click <strong>"Select Folder"</strong></li>
+                        </ol>
+                        <div class="note-box" style="margin-top: 1rem; background: rgba(34, 197, 94, 0.1); border-color: #22c55e;">
+                            <i class="fas fa-check-circle" style="color: #22c55e;"></i>
+                            <div>
+                                <strong>Recommended:</strong> Create a dedicated folder like <code>C:\Tools</code> and add it as an exclusion. Extract all your game tools to this folder.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="requirement-install">
+                        <h4><i class="fas fa-undo"></i> Restore Quarantined Files</h4>
+                        <ol>
+                            <li>Open <strong>Windows Security</strong></li>
+                            <li>Click <strong>"Virus & threat protection"</strong></li>
+                            <li>Click <strong>"Protection history"</strong></li>
+                            <li>Find your file in the list</li>
+                            <li>Click on it and select <strong>"Actions"</strong> → <strong>"Restore"</strong></li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Other Antivirus Programs -->
+                <div class="section-header" style="margin-top: 3rem;">
+                    <h3 class="section-title" style="font-size: 1.75rem;"><i class="fas fa-shield-virus"></i> Other Antivirus Programs</h3>
+                </div>
+
+                <div class="troubleshooting-grid" style="margin-top: 2rem;">
+                    <!-- Avast -->
+                    <div class="troubleshooting-card">
+                        <div class="troubleshooting-icon warning">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Avast Antivirus</h3>
+                        <p><strong>Disable Protection:</strong></p>
+                        <ol style="font-size: 0.9rem; margin-left: 1rem;">
+                            <li>Right-click Avast icon in system tray</li>
+                            <li>Select "Avast shields control"</li>
+                            <li>Choose duration (10 min, 1 hour, etc.)</li>
+                        </ol>
+                        <p><strong>Add Exclusion:</strong></p>
+                        <ol style="font-size: 0.9rem; margin-left: 1rem;">
+                            <li>Open Avast → Settings → General</li>
+                            <li>Go to "Exceptions"</li>
+                            <li>Click "Add Exception" → Browse folder</li>
+                        </ol>
+                    </div>
+
+                    <!-- AVG -->
+                    <div class="troubleshooting-card">
+                        <div class="troubleshooting-icon warning">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>AVG Antivirus</h3>
+                        <p><strong>Disable Protection:</strong></p>
+                        <ol style="font-size: 0.9rem; margin-left: 1rem;">
+                            <li>Right-click AVG icon in system tray</li>
+                            <li>Select "Temporarily disable AVG protection"</li>
+                            <li>Choose duration</li>
+                        </ol>
+                        <p><strong>Add Exclusion:</strong></p>
+                        <ol style="font-size: 0.9rem; margin-left: 1rem;">
+                            <li>Open AVG → Settings → General → Exceptions</li>
+                            <li>Click "Add Exception"</li>
+                            <li>Browse and select your folder</li>
+                        </ol>
+                    </div>
+
+                    <!-- Norton -->
+                    <div class="troubleshooting-card">
+                        <div class="troubleshooting-icon warning">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Norton Antivirus</h3>
+                        <p><strong>Disable Protection:</strong></p>
+                        <ol style="font-size: 0.9rem; margin-left: 1rem;">
+                            <li>Open Norton</li>
+                            <li>Click "Settings"</li>
+                            <li>Go to "Antivirus" → Turn off Auto-Protect</li>
+                            <li>Select duration</li>
+                        </ol>
+                        <p><strong>Add Exclusion:</strong></p>
+                        <ol style="font-size: 0.9rem; margin-left: 1rem;">
+                            <li>Settings → Antivirus</li>
+                            <li>Click "Scans and Risks" tab</li>
+                            <li>Under "Exclusions/Low Risks", click "Configure"</li>
+                            <li>Add your folder path</li>
+                        </ol>
+                    </div>
+
+                    <!-- McAfee -->
+                    <div class="troubleshooting-card">
+                        <div class="troubleshooting-icon warning">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>McAfee Antivirus</h3>
+                        <p><strong>Disable Protection:</strong></p>
+                        <ol style="font-size: 0.9rem; margin-left: 1rem;">
+                            <li>Right-click McAfee icon in system tray</li>
+                            <li>Select "Change Settings"</li>
+                            <li>Click "Real-Time Scanning"</li>
+                            <li>Turn it off and select duration</li>
+                        </ol>
+                        <p><strong>Add Exclusion:</strong></p>
+                        <ol style="font-size: 0.9rem; margin-left: 1rem;">
+                            <li>Open McAfee → PC Security</li>
+                            <li>Click "Real-Time Scanning"</li>
+                            <li>Click "Excluded Files"</li>
+                            <li>Add your folder</li>
+                        </ol>
+                    </div>
+
+                    <!-- Bitdefender -->
+                    <div class="troubleshooting-card">
+                        <div class="troubleshooting-icon warning">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Bitdefender</h3>
+                        <p><strong>Disable Protection:</strong></p>
+                        <ol style="font-size: 0.9rem; margin-left: 1rem;">
+                            <li>Open Bitdefender</li>
+                            <li>Go to "Protection" module</li>
+                            <li>Click on "Antivirus"</li>
+                            <li>Toggle "Advanced Threat Defense" off</li>
+                        </ol>
+                        <p><strong>Add Exclusion:</strong></p>
+                        <ol style="font-size: 0.9rem; margin-left: 1rem;">
+                            <li>Open Bitdefender → Protection → Antivirus</li>
+                            <li>Click "Settings" (gear icon)</li>
+                            <li>Go to "Exceptions" tab</li>
+                            <li>Add folder path</li>
+                        </ol>
+                    </div>
+
+                    <!-- Kaspersky -->
+                    <div class="troubleshooting-card">
+                        <div class="troubleshooting-icon warning">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Kaspersky</h3>
+                        <p><strong>Disable Protection:</strong></p>
+                        <ol style="font-size: 0.9rem; margin-left: 1rem;">
+                            <li>Open Kaspersky</li>
+                            <li>Click Settings (gear icon)</li>
+                            <li>Go to "Protection" section</li>
+                            <li>Toggle off "File Antivirus"</li>
+                        </ol>
+                        <p><strong>Add Exclusion:</strong></p>
+                        <ol style="font-size: 0.9rem; margin-left: 1rem;">
+                            <li>Settings → Additional → Threats and Exclusions</li>
+                            <li>Click "Manage Exclusions"</li>
+                            <li>Click "Add" → Select folder</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="warning-card" style="margin-top: 2rem;">
+                    <div class="warning-header">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Best Practices</h3>
+                    </div>
+                    <div class="warning-content">
+                        <ul>
+                            <li><strong>Create a dedicated folder:</strong> Make a folder like <code>C:\Tools</code> or <code>C:\GameCheats</code></li>
+                            <li><strong>Add exclusion BEFORE downloading:</strong> Set up the exclusion first, then download files to that folder</li>
+                            <li><strong>Extract to excluded folder:</strong> Always extract downloaded files to your excluded folder</li>
+                            <li><strong>Use Windows Defender:</strong> If possible, uninstall third-party antivirus and use Windows Defender with exclusions</li>
+                            <li><strong>Re-enable protection:</strong> Always re-enable your antivirus after testing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Troubleshooting Section -->
         <section class="section">
             <div class="container">
@@ -359,6 +603,7 @@
                             <li>Disable antivirus temporarily</li>
                             <li>Ensure Windows is up to date</li>
                             <li>Close all running applications</li>
+                            <li>Free up disk space (need at least 5GB free)</li>
                         </ul>
                     </div>
 
@@ -373,6 +618,7 @@
                             <li>Reinstall both .NET and VC Runtime</li>
                             <li>Check if you downloaded the correct architecture (x64/x86)</li>
                             <li>Try running the repair option in the installer</li>
+                            <li>Manually register DLLs using "regsvr32" command</li>
                         </ul>
                     </div>
 
@@ -391,6 +637,141 @@
                     </div>
 
                     <div class="troubleshooting-card">
+                        <div class="troubleshooting-icon error">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>DirectX Errors (d3dx9_43.dll, xinput1_3.dll)</h3>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>Download DirectX End-User Runtime from Microsoft</li>
+                            <li>Install DirectX 9.0c (required for older games)</li>
+                            <li>Update your graphics drivers to the latest version</li>
+                            <li>Run Windows Update to get latest DirectX updates</li>
+                            <li>Download: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=35" target="_blank">DirectX End-User Runtime</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="troubleshooting-card">
+                        <div class="troubleshooting-icon warning">
+                            <i class="fas fa-display"></i>
+                        </div>
+                        <h3>Graphics/Display Issues</h3>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>Update your GPU drivers (NVIDIA/AMD/Intel)</li>
+                            <li>Verify your GPU meets minimum requirements</li>
+                            <li>Enable Windows Hardware Acceleration</li>
+                            <li>Disable overlays (Discord, GeForce Experience, etc.)</li>
+                            <li>Run game/tool in compatibility mode</li>
+                        </ul>
+                    </div>
+
+                    <div class="troubleshooting-card">
+                        <div class="troubleshooting-icon error">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <h3>Antivirus Blocking Files</h3>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>Add exception/exclusion for the tool folder</li>
+                            <li>Temporarily disable real-time protection</li>
+                            <li>Restore quarantined files from antivirus</li>
+                            <li>Use Windows Defender instead of third-party AV</li>
+                            <li>Check our <a href="safety.html">Safety Tips</a> page</li>
+                        </ul>
+                    </div>
+
+                    <div class="troubleshooting-card">
+                        <div class="troubleshooting-icon warning">
+                            <i class="fas fa-memory"></i>
+                        </div>
+                        <h3>Memory/Performance Issues</h3>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>Close unnecessary background applications</li>
+                            <li>Check Task Manager for high CPU/RAM usage</li>
+                            <li>Run game/tool as Administrator</li>
+                            <li>Disable Windows Game Mode (can cause issues)</li>
+                            <li>Verify at least 4GB free RAM available</li>
+                        </ul>
+                    </div>
+
+                    <div class="troubleshooting-card">
+                        <div class="troubleshooting-icon info">
+                            <i class="fas fa-windows"></i>
+                        </div>
+                        <h3>Windows Compatibility Issues</h3>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>Right-click tool → Properties → Compatibility</li>
+                            <li>Try "Windows 7" or "Windows 8" compatibility mode</li>
+                            <li>Enable "Run as Administrator" option</li>
+                            <li>Disable fullscreen optimizations</li>
+                            <li>Update Windows to latest version (Windows Update)</li>
+                        </ul>
+                    </div>
+
+                    <div class="troubleshooting-card">
+                        <div class="troubleshooting-icon error">
+                            <i class="fas fa-ban"></i>
+                        </div>
+                        <h3>Access Denied Errors</h3>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>Run as Administrator (right-click → Run as admin)</li>
+                            <li>Check file/folder permissions</li>
+                            <li>Disable User Account Control (UAC) temporarily</li>
+                            <li>Move tool to a non-system folder (not C:\Program Files)</li>
+                            <li>Ensure you're logged in as Administrator</li>
+                        </ul>
+                    </div>
+
+                    <div class="troubleshooting-card">
+                        <div class="troubleshooting-icon warning">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Network/Connection Errors</h3>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>Check your internet connection is stable</li>
+                            <li>Disable VPN/Proxy temporarily</li>
+                            <li>Add firewall exception for the tool</li>
+                            <li>Try a different DNS (Google DNS: 8.8.8.8)</li>
+                            <li>Verify game servers are online</li>
+                        </ul>
+                    </div>
+
+                    <div class="troubleshooting-card">
+                        <div class="troubleshooting-icon error">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h3>Game Not Detected</h3>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>Run the game first, THEN launch the tool</li>
+                            <li>Ensure game is running in windowed/borderless mode</li>
+                            <li>Verify game is fully updated</li>
+                            <li>Check tool supports your game version</li>
+                            <li>Try running both game and tool as Administrator</li>
+                        </ul>
+                    </div>
+
+                    <div class="troubleshooting-card">
+                        <div class="troubleshooting-icon info">
+                            <i class="fas fa-file-archive"></i>
+                        </div>
+                        <h3>Extract/Archive Errors</h3>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>Use WinRAR or 7-Zip to extract files</li>
+                            <li>Extract to a simple path (like C:\Tools)</li>
+                            <li>Avoid paths with special characters or spaces</li>
+                            <li>Re-download if archive is corrupted</li>
+                            <li>Check available disk space before extracting</li>
+                        </ul>
+                    </div>
+
+                    <div class="troubleshooting-card">
                         <div class="troubleshooting-icon success">
                             <i class="fas fa-check-circle"></i>
                         </div>
@@ -401,6 +782,7 @@
                             <li><a href="help.html">Check the Help & FAQ page</a></li>
                             <li><a href="youtube.html">Watch video tutorials</a></li>
                             <li><a href="profile.html">Contact us directly</a></li>
+                            <li><a href="safety.html">Read Safety Guidelines</a></li>
                         </ul>
                     </div>
                 </div>
@@ -842,6 +1224,32 @@
 
         .reference-footer i {
             color: var(--warning-color);
+        }
+
+        /* Keyboard shortcuts styling */
+        kbd {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+            color: var(--text-primary);
+            display: inline-block;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            font-weight: var(--font-weight-semibold);
+            line-height: 1;
+            padding: 3px 6px;
+            white-space: nowrap;
+        }
+
+        code {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            color: var(--primary-color);
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            padding: 2px 6px;
         }
 
         /* Mobile responsive */
