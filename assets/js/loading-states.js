@@ -40,36 +40,38 @@ class LoadingStateManager {
     }
 
     initImageLoading() {
-        const images = document.querySelectorAll('img[data-src], img[loading="lazy"]');
-        
+        // Only target images with data-src (lazy load placeholder images)
+        // Regular images with src attribute should load normally without placeholders
+        const images = document.querySelectorAll('img[data-src]');
+
         images.forEach(img => {
             // Add loading placeholder
             if (!img.classList.contains('loaded')) {
                 img.classList.add('loading');
-                
+
                 // Create placeholder
                 const placeholder = document.createElement('div');
                 placeholder.className = 'image-placeholder';
                 placeholder.innerHTML = '<div class="placeholder-spinner"></div>';
-                
+
                 if (img.parentElement) {
                     img.parentElement.style.position = 'relative';
                     img.parentElement.appendChild(placeholder);
                 }
-                
+
                 // Handle load event
                 img.addEventListener('load', () => {
                     img.classList.remove('loading');
                     img.classList.add('loaded');
                     placeholder?.remove();
                 });
-                
+
                 // Handle error event
                 img.addEventListener('error', () => {
                     img.classList.remove('loading');
                     img.classList.add('error');
                     placeholder?.remove();
-                    
+
                     // Show error state
                     const errorDiv = document.createElement('div');
                     errorDiv.className = 'image-error';

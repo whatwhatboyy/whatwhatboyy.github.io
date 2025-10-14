@@ -2510,12 +2510,10 @@ body {
 .cheat-image img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     transition: none;
     will-change: auto;
-    max-width: 100%;
-    max-height: 100%;
 }
 
 .cheat-image::before {
