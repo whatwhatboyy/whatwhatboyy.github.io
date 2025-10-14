@@ -31,6 +31,7 @@ class ErrorHandler {
 
         this.createGlobalLoadingIndicator();
         this.setupNetworkStatusMonitoring();
+        this.setupBrokenLinkRedirects();
     }
 
     handleError(error, type = 'Unknown Error', filename = '', lineno = 0) {
@@ -446,6 +447,53 @@ class ErrorHandler {
 
     clearErrorLog() {
         this.errorLog = [];
+    }
+
+    // Broken link redirect handling
+    setupBrokenLinkRedirects() {
+        // Common broken link patterns and their corrections
+        const redirectMap = {
+            '/game/': '/games/',
+            '/download/': '/downloads/',
+            '/mod/': '/games/',
+            '/cheat/': '/games/',
+            '/tool/': '/tools/'
+        };
+
+        // Check current URL for broken patterns
+        const currentPath = window.location.pathname.toLowerCase();
+        for (const [pattern, redirect] of Object.entries(redirectMap)) {
+            if (currentPath.includes(pattern)) {
+                const correctedPath = currentPath.replace(pattern, redirect);
+                this.showWarningToast('Redirecting to correct page...', 2000);
+                setTimeout(() => {
+                    window.location.href = correctedPath;
+                }, 500);
+                return;
+            }
+        }
+
+        // Monitor all clicks on links
+        document.addEventListener('click', (e) => {
+            const link = e.target.closest('a[href]');
+            if (!link) return;
+
+            const href = link.getAttribute('href');
+            if (!href || href === '#' || href.startsWith('javascript:')) return;
+
+            // Check if link matches broken patterns
+            for (const [pattern, redirect] of Object.entries(redirectMap)) {
+                if (href.includes(pattern)) {
+                    e.preventDefault();
+                    const correctedHref = href.replace(pattern, redirect);
+                    this.showWarningToast('Redirecting to correct page...', 1500);
+                    setTimeout(() => {
+                        window.location.href = correctedHref;
+                    }, 500);
+                    return;
+                }
+            }
+        }, true);
     }
 }
 

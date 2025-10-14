@@ -3,319 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Page not found - whatwhatboy gaming content">
-    <title>Page Not Found - whatwhatboy</title>
-
-    <link rel="icon" href="assets/images/logo.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/css/site-fixes.css">
-    <link rel="stylesheet" href="assets/css/image-optimization.css">
-</head>
-<body>
-    <div class="error-page">
-        <div class="error-container">
-            <div class="error-content">
-                <div class="error-icon">
-                    <i class="fas fa-exclamation-triangle"></i>
-                </div>
-
-                <h1 class="error-title">404</h1>
-                <h2 class="error-subtitle">Page Not Found</h2>
-
-                <p class="error-message">
-                    The page you're looking for seems to have vanished into the digital void.
-                    Don't worry though - our cheats are still here and working!
-                </p>
-
-                <div class="error-suggestions">
-                    <h3>Here's what you can do:</h3>
-                    <ul>
-                        <li><i class="fas fa-home"></i> Go back to the <a href="index.html">home page</a></li>
-                        <li><i class="fas fa-gamepad"></i> Check out our <a href="index.html#games">free cheats</a></li>
-                        <li><i class="fas fa-tools"></i> Browse our <a href="tools/">tools and utilities</a></li>
-                        <li><i class="fas fa-youtube"></i> Watch our <a href="youtube.html">YouTube videos</a></li>
-                        <li><i class="fas fa-search"></i> Use the search function (Ctrl+K)</li>
-                    </ul>
-                </div>
-
-                <div class="error-actions">
-                    <a href="index.html" class="btn btn-primary">
-                        <i class="fas fa-home"></i>
-                        Go Home
-                    </a>
-                    <button onclick="history.back()" class="btn btn-outline">
-                        <i class="fas fa-arrow-left"></i>
-                        Go Back
-                    </button>
-                    <button onclick="window.location.reload()" class="btn btn-outline">
-                        <i class="fas fa-refresh"></i>
-                        Reload
-                    </button>
-                </div>
-
-                <div class="error-contact">
-                    <p>Still can't find what you're looking for?</p>
-                    <a href="help.html" class="contact-link">
-                        <i class="fas fa-life-ring"></i>
-                        Get Help & Support
-                    </a>
-                </div>
-            </div>
-
-            <div class="error-background">
-                <div class="floating-icon"><i class="fas fa-gamepad"></i></div>
-                <div class="floating-icon"><i class="fas fa-bug"></i></div>
-                <div class="floating-icon"><i class="fas fa-code"></i></div>
-                <div class="floating-icon"><i class="fas fa-terminal"></i></div>
-                <div class="floating-icon"><i class="fas fa-shield-alt"></i></div>
-            </div>
-        </div>
-    </div>
-
+    <title>404 - Page Not Found | whatwhatboyy</title>
+    <link rel="stylesheet" href="/style.css">
     <style>
-        .error-page {
+        .error-container {
             min-height: 100vh;
-            background: linear-gradient(135deg, var(--bg-primary, #0f0f23) 0%, var(--bg-secondary, #1a1a2e) 100%);
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 2rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .error-container {
-            max-width: 800px;
-            width: 100%;
-            position: relative;
-            z-index: 2;
+            padding: var(--spacing-lg);
+            text-align: center;
         }
 
         .error-content {
-            background: var(--bg-card, #1a1a1a);
-            border: 2px solid var(--primary-color, #6366f1);
-            border-radius: 20px;
-            padding: 3rem;
-            text-align: center;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-            backdrop-filter: blur(10px);
+            max-width: 600px;
+            margin: 0 auto;
         }
 
-        .error-icon {
-            font-size: 4rem;
-            color: var(--warning-color, #f59e0b);
-            margin-bottom: 1rem;
-            animation: pulse 2s infinite;
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            color: var(--accent-red);
+            line-height: 1;
+            margin-bottom: var(--spacing-md);
+            text-shadow: 0 0 20px rgba(220, 38, 38, 0.3);
         }
 
         .error-title {
-            font-size: 6rem;
-            font-weight: 800;
-            color: var(--primary-color, #6366f1);
-            margin: 0 0 0.5rem 0;
-            line-height: 1;
-            text-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+            font-size: 2rem;
+            margin-bottom: var(--spacing-md);
+            color: var(--text-primary);
         }
 
-        .error-subtitle {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: var(--text-primary, #ffffff);
-            margin: 0 0 1.5rem 0;
-        }
-
-        .error-message {
-            font-size: 1.2rem;
-            color: var(--text-secondary, #cccccc);
-            margin-bottom: 2rem;
+        .error-description {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-xl);
             line-height: 1.6;
-        }
-
-        .error-suggestions {
-            text-align: left;
-            margin: 2rem 0;
-            background: rgba(99, 102, 241, 0.1);
-            padding: 1.5rem;
-            border-radius: 10px;
-            border-left: 4px solid var(--primary-color, #6366f1);
-        }
-
-        .error-suggestions h3 {
-            color: var(--text-primary, #ffffff);
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
-
-        .error-suggestions ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .error-suggestions li {
-            margin-bottom: 0.8rem;
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-            color: var(--text-secondary, #cccccc);
-        }
-
-        .error-suggestions li i {
-            color: var(--primary-color, #6366f1);
-            width: 20px;
-        }
-
-        .error-suggestions a {
-            color: var(--primary-color, #6366f1);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .error-suggestions a:hover {
-            color: var(--primary-color-light, #818cf8);
-            text-decoration: underline;
         }
 
         .error-actions {
             display: flex;
-            gap: 1rem;
+            gap: var(--spacing-md);
             justify-content: center;
-            margin: 2rem 0;
             flex-wrap: wrap;
         }
 
-        .error-contact {
-            margin-top: 3rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--border-color, #333);
-        }
-
-        .error-contact p {
-            color: var(--text-secondary, #cccccc);
-            margin-bottom: 1rem;
-        }
-
-        .contact-link {
+        .error-btn {
+            padding: 12px 24px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            color: var(--primary-color, #6366f1);
-            text-decoration: none;
-            font-weight: 500;
-            padding: 0.5rem 1rem;
-            border: 1px solid var(--primary-color, #6366f1);
-            border-radius: 8px;
-            transition: all 0.3s ease;
+            gap: 8px;
         }
 
-        .contact-link:hover {
-            background: var(--primary-color, #6366f1);
+        .error-btn-primary {
+            background: var(--accent-red);
             color: white;
+        }
+
+        .error-btn-primary:hover {
+            background: #b91c1c;
             transform: translateY(-2px);
         }
 
-        .error-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            pointer-events: none;
+        .error-btn-secondary {
+            background: var(--card-bg);
+            color: var(--text-primary);
+            border: 2px solid var(--border-color);
         }
 
-        .floating-icon {
-            position: absolute;
-            font-size: 2rem;
-            color: rgba(99, 102, 241, 0.1);
-            animation: float 6s ease-in-out infinite;
+        .error-btn-secondary:hover {
+            border-color: var(--accent-red);
+            transform: translateY(-2px);
         }
 
-        .floating-icon:nth-child(1) {
-            top: 10%;
-            left: 10%;
-            animation-delay: 0s;
+        .popular-links {
+            margin-top: var(--spacing-xl);
+            padding-top: var(--spacing-xl);
+            border-top: 1px solid var(--border-color);
         }
 
-        .floating-icon:nth-child(2) {
-            top: 20%;
-            right: 15%;
-            animation-delay: 1s;
+        .popular-links h3 {
+            font-size: 1.2rem;
+            margin-bottom: var(--spacing-md);
+            color: var(--text-primary);
         }
 
-        .floating-icon:nth-child(3) {
-            bottom: 20%;
-            left: 20%;
-            animation-delay: 2s;
+        .popular-links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: var(--spacing-sm);
+            margin-top: var(--spacing-md);
         }
 
-        .floating-icon:nth-child(4) {
-            bottom: 30%;
-            right: 10%;
-            animation-delay: 3s;
+        .popular-link {
+            padding: 12px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
         }
 
-        .floating-icon:nth-child(5) {
-            top: 50%;
-            left: 5%;
-            animation-delay: 4s;
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            25% { transform: translateY(-20px) rotate(90deg); }
-            50% { transform: translateY(0px) rotate(180deg); }
-            75% { transform: translateY(-10px) rotate(270deg); }
+        .popular-link:hover {
+            border-color: var(--accent-red);
+            background: var(--hover-bg);
+            transform: translateY(-2px);
         }
 
         @media (max-width: 768px) {
-            .error-content {
-                padding: 2rem;
+            .error-code {
+                font-size: 5rem;
             }
 
             .error-title {
-                font-size: 4rem;
+                font-size: 1.5rem;
             }
 
-            .error-subtitle {
-                font-size: 2rem;
-            }
-
-            .error-message {
+            .error-description {
                 font-size: 1rem;
             }
 
             .error-actions {
                 flex-direction: column;
-                align-items: center;
             }
 
-            .error-actions .btn {
+            .error-btn {
                 width: 100%;
-                max-width: 300px;
+                justify-content: center;
             }
 
-            .floating-icon {
-                font-size: 1.5rem;
+            .popular-links-grid {
+                grid-template-columns: 1fr;
             }
         }
-    </style>
 
-    <script src="script.js"></script>
-    <script src="assets/js/language-system.js"></script>
-    <script src="assets/js/mobile-enhancements.js"></script>
-    <script src="assets/js/global-search.js"></script>
-    <script src="assets/js/error-handling.js"></script>
-    <script src="assets/js/dark-mode.js"></script>
-    <script src="assets/js/activity-tracker.js"></script>
-    <script src="assets/js/image-optimizer.js"></script>
+        .redirect-info {
+            margin-top: var(--spacing-md);
+            padding: var(--spacing-md);
+            background: rgba(220, 38, 38, 0.1);
+            border-radius: var(--border-radius);
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .countdown {
+            font-weight: 700;
+            color: var(--accent-red);
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1 class="error-title">Page Not Found</h1>
+            <p class="error-description">
+                The page you're looking for doesn't exist or has been moved.
+                Don't worry, you can find what you're looking for using the links below.
+            </p>
+
+            <div class="error-actions">
+                <a href="/" class="error-btn error-btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    </svg>
+                    Go Home
+                </a>
+                <a href="javascript:history.back()" class="error-btn error-btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                    Go Back
+                </a>
+            </div>
+
+            <div class="popular-links">
+                <h3>Popular Pages</h3>
+                <div class="popular-links-grid">
+                    <a href="/profile.html" class="popular-link">Profile</a>
+                    <a href="/games/gta/index.html" class="popular-link">GTA V Mods</a>
+                    <a href="/games/cs2/index.html" class="popular-link">CS2 Cheats</a>
+                    <a href="/games/rdr2/index.html" class="popular-link">RDR2 Mods</a>
+                    <a href="/games/cod/index.html" class="popular-link">COD Tools</a>
+                    <a href="/youtube.html" class="popular-link">YouTube</a>
+                </div>
+            </div>
+
+            <div class="redirect-info" id="redirectInfo" style="display: none;">
+                Redirecting to home in <span class="countdown" id="countdown">10</span> seconds...
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let countdown = 10;
+        const countdownEl = document.getElementById('countdown');
+        const redirectInfo = document.getElementById('redirectInfo');
+
+        setTimeout(() => {
+            redirectInfo.style.display = 'block';
+            countdownEl.textContent = countdown;
+
+            const interval = setInterval(() => {
+                countdown--;
+                countdownEl.textContent = countdown;
+
+                if (countdown <= 0) {
+                    clearInterval(interval);
+                    window.location.href = '/';
+                }
+            }, 1000);
+        }, 5000);
+
+        const redirectMap = {
+            '/game/': '/games/',
+            '/download/': '/downloads/',
+            '/mod/': '/games/',
+            '/cheat/': '/games/',
+            '/tool/': '/tools/',
+        };
+
+        const currentPath = window.location.pathname.toLowerCase();
+        for (const [pattern, redirect] of Object.entries(redirectMap)) {
+            if (currentPath.includes(pattern)) {
+                window.location.href = redirect;
+                break;
+            }
+        }
+    </script>
 </body>
 </html>
