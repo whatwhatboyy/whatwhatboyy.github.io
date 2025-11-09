@@ -70,7 +70,9 @@
       "Bash(else echo \"No .gitignore file\")",
       "Bash(powershell -Command \"(Select-String -Path ''c:\\Users\\whatw\\Documents\\GitHub\\whatwhatboyy.github.io\\games\\gta\\index.html'' -Pattern ''\\?v=2\\.0\\.0'' | Measure-Object).Count\")",
       "Bash(powershell -Command:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nAdd cache-busting and Enigma v1 cheat\n\n- Added cache-busting version parameter ?v=2.0.0 to all CSS and JS files across the entire site\n- Added Enigma v1 cheat to CS2 page above SharkHack with download link, features, and Discord image\n- Updated index.html, all game pages, mods.html, apk.html, youtube.html, profile.html, and help.html\n- This forces browsers to reload updated files instead of using cached versions\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
