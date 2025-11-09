@@ -67,7 +67,10 @@
       "Bash(python3:*)",
       "Bash(if [ -f .gitignore ])",
       "Bash(then echo \"=== .gitignore contents ===\")",
-      "Bash(else echo \"No .gitignore file\")"
+      "Bash(else echo \"No .gitignore file\")",
+      "Bash(powershell -Command \"(Select-String -Path ''c:\\Users\\whatw\\Documents\\GitHub\\whatwhatboyy.github.io\\games\\gta\\index.html'' -Pattern ''\\?v=2\\.0\\.0'' | Measure-Object).Count\")",
+      "Bash(powershell -Command:*)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []
