@@ -123,10 +123,11 @@ body {
 }
 
 .sidebar.collapsed .sidebar-header {
-    padding: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-sm);
     flex-direction: column;
     align-items: center;
     gap: var(--spacing-sm);
+    justify-content: center;
 }
 
 .sidebar.collapsed .sidebar-brand {
@@ -211,12 +212,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: var(--spacing-md);
 }
 
 .sidebar-brand {
     display: flex;
     align-items: center;
     gap: var(--spacing-md);
+    flex: 1;
+    min-width: 0;
 }
 
 .sidebar-logo {
@@ -235,18 +239,19 @@ body {
     background: var(--bg-tertiary);
     border: 1px solid var(--border-color);
     color: var(--text-secondary);
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     cursor: pointer;
-    padding: 0.6rem;
-    width: 36px;
-    height: 36px;
+    padding: 0;
+    width: 28px;
+    height: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-sm);
     transition: all var(--transition-fast);
     z-index: 10;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
 }
 
 .sidebar-toggle:hover {
