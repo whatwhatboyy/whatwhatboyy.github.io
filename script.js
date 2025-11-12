@@ -18,6 +18,12 @@ function initSidebarNavigation() {
     const mainContent = document.getElementById('main-content');
     const navLinks = document.querySelectorAll('.nav-link');
 
+    // Exit if required elements don't exist
+    if (!sidebar || !mainContent) {
+        console.error('Sidebar or main content not found');
+        return;
+    }
+
     // Create backdrop overlay for mobile
     let backdrop = document.querySelector('.sidebar-backdrop');
     if (!backdrop) {
@@ -28,6 +34,8 @@ function initSidebarNavigation() {
 
     // Helper function to close sidebar (mobile)
     function closeSidebar() {
+        if (!sidebar || !mainContent || !backdrop) return;
+
         sidebar.classList.remove('active');
         mainContent.classList.remove('sidebar-open');
         backdrop.classList.remove('active');
@@ -35,13 +43,17 @@ function initSidebarNavigation() {
 
         if (mobileSidebarBtn) {
             const icon = mobileSidebarBtn.querySelector('i');
-            icon.classList.remove('fa-times');
-            icon.classList.add('fa-bars');
+            if (icon) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
         }
     }
 
     // Helper function to open sidebar (mobile)
     function openSidebar() {
+        if (!sidebar || !mainContent || !backdrop) return;
+
         sidebar.classList.add('active');
         mainContent.classList.add('sidebar-open');
         backdrop.classList.add('active');
@@ -49,8 +61,10 @@ function initSidebarNavigation() {
 
         if (mobileSidebarBtn) {
             const icon = mobileSidebarBtn.querySelector('i');
-            icon.classList.remove('fa-bars');
-            icon.classList.add('fa-times');
+            if (icon) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
         }
     }
 
