@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="YimMenu Lua scripts collection for GTA V Online. Advanced protections, custom heists, and business management scripts.">
-    <meta name="keywords" content="yimmenu lua scripts, gta 5 lua scripts, yimmenu scripts download, gta online lua scripts, yim menu lua, free gta 5 scripts, yimmenu money script, gta v mod menu scripts, lua scripts for yimmenu, gta online money scripts, yim lua pack, heist editor lua, recovery lua scripts, gta 5 cheat scripts, yimmenu script pack, gta online heist scripts, yimmenu v1 lua, career progress lua, gta 5 money lua, ultimate lua script, yimmenu recovery, gta v free scripts, mod menu lua, 2024, 2025">
+    <meta name="keywords" content="YimMenu Lua scripts, GTA V YimMenu, advanced scripts, protection scripts">
     <meta name="author" content="whatwhatboy">
     <title>YimMenu Lua Scripts Collection - whatwhatboy</title>
 
@@ -13,12 +13,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../../../style.css?v=2.0.0">
+    <link rel="stylesheet" href="../../../style.css">
 
     <script data-cfasync="false" src="//d1r9f6frybgiqo.cloudfront.net/?rffrd=1026305"></script>
-    <script src="../../../assets/js/anti-adblock.js?v=2.0.0"></script>
+    <script src="../../../assets/js/anti-adblock.js"></script>
     <link rel="stylesheet" href="assets/css/site-fixes.css">
-    <link rel="stylesheet" href="../../../assets/css/image-optimization.css?v=2.0.0">
+    <link rel="stylesheet" href="../../../assets/css/image-optimization.css">
 </head>
 <body>
     <!-- Sidebar Navigation -->
@@ -108,73 +108,29 @@
             <div class="hero-bg"></div>
             <div class="hero-content">
                 <div class="hero-image" style="margin-bottom: 2rem;">
-                    <img src="../../../assets/images/yim.png" alt="YimMenu Lua Scripts" style="max-width: 400px; border-radius: 1rem; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+                    <img src="https://i.imgur.com/uWddJyX.png" alt="YimMenu Lua Scripts" style="max-width: 400px; border-radius: 1rem; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
                 </div>
                 <h1 class="hero-title">YimMenu Lua Scripts</h1>
                 <p class="hero-subtitle">Advanced Lua scripts for YimMenu with enhanced protections, custom heist scripts, business management tools, and comprehensive anti-griefing features.</p>
 
-                <div style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%); border: 2px solid var(--primary-color); border-radius: 12px; padding: 2rem; margin: 2rem auto; max-width: 800px;">
-                    <h3 style="color: var(--primary-color); margin-bottom: 1.5rem; font-size: 1.5rem; text-align: center;"><i class="fas fa-graduation-cap"></i> Quick Start Guide</h3>
-
-                    <div style="display: grid; gap: 1.5rem; margin-bottom: 1.5rem;">
-                        <div style="background: var(--bg-secondary); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary-color);">
-                            <h4 style="color: var(--primary-color); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
-                                <span style="background: var(--primary-color); color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem;">1</span>
-                                Download Script Pack
-                            </h4>
-                            <p style="color: var(--text-secondary); margin: 0; line-height: 1.6; padding-left: 2.5rem;">Choose a script pack below (Pack 1, 2, or 3) and click the download button. Each pack contains multiple scripts.</p>
-                        </div>
-
-                        <div style="background: var(--bg-secondary); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary-color);">
-                            <h4 style="color: var(--primary-color); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
-                                <span style="background: var(--primary-color); color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem;">2</span>
-                                Extract Files
-                            </h4>
-                            <p style="color: var(--text-secondary); margin: 0; line-height: 1.6; padding-left: 2.5rem;">Extract the downloaded .zip file. You'll find .lua script files inside.</p>
-                        </div>
-
-                        <div style="background: var(--bg-secondary); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary-color);">
-                            <h4 style="color: var(--primary-color); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
-                                <span style="background: var(--primary-color); color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem;">3</span>
-                                Install Scripts
-                            </h4>
-                            <p style="color: var(--text-secondary); margin: 0; line-height: 1.6; padding-left: 2.5rem;">
-                                Press <kbd style="background: var(--bg-tertiary); padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid var(--border-color);">Win + R</kbd>, type <code style="background: var(--bg-tertiary); padding: 0.2rem 0.5rem; border-radius: 4px; color: var(--primary-color);">%appdata%</code> and press Enter.<br>
-                                Navigate to: <code style="background: var(--bg-tertiary); padding: 0.2rem 0.5rem; border-radius: 4px; color: var(--primary-color);">YimMenu/scripts</code><br>
-                                Copy all .lua files into this folder.
-                            </p>
-                        </div>
-
-                        <div style="background: var(--bg-secondary); padding: 1.5rem; border-radius: 8px; border-left: 4px solid #10b981;">
-                            <h4 style="color: #10b981; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
-                                <span style="background: #10b981; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem;">4</span>
-                                Load in Game
-                            </h4>
-                            <p style="color: var(--text-secondary); margin: 0; line-height: 1.6; padding-left: 2.5rem;">
-                                Launch GTA V and inject YimMenu<br>
-                                Open YimMenu → Go to <strong style="color: var(--text-primary);">Settings > Lua Scripts</strong><br>
-                                Select your installed scripts from the list and enable them!
-                            </p>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid #10b981; border-radius: 8px; padding: 1rem; text-align: center;">
-                        <p style="color: var(--text-primary); margin: 0; line-height: 1.6;">
-                            <i class="fas fa-check-circle" style="color: #10b981; margin-right: 0.5rem;"></i>
-                            <strong>That's it!</strong> Your scripts are now ready to use. Scroll down to choose your pack.
-                        </p>
-                    </div>
+                <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--border-radius); padding: 1.5rem; margin: 2rem 0; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;"><i class="fas fa-info-circle"></i> How to use?</h3>
+                    <p style="line-height: 1.6; color: var(--text-secondary);">Copy the desired code in Windows Notepad or equivalent, save it as <strong>.lua</strong> and place it inside Yim's scripts folder located at <code style="background: var(--bg-tertiary); padding: 0.2rem 0.4rem; border-radius: 4px; color: var(--primary-color);">%AppData%/Roaming/YimMenu/scripts</code>.<br><br>Once in-game, open YimMenu, go to <strong>Settings > Lua Scripts</strong> and select it from the list.</p>
                 </div>
 
-                <div class="hero-buttons" style="margin-top: 2rem;">
-                    <a href="#all-in-one" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2rem;">
-                        <i class="fas fa-download"></i>
-                        Download Script Packs
-                    </a>
+                <div class="hero-buttons">
                     <button onclick="history.back()" class="btn btn-outline">
                         <i class="fas fa-arrow-left"></i>
                         Go Back
                     </button>
+                    <a href="#all-in-one" class="btn btn-primary">
+                        <i class="fas fa-star"></i>
+                        All-in-One Scripts
+                    </a>
+                    <a href="#recovery-scripts" class="btn btn-outline">
+                        <i class="fas fa-dollar-sign"></i>
+                        Recovery Scripts
+                    </a>
                 </div>
 
                 <div class="hero-stats">
@@ -198,212 +154,14 @@
         <section class="section" id="all-in-one">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Lua Script Packs</h2>
-                    <p class="section-subtitle">Download complete packs of YimMenu Lua scripts</p>
-                </div>
-
-                <div style="background: var(--bg-secondary); border-left: 4px solid var(--primary-color); border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem; max-width: 900px; margin-left: auto; margin-right: auto;">
-                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;"><i class="fas fa-question-circle"></i> Which Pack Should I Download?</h3>
-                    <div style="display: grid; gap: 1rem;">
-                        <p style="color: var(--text-secondary); margin: 0; line-height: 1.6;">
-                            <strong style="color: var(--primary-color);">Pack 1 (Essential):</strong> Perfect for beginners - includes recovery scripts, basic protections, and utility tools.
-                        </p>
-                        <p style="color: var(--text-secondary); margin: 0; line-height: 1.6;">
-                            <strong style="color: var(--primary-color);">Pack 2 (Advanced):</strong> For experienced users - heist editors, business automation, and advanced features.
-                        </p>
-                        <p style="color: var(--text-secondary); margin: 0; line-height: 1.6;">
-                            <strong style="color: var(--primary-color);">Pack 3 (Premium):</strong> Complete collection - fun features, vehicle customization, and special unlocks.
-                        </p>
-                        <p style="color: #10b981; margin: 1rem 0 0 0; padding: 1rem; background: rgba(16, 185, 129, 0.1); border-radius: 6px;">
-                            <i class="fas fa-lightbulb"></i> <strong>Pro Tip:</strong> You can download and use all three packs together for the ultimate YimMenu experience!
-                        </p>
-                    </div>
+                    <h2 class="section-title">All-in-One Scripts</h2>
+                    <p class="section-subtitle">Comprehensive scripts with multiple features</p>
                 </div>
 
                 <div class="cheats-grid">
-                    <!-- Lua Scripts Pack 1 -->
                     <div class="cheat-card featured">
                         <div class="cheat-image">
-                            <img src="../../../assets/images/yim.png" alt="Lua Scripts Pack 1" onclick="openImageModal(this.src)">
-                        </div>
-                        <div class="cheat-header">
-                            <div class="cheat-icon">
-                                <i class="fas fa-box-open"></i>
-                            </div>
-                            <div class="cheat-info">
-                                <h3>Lua Scripts Pack 1</h3>
-                                <p>Essential collection of YimMenu Lua scripts - recovery, protections, and utilities</p>
-                            </div>
-                            <div class="cheat-status">
-                                <span class="status-badge safe">Pack 1</span>
-                            </div>
-                        </div>
-
-                        <div class="cheat-features">
-                            <div class="features-grid">
-                                <div class="feature">
-                                    <i class="fas fa-code"></i>
-                                    <span>Multiple Scripts</span>
-                                </div>
-                                <div class="feature">
-                                    <i class="fas fa-shield-alt"></i>
-                                    <span>Protections</span>
-                                </div>
-                                <div class="feature">
-                                    <i class="fas fa-dollar-sign"></i>
-                                    <span>Recovery</span>
-                                </div>
-                                <div class="feature">
-                                    <i class="fas fa-star"></i>
-                                    <span>Essential Pack</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="cheat-actions">
-                            <a href="https://bstlar.com/F/YimScriptspack1" class="btn btn-primary" target="_blank">
-                                <i class="fas fa-download"></i>
-                                Download Pack 1
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Lua Scripts Pack 2 -->
-                    <div class="cheat-card featured">
-                        <div class="cheat-image">
-                            <img src="../../../assets/images/yim.png" alt="Lua Scripts Pack 2" onclick="openImageModal(this.src)">
-                        </div>
-                        <div class="cheat-header">
-                            <div class="cheat-icon">
-                                <i class="fas fa-box-open"></i>
-                            </div>
-                            <div class="cheat-info">
-                                <h3>Lua Scripts Pack 2</h3>
-                                <p>Advanced YimMenu scripts - heist editors, business tools, and custom features</p>
-                            </div>
-                            <div class="cheat-status">
-                                <span class="status-badge safe">Pack 2</span>
-                            </div>
-                        </div>
-
-                        <div class="cheat-features">
-                            <div class="features-grid">
-                                <div class="feature">
-                                    <i class="fas fa-mask"></i>
-                                    <span>Heist Tools</span>
-                                </div>
-                                <div class="feature">
-                                    <i class="fas fa-briefcase"></i>
-                                    <span>Business</span>
-                                </div>
-                                <div class="feature">
-                                    <i class="fas fa-tools"></i>
-                                    <span>Utilities</span>
-                                </div>
-                                <div class="feature">
-                                    <i class="fas fa-star"></i>
-                                    <span>Advanced Pack</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="cheat-actions">
-                            <a href="https://bstlar.com/F/YimScriptspack2" class="btn btn-primary" target="_blank">
-                                <i class="fas fa-download"></i>
-                                Download Pack 2
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Lua Scripts Pack 3 -->
-                    <div class="cheat-card featured">
-                        <div class="cheat-image">
-                            <img src="../../../assets/images/yim.png" alt="Lua Scripts Pack 3" onclick="openImageModal(this.src)">
-                        </div>
-                        <div class="cheat-header">
-                            <div class="cheat-icon">
-                                <i class="fas fa-box-open"></i>
-                            </div>
-                            <div class="cheat-info">
-                                <h3>Lua Scripts Pack 3</h3>
-                                <p>Premium YimMenu scripts - fun features, vehicle tools, and special unlocks</p>
-                            </div>
-                            <div class="cheat-status">
-                                <span class="status-badge safe">Pack 3</span>
-                            </div>
-                        </div>
-
-                        <div class="cheat-features">
-                            <div class="features-grid">
-                                <div class="feature">
-                                    <i class="fas fa-smile"></i>
-                                    <span>Fun Features</span>
-                                </div>
-                                <div class="feature">
-                                    <i class="fas fa-car"></i>
-                                    <span>Vehicle Tools</span>
-                                </div>
-                                <div class="feature">
-                                    <i class="fas fa-unlock"></i>
-                                    <span>Unlocks</span>
-                                </div>
-                                <div class="feature">
-                                    <i class="fas fa-star"></i>
-                                    <span>Premium Pack</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="cheat-actions">
-                            <a href="https://bstlar.com/F/YimScriptspack3" class="btn btn-primary" target="_blank">
-                                <i class="fas fa-download"></i>
-                                Download Pack 3
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Individual Scripts Section -->
-        <section class="section" id="recovery-scripts">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Individual Scripts</h2>
-                    <p class="section-subtitle">Download specific scripts separately for YimMenu</p>
-                </div>
-
-                <div class="cheats-grid">
-                    <!-- PessiV2 Script -->
-                    <div class="cheat-card">
-                        <div class="cheat-image">
-                            <img src="../../../assets/images/yim.png" alt="PessiV2 Script" onclick="openImageModal(this.src)">
-                        </div>
-                        <div class="cheat-header">
-                            <div class="cheat-icon">
-                                <i class="fas fa-dollar-sign"></i>
-                            </div>
-                            <div class="cheat-info">
-                                <h3>PessiV2 - Money Options</h3>
-                                <p>Advanced money options and recovery features</p>
-                            </div>
-                            <div class="cheat-status">
-                                <span class="status-badge safe">Working 1.70</span>
-                            </div>
-                        </div>
-
-                        <div class="cheat-actions">
-                            <a href="https://bstlar.com/F/PessiV2LUA" class="btn btn-primary" target="_blank">
-                                <i class="fas fa-download"></i>
-                                Download
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Ultimate Script -->
-                    <div class="cheat-card featured">
-                        <div class="cheat-image">
-                            <img src="../../../assets/images/yim.png" alt="Ultimate Script" onclick="openImageModal(this.src)">
+                            <img src="https://i.imgur.com/uWddJyX.png" alt="Ultimate Script" onclick="openImageModal(this.src)">
                         </div>
                         <div class="cheat-header">
                             <div class="cheat-icon">
@@ -447,6 +205,43 @@
                             <a href="https://youtu.be/ultimate-guide" class="btn btn-outline" target="_blank">
                                 <i class="fab fa-youtube"></i>
                                 Video Guide
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recovery Scripts Section -->
+        <section class="section" id="recovery-scripts">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Recovery Scripts</h2>
+                    <p class="section-subtitle">Money generation and account recovery scripts</p>
+                </div>
+
+                <div class="cheats-grid">
+                    <div class="cheat-card">
+                        <div class="cheat-image">
+                            <img src="https://i.imgur.com/uWddJyX.png" alt="PessiV2 Script" onclick="openImageModal(this.src)">
+                        </div>
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>PessiV2 - Money Options</h3>
+                                <p>Advanced money options and recovery features</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge safe">Working 1.70</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="https://bstlar.com/F/PessiV2LUA" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-download"></i>
+                                Download
                             </a>
                         </div>
                     </div>
