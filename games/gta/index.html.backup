@@ -561,6 +561,244 @@
             </div>
         </section>
 
+        <!-- More Free Menus Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Additional Free Mod Menus</h2>
+                    <p class="section-subtitle">More excellent free options with various specializations</p>
+                </div>
+
+                <div class="cheats-grid">
+                    <div class="cheat-card featured" data-search="kiddions modest menu external lua">
+                        <div class="cheat-image">
+                            <img src="https://via.placeholder.com/300x180/1e293b/6366f1?text=Kiddions+Menu" alt="Kiddions Modest Menu Interface" onclick="openImageModal(this.src)">
+                        </div>
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Kiddions Modest Menu</h3>
+                                <p>The most popular external GTA5 Online mod menu with Lua support</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge undetected">Working</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-features">
+                            <div class="features-grid">
+                                <div class="feature">
+                                    <i class="fas fa-shield"></i>
+                                    <span>External</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-code"></i>
+                                    <span>Lua Support</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-crown"></i>
+                                    <span>Most Popular</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-users"></i>
+                                    <span>Active Community</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="https://bstlar.com/F/Kiddions" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-download"></i>
+                                Download Menu
+                            </a>
+                            <a href="#lua-scripts" class="btn btn-outline">
+                                <i class="fas fa-code"></i>
+                                Lua Scripts
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cheat-card" data-search="portal recovery fun">
+                        <div class="cheat-image">
+                            <img src="https://i.imgur.com/zN8vHkF.png" alt="Portal Mod Menu Interface" onclick="openImageModal(this.src)">
+                        </div>
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-portal-enter"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Portal Mod Menu (Full)</h3>
+                                <p>Recovery & fun menu with comprehensive features</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge working">Working</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="https://workink.one/vY/PortalMenuLauncher" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                            <a href="https://youtu.be/w9uP_v8jcPE?si=hPPpGRovlcuNQekJ" class="btn btn-outline" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                                Video
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cheat-card" data-search="foxy feature packed">
+                        <div class="cheat-image">
+                            <img src="https://i.imgur.com/Q8YKp2V.png" alt="Foxy Mod Menu Interface" onclick="openImageModal(this.src)">
+                        </div>
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-fox"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Foxy Mod Menu</h3>
+                                <p>Feature packed menu with comprehensive options</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge working">Working</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="https://bstlar.com/F/FoxyMenuloader" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                            <a href="https://youtu.be/VtG9qY4mzfo" class="btn btn-outline" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                                Video
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cheat-card" data-search="nexus online">
+                        <div class="cheat-image">
+                            <img src="https://i.imgur.com/R6VbN4J.png" alt="Nexus Mod Menu Interface" onclick="openImageModal(this.src)">
+                        </div>
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Nexus Mod Menu</h3>
+                                <p>GTA5 Online mod menu with reliable features</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge working">Dead</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="https://bstlar.com/F/NexusMenuloader" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                            <a href="https://youtu.be/o2JYJtLc-UM" class="btn btn-outline" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                                Video
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cheat-card" data-search="elysuim protections">
+                        <div class="cheat-image">
+                            <img src="https://i.imgur.com/8KzPm3N.png" alt="Elysuim Mod Menu Interface" onclick="openImageModal(this.src)">
+                        </div>
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-shield"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Elysuim Mod Menu</h3>
+                                <p>Menu focused on protections and safety features</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge working">Working</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="https://direct-link.net/43271/elysuim-mod-menu" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                            <a href="https://youtu.be/kLhBGMpWWRM" class="btn btn-outline" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                                Video
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cheat-card" data-search="tupoye lua support">
+                        <div class="cheat-image">
+                            <img src="https://i.imgur.com/F9xLqMr.png" alt="Tupoye Mod Menu Interface" onclick="openImageModal(this.src)">
+                        </div>
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Tupoye Mod Menu</h3>
+                                <p>GTA5 Online mod menu with Lua scripting support</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge working">Dead</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="https://workink.net/vY/lm1m7dio" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                            <a href="https://www.youtube.com/@whatwhatboy98" class="btn btn-outline" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                                Video
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cheat-card" data-search="wonder recovery fun">
+                        <div class="cheat-image">
+                            <img src="https://i.imgur.com/T7KpL2B.png" alt="Wonder Mod Menu Interface" onclick="openImageModal(this.src)">
+                        </div>
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-magic"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Wonder Mod Menu</h3>
+                                <p>Recovery & fun menu with unique features</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge working">Working</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="https://work.ink/vY/lohxd5b8" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                            <a href="https://www.youtube.com/@whatwhatboy98" class="btn btn-outline" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                                Video
+                            </a>
+                        </div>
+                    
+
+                 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Lua Scripts Section -->
         <section class="section" id="lua-scripts">
@@ -923,244 +1161,6 @@
             </div>
         </section>
 
-        <!-- More Free Menus Section -->
-        <section class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Additional Free Mod Menus</h2>
-                    <p class="section-subtitle">More excellent free options with various specializations</p>
-                </div>
-
-                <div class="cheats-grid">
-                    <div class="cheat-card featured" data-search="kiddions modest menu external lua">
-                        <div class="cheat-image">
-                            <img src="https://via.placeholder.com/300x180/1e293b/6366f1?text=Kiddions+Menu" alt="Kiddions Modest Menu Interface" onclick="openImageModal(this.src)">
-                        </div>
-                        <div class="cheat-header">
-                            <div class="cheat-icon">
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div class="cheat-info">
-                                <h3>Kiddions Modest Menu</h3>
-                                <p>The most popular external GTA5 Online mod menu with Lua support</p>
-                            </div>
-                            <div class="cheat-status">
-                                <span class="status-badge undetected">Working</span>
-                            </div>
-                        </div>
-
-                        <div class="cheat-features">
-                            <div class="features-grid">
-                                <div class="feature">
-                                    <i class="fas fa-shield"></i>
-                                    <span>External</span>
-                                </div>
-                                <div class="feature">
-                                    <i class="fas fa-code"></i>
-                                    <span>Lua Support</span>
-                                </div>
-                                <div class="feature">
-                                    <i class="fas fa-crown"></i>
-                                    <span>Most Popular</span>
-                                </div>
-                                <div class="feature">
-                                    <i class="fas fa-users"></i>
-                                    <span>Active Community</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="cheat-actions">
-                            <a href="https://bstlar.com/F/Kiddions" class="btn btn-primary" target="_blank">
-                                <i class="fas fa-download"></i>
-                                Download Menu
-                            </a>
-                            <a href="#lua-scripts" class="btn btn-outline">
-                                <i class="fas fa-code"></i>
-                                Lua Scripts
-                            </a>
-                        </div>
-                    </div>
-                    <div class="cheat-card" data-search="portal recovery fun">
-                        <div class="cheat-image">
-                            <img src="https://i.imgur.com/zN8vHkF.png" alt="Portal Mod Menu Interface" onclick="openImageModal(this.src)">
-                        </div>
-                        <div class="cheat-header">
-                            <div class="cheat-icon">
-                                <i class="fas fa-portal-enter"></i>
-                            </div>
-                            <div class="cheat-info">
-                                <h3>Portal Mod Menu (Full)</h3>
-                                <p>Recovery & fun menu with comprehensive features</p>
-                            </div>
-                            <div class="cheat-status">
-                                <span class="status-badge working">Working</span>
-                            </div>
-                        </div>
-
-                        <div class="cheat-actions">
-                            <a href="https://workink.one/vY/PortalMenuLauncher" class="btn btn-primary" target="_blank">
-                                <i class="fas fa-download"></i>
-                                Download
-                            </a>
-                            <a href="https://youtu.be/w9uP_v8jcPE?si=hPPpGRovlcuNQekJ" class="btn btn-outline" target="_blank">
-                                <i class="fab fa-youtube"></i>
-                                Video
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="cheat-card" data-search="foxy feature packed">
-                        <div class="cheat-image">
-                            <img src="https://i.imgur.com/Q8YKp2V.png" alt="Foxy Mod Menu Interface" onclick="openImageModal(this.src)">
-                        </div>
-                        <div class="cheat-header">
-                            <div class="cheat-icon">
-                                <i class="fas fa-fox"></i>
-                            </div>
-                            <div class="cheat-info">
-                                <h3>Foxy Mod Menu</h3>
-                                <p>Feature packed menu with comprehensive options</p>
-                            </div>
-                            <div class="cheat-status">
-                                <span class="status-badge working">Working</span>
-                            </div>
-                        </div>
-
-                        <div class="cheat-actions">
-                            <a href="https://bstlar.com/F/FoxyMenuloader" class="btn btn-primary" target="_blank">
-                                <i class="fas fa-download"></i>
-                                Download
-                            </a>
-                            <a href="https://youtu.be/VtG9qY4mzfo" class="btn btn-outline" target="_blank">
-                                <i class="fab fa-youtube"></i>
-                                Video
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="cheat-card" data-search="nexus online">
-                        <div class="cheat-image">
-                            <img src="https://i.imgur.com/R6VbN4J.png" alt="Nexus Mod Menu Interface" onclick="openImageModal(this.src)">
-                        </div>
-                        <div class="cheat-header">
-                            <div class="cheat-icon">
-                                <i class="fas fa-network-wired"></i>
-                            </div>
-                            <div class="cheat-info">
-                                <h3>Nexus Mod Menu</h3>
-                                <p>GTA5 Online mod menu with reliable features</p>
-                            </div>
-                            <div class="cheat-status">
-                                <span class="status-badge working">Dead</span>
-                            </div>
-                        </div>
-
-                        <div class="cheat-actions">
-                            <a href="https://bstlar.com/F/NexusMenuloader" class="btn btn-primary" target="_blank">
-                                <i class="fas fa-download"></i>
-                                Download
-                            </a>
-                            <a href="https://youtu.be/o2JYJtLc-UM" class="btn btn-outline" target="_blank">
-                                <i class="fab fa-youtube"></i>
-                                Video
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="cheat-card" data-search="elysuim protections">
-                        <div class="cheat-image">
-                            <img src="https://i.imgur.com/8KzPm3N.png" alt="Elysuim Mod Menu Interface" onclick="openImageModal(this.src)">
-                        </div>
-                        <div class="cheat-header">
-                            <div class="cheat-icon">
-                                <i class="fas fa-shield"></i>
-                            </div>
-                            <div class="cheat-info">
-                                <h3>Elysuim Mod Menu</h3>
-                                <p>Menu focused on protections and safety features</p>
-                            </div>
-                            <div class="cheat-status">
-                                <span class="status-badge working">Working</span>
-                            </div>
-                        </div>
-
-                        <div class="cheat-actions">
-                            <a href="https://direct-link.net/43271/elysuim-mod-menu" class="btn btn-primary" target="_blank">
-                                <i class="fas fa-download"></i>
-                                Download
-                            </a>
-                            <a href="https://youtu.be/kLhBGMpWWRM" class="btn btn-outline" target="_blank">
-                                <i class="fab fa-youtube"></i>
-                                Video
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="cheat-card" data-search="tupoye lua support">
-                        <div class="cheat-image">
-                            <img src="https://i.imgur.com/F9xLqMr.png" alt="Tupoye Mod Menu Interface" onclick="openImageModal(this.src)">
-                        </div>
-                        <div class="cheat-header">
-                            <div class="cheat-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <div class="cheat-info">
-                                <h3>Tupoye Mod Menu</h3>
-                                <p>GTA5 Online mod menu with Lua scripting support</p>
-                            </div>
-                            <div class="cheat-status">
-                                <span class="status-badge working">Dead</span>
-                            </div>
-                        </div>
-
-                        <div class="cheat-actions">
-                            <a href="https://workink.net/vY/lm1m7dio" class="btn btn-primary" target="_blank">
-                                <i class="fas fa-download"></i>
-                                Download
-                            </a>
-                            <a href="https://www.youtube.com/@whatwhatboy98" class="btn btn-outline" target="_blank">
-                                <i class="fab fa-youtube"></i>
-                                Video
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="cheat-card" data-search="wonder recovery fun">
-                        <div class="cheat-image">
-                            <img src="https://i.imgur.com/T7KpL2B.png" alt="Wonder Mod Menu Interface" onclick="openImageModal(this.src)">
-                        </div>
-                        <div class="cheat-header">
-                            <div class="cheat-icon">
-                                <i class="fas fa-magic"></i>
-                            </div>
-                            <div class="cheat-info">
-                                <h3>Wonder Mod Menu</h3>
-                                <p>Recovery & fun menu with unique features</p>
-                            </div>
-                            <div class="cheat-status">
-                                <span class="status-badge working">Working</span>
-                            </div>
-                        </div>
-
-                        <div class="cheat-actions">
-                            <a href="https://work.ink/vY/lohxd5b8" class="btn btn-primary" target="_blank">
-                                <i class="fas fa-download"></i>
-                                Download
-                            </a>
-                            <a href="https://www.youtube.com/@whatwhatboy98" class="btn btn-outline" target="_blank">
-                                <i class="fab fa-youtube"></i>
-                                Video
-                            </a>
-                        </div>
-                    
-
-                 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Safety Warning Section -->
         <section class="section">
             <div class="container">
