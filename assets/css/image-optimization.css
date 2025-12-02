@@ -69,10 +69,14 @@ img[data-src].loaded {
 .game-card .game-image {
     aspect-ratio: 16 / 9;
     width: 100%;
+    height: auto;
     background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
 }
 
 .game-card .game-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
