@@ -238,7 +238,7 @@ function init() {
         }
     });
 
-    console.log('Floating search initialized successfully');
+    // console.log('Floating search initialized successfully');
 }
 
 })();

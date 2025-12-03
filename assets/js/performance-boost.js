@@ -202,5 +202,5 @@
     // Start performance optimizations
     init();
     
-    console.log('[Performance] Boost module loaded');
+    // console.log('[Performance] Boost module loaded');
 })();

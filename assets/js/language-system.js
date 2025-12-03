@@ -430,7 +430,7 @@ class LanguageSystem {
         document.addEventListener('keydown', (e) => {
             if ((e.ctrlKey || e.metaKey) && e.key === 'l') {
                 e.preventDefault();
-                console.log('Keyboard shortcut triggered');
+                // console.log('Keyboard shortcut triggered');
                 this.toggleTopDropdown();
             }
         });
@@ -668,7 +668,7 @@ class LanguageSystem {
     }
 
     showLanguageModal() {
-        console.log('Language modal triggered'); // Debug log
+        // console.log('Language modal triggered'); // Debug log
 
         // Remove existing modal
         const existingModal = document.getElementById('language-modal');
@@ -919,7 +919,7 @@ class LanguageSystem {
     }
 
     resetLanguage() {
-        console.log('Resetting language to English');
+        // console.log('Resetting language to English');
         localStorage.removeItem('selectedLanguage');
         this.currentLanguage = 'en';
         this.applyLanguage();

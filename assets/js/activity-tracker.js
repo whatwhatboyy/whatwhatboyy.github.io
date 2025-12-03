@@ -255,4 +255,4 @@ if (window.activityTracker.activities.length === 0) {
     window.activityTracker.trackCheatUpdate('YimMenu v2.0');
 }
 
-console.log('✅ Activity Tracker initialized');
+// console.log('✅ Activity Tracker initialized');

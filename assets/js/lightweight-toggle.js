@@ -44,7 +44,7 @@
         // Save preference
         localStorage.setItem('lightweightMode', 'true');
 
-        console.log('✓ Lightweight mode enabled');
+        // console.log('✓ Lightweight mode enabled');
     }
 
     function disableLightweightMode() {
@@ -66,7 +66,7 @@
         // Save preference
         localStorage.setItem('lightweightMode', 'false');
 
-        console.log('✓ Normal mode enabled');
+        // console.log('✓ Normal mode enabled');
     }
 
     // Apply saved preference on load
@@ -84,5 +84,5 @@
         }
     });
 
-    console.log('Lightweight mode toggle initialized');
+    // console.log('Lightweight mode toggle initialized');
 })();

@@ -3,12 +3,12 @@ if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
         navigator.serviceWorker.register('/service-worker.js')
             .then((registration) => {
-                console.log('[SW] Registration successful:', registration.scope);
+                // console.log('[SW] Registration successful:', registration.scope);
                 
                 // Check for updates
                 registration.addEventListener('updatefound', () => {
                     const newWorker = registration.installing;
-                    console.log('[SW] New version installing...');
+                    // console.log('[SW] New version installing...');
                     
                     newWorker.addEventListener('statechange', () => {
                         if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
@@ -19,7 +19,7 @@ if ('serviceWorker' in navigator) {
                 });
             })
             .catch((error) => {
-                console.log('[SW] Registration failed:', error);
+                // console.log('[SW] Registration failed:', error);
             });
         
         // Handle service worker updates

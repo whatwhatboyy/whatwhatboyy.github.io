@@ -148,6 +148,6 @@
     });
 
     // ============ CONSOLE LOG (Minimal) ============
-    console.log('%c✓ Site loaded successfully', 'color: #8b5cf6; font-weight: bold; font-size: 14px;');
+    // console.log('%c✓ Site loaded successfully', 'color: #8b5cf6; font-weight: bold; font-size: 14px;');
 
 })();

@@ -21,11 +21,11 @@ const PRECACHE_ASSETS = [
 
 // Install event - precache assets
 self.addEventListener('install', (event) => {
-    console.log('[Service Worker] Installing...');
+    // console.log('[Service Worker] Installing...');
     event.waitUntil(
         caches.open(CACHE_NAME)
             .then((cache) => {
-                console.log('[Service Worker] Precaching assets');
+                // console.log('[Service Worker] Precaching assets');
                 return cache.addAll(PRECACHE_ASSETS);
             })
             .then(() => self.skipWaiting())
@@ -34,13 +34,13 @@ self.addEventListener('install', (event) => {
 
 // Activate event - clean up old caches
 self.addEventListener('activate', (event) => {
-    console.log('[Service Worker] Activating...');
+    // console.log('[Service Worker] Activating...');
     event.waitUntil(
         caches.keys().then((cacheNames) => {
             return Promise.all(
                 cacheNames.map((cacheName) => {
                     if (cacheName !== CACHE_NAME) {
-                        console.log('[Service Worker] Deleting old cache:', cacheName);
+                        // console.log('[Service Worker] Deleting old cache:', cacheName);
                         return caches.delete(cacheName);
                     }
                 })
@@ -100,7 +100,7 @@ self.addEventListener('fetch', (event) => {
 
 // Background sync for failed requests
 self.addEventListener('sync', (event) => {
-    console.log('[Service Worker] Background sync:', event.tag);
+    // console.log('[Service Worker] Background sync:', event.tag);
     if (event.tag === 'sync-downloads') {
         event.waitUntil(syncDownloads());
     }
@@ -138,4 +138,4 @@ self.addEventListener('notificationclick', (event) => {
     }
 });
 
-console.log('[Service Worker] Loaded successfully');
+// console.log('[Service Worker] Loaded successfully');

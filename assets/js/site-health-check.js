@@ -12,7 +12,7 @@ class SiteHealthCheck {
     }
 
     runChecks() {
-        console.log('🔍 Running site health check...');
+        // console.log('🔍 Running site health check...');
 
         this.checkScriptLoading();
         this.checkImages();
@@ -222,13 +222,13 @@ class SiteHealthCheck {
         };
 
         console.group('🏥 Site Health Report');
-        console.log(`Health Score: ${report.healthScore}/100`);
+        // console.log(`Health Score: ${report.healthScore}/100`);
 
         if (report.issues.length > 0) {
             console.group('Issues Found:');
             report.issues.forEach(issue => {
                 const icon = this.getIssueIcon(issue.severity);
-                console.log(`${icon} ${issue.message}`);
+                // console.log(`${icon} ${issue.message}`);
             });
             console.groupEnd();
         }
@@ -236,11 +236,11 @@ class SiteHealthCheck {
         console.group('Check Results:');
         report.checks.forEach(check => {
             const icon = check.passed ? '✅' : '❌';
-            console.log(`${icon} ${check.name}`);
+            // console.log(`${icon} ${check.name}`);
         });
         console.groupEnd();
 
-        console.log('Summary:', report.summary);
+        // console.log('Summary:', report.summary);
         console.groupEnd();
 
         // Store report for debugging
