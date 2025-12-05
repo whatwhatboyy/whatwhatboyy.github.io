@@ -660,23 +660,36 @@
     </div>
 
     <script>
-        // Referrer check - only allow access from bstlar.com
+        // Referrer check - only allow access from bstlar.com or with valid ref param
         (function() {
             const referrer = document.referrer;
-            const allowedReferrers = ['bstlar.com', 'bstlar.net'];
             const urlParams = new URLSearchParams(window.location.search);
-            const hasValidToken = urlParams.get('token') === 'scooby2025';
 
-            // Check if referrer is from allowed domain
-            const isValidReferrer = allowedReferrers.some(domain => referrer.includes(domain));
+            // Multiple ways to verify access
+            const allowedReferrers = ['bstlar.com', 'bstlar.net', 'bst.gg', 'boost.ink', 'boostink'];
+            const validRefParams = ['bstlar', 'boost', 'key'];
+            const validTokens = ['scooby2025'];
 
-            if (isValidReferrer || hasValidToken) {
+            // Check all verification methods
+            const isValidReferrer = allowedReferrers.some(domain => referrer.toLowerCase().includes(domain));
+            const hasValidRef = validRefParams.includes(urlParams.get('ref'));
+            const hasValidToken = validTokens.includes(urlParams.get('token'));
+
+            const isAuthorized = isValidReferrer || hasValidRef || hasValidToken;
+
+            if (isAuthorized) {
                 // Show key content, hide blocked content
                 document.getElementById('blockedContent').classList.add('hidden');
                 document.getElementById('keyContent').classList.remove('hidden');
 
-                // Set a short-lived session marker (expires when tab closes)
+                // Set a session marker (expires when browser closes)
                 sessionStorage.setItem('scooby_verified', Date.now().toString());
+
+                // Clean the URL (remove the ref param) without reloading
+                if (urlParams.has('ref') || urlParams.has('token')) {
+                    const cleanUrl = window.location.pathname;
+                    window.history.replaceState({}, '', cleanUrl);
+                }
             } else {
                 // Check if they were recently verified in this session
                 const verified = sessionStorage.getItem('scooby_verified');
