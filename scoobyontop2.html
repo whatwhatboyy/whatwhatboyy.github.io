@@ -1,656 +1,678 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Welcome to Scooby Free Key Page & This Means Pain coming back???">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Scooby on Top</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scooby Menu - Free Access Key">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Scooby Menu - Free Key</title>
     <link rel="icon" href="icon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-    <script data-cfasync="false" src="//d1r9f6frybgiqo.cloudfront.net/?rffrd=1026305"></script>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         :root {
-            --primary-color: #ff5722;
-            --secondary-color: #2196f3;
-            --dark-bg: #0a0a0a;
-            --card-bg: rgba(30, 30, 30, 0.8);
+            --primary: #10b981;
+            --primary-dark: #059669;
+            --secondary: #6366f1;
+            --bg-dark: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a25;
+            --text-primary: #ffffff;
+            --text-secondary: #9ca3af;
+            --border: rgba(255, 255, 255, 0.08);
+            --glow: rgba(16, 185, 129, 0.3);
         }
-        
+
         body {
-            background-color: var(--dark-bg);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-            overflow-x: hidden;
-            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjMWExYTFhIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiMxZDFkMWQiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=');
-        }
-        
-        /* Header Styles */
-        .navbar {
-            background-color: rgba(10, 10, 10, 0.95) !important;
-            backdrop-filter: blur(10px);
-            padding: 10px 0;
-            transition: all 0.3s ease;
-        }
-        
-        .navbar-brand img {
-            height: 50px;
-            transition: all 0.3s ease;
-        }
-        
-        .nav-link {
-            color: white !important;
-            font-weight: 500;
-            margin: 0 10px;
-            position: relative;
-            transition: all 0.3s ease;
-        }
-        
-        .nav-link:hover {
-            color: var(--primary-color) !important;
-        }
-        
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: var(--primary-color);
-            transition: width 0.3s ease;
-        }
-        
-        .nav-link:hover::after {
-            width: 100%;
-        }
-        
-        .nav-link.active {
-            color: var(--primary-color) !important;
-        }
-        
-        /* Hero Section */
-        .hero-section {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
             min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            position: relative;
-            overflow: hidden;
-            padding-top: 80px;
-        }
-        
-        .hero-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            z-index: -1;
-            transition: background-image 1s ease;
-        }
-        
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9));
-            z-index: -1;
-        }
-        
-        .hero-content {
-            text-align: center;
-            z-index: 1;
+            justify-content: center;
             padding: 20px;
+            position: relative;
+            overflow-x: hidden;
         }
-        
-        .hero-title {
-            font-size: 3.5rem;
+
+        /* Animated background */
+        .bg-gradient {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(ellipse at 20% 20%, rgba(16, 185, 129, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(99, 102, 241, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(16, 185, 129, 0.03) 0%, transparent 70%);
+            z-index: -1;
+            animation: bgPulse 8s ease-in-out infinite;
+        }
+
+        @keyframes bgPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        /* Grid pattern overlay */
+        .grid-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -1;
+        }
+
+        /* Main container */
+        .container {
+            width: 100%;
+            max-width: 480px;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Logo section */
+        .logo-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 8px 32px rgba(16, 185, 129, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .brand-name {
+            font-size: 28px;
             font-weight: 800;
-            margin-bottom: 20px;
-            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            background-clip: text;
+            margin-bottom: 8px;
         }
-        
-        .hero-subtitle {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            color: #ccc;
+
+        .brand-tagline {
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 400;
         }
-        
-        /* Token Box */
-        .token-container {
-            background: var(--card-bg);
-            border-radius: 10px;
-            padding: 20px;
-            margin: 30px auto;
-            max-width: 600px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            border: 1px solid rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
+
+        /* Card */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
         }
-        
-        .token-label {
-            font-size: 1rem;
-            color: #aaa;
-            margin-bottom: 10px;
+
+        .card:hover {
+            background: var(--bg-card-hover);
+            border-color: rgba(16, 185, 129, 0.2);
         }
-        
-        .token-display {
+
+        /* Key section */
+        .key-header {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            background: rgba(0,0,0,0.3);
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            border: 1px solid rgba(255,255,255,0.1);
+            justify-content: space-between;
+            margin-bottom: 16px;
         }
-        
-        .token-text {
-            font-size: 1.1rem;
+
+        .key-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
             font-weight: 600;
-            letter-spacing: 1px;
-            margin: 0;
-            color: var(--primary-color);
-            overflow: hidden;
-            text-overflow: ellipsis;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
-        
-        .copy-btn {
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 8px 15px;
-            border-radius: 5px;
+
+        .key-label i {
+            color: var(--primary);
+        }
+
+        .key-timer {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            color: var(--text-secondary);
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px 12px;
+            border-radius: 20px;
+        }
+
+        .key-timer i {
+            color: var(--secondary);
+            font-size: 11px;
+        }
+
+        .key-box {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(99, 102, 241, 0.1));
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: 12px;
+            padding: 20px;
             cursor: pointer;
             transition: all 0.3s ease;
-            font-weight: 600;
-        }
-        
-        .copy-btn:hover {
-            background: #e64a19;
-            transform: translateY(-2px);
-        }
-        
-        /* Buttons */
-        .btn-custom {
-            padding: 12px 25px;
-            border-radius: 8px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            margin: 10px 5px;
-            border: none;
             position: relative;
             overflow: hidden;
         }
-        
-        .btn-primary-custom {
-            background: linear-gradient(45deg, var(--primary-color), #ff8a65);
-            color: white;
-        }
-        
-        .btn-secondary-custom {
-            background: rgba(255,255,255,0.1);
-            color: white;
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-        
-        .btn-custom:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-        
-        .btn-custom::after {
+
+        .key-box::before {
             content: '';
             position: absolute;
             top: 0;
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: all 0.5s ease;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s ease;
         }
-        
-        .btn-custom:hover::after {
+
+        .key-box:hover::before {
             left: 100%;
         }
-        
-        /* Popup */
-        .floating-popup {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: var(--card-bg);
-            border-radius: 10px;
-            padding: 15px;
+
+        .key-box:hover {
+            border-color: var(--primary);
+            box-shadow: 0 0 30px var(--glow);
+            transform: translateY(-2px);
+        }
+
+        .key-text {
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--primary);
+            letter-spacing: 1.5px;
+            text-align: center;
+            filter: blur(8px);
+            transition: filter 0.3s ease;
+            user-select: all;
+            word-break: break-all;
+        }
+
+        .key-box:hover .key-text,
+        .key-box:focus .key-text,
+        .key-box.revealed .key-text {
+            filter: blur(0);
+        }
+
+        .key-hint {
             display: flex;
             align-items: center;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.3);
-            z-index: 1000;
-            animation: float 6s ease-in-out infinite;
-            cursor: pointer;
-            border: 1px solid rgba(255,255,255,0.1);
-            max-width: 300px;
-            transition: all 0.3s ease;
+            justify-content: center;
+            gap: 6px;
+            margin-top: 12px;
+            font-size: 12px;
+            color: var(--text-secondary);
         }
-        
-        .floating-popup:hover {
-            transform: translateY(-5px);
+
+        .key-hint i {
+            font-size: 10px;
         }
-        
-        .popup-img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin-right: 15px;
-            object-fit: cover;
-        }
-        
-        .popup-text {
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: var(--primary-color);
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        
-        /* Features Section */
-        .features-section {
-            padding: 80px 0;
-            background: rgba(0,0,0,0.5);
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-            font-size: 2.5rem;
-            font-weight: 700;
+
+        .copy-notice {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: var(--primary);
             color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 10px 40px rgba(16, 185, 129, 0.4);
+            transition: transform 0.3s ease;
+            z-index: 1000;
         }
-        
-        .feature-card {
-            background: var(--card-bg);
-            border-radius: 10px;
-            padding: 30px;
-            text-align: center;
-            margin-bottom: 30px;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255,255,255,0.1);
-            height: 100%;
+
+        .copy-notice.show {
+            transform: translateX(-50%) translateY(0);
         }
-        
-        .feature-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-        }
-        
-        .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            color: var(--primary-color);
-        }
-        
-        .feature-title {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-        
-        .feature-description {
-            color: #ccc;
-        }
-        
-        /* Footer */
-        .footer {
-            background: rgba(10, 10, 10, 0.95);
-            padding: 40px 0 20px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-        }
-        
-        .footer-logo {
-            height: 40px;
-            margin-bottom: 20px;
-        }
-        
-        .footer-links {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-links a {
-            color: #aaa;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-        
-        .footer-links a:hover {
-            color: var(--primary-color);
-        }
-        
-        .social-icons {
+
+        /* Buttons */
+        .button-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
             margin-top: 20px;
         }
-        
-        .social-icons a {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            line-height: 40px;
-            text-align: center;
-            background: rgba(255,255,255,0.1);
-            border-radius: 50%;
-            color: white;
-            margin-right: 10px;
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 14px 20px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
             transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
         }
-        
-        .social-icons a:hover {
-            background: var(--primary-color);
-            transform: translateY(-3px);
+
+        .btn-primary {
+            grid-column: span 2;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
         }
-        
-        .copyright {
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(16, 185, 129, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-discord {
+            background: linear-gradient(135deg, #5865F2, #4752c4);
+            color: white;
+        }
+
+        .btn-discord:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(88, 101, 242, 0.4);
+        }
+
+        /* Stats */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 16px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .stat-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 11px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
             margin-top: 30px;
-            color: #666;
-            font-size: 0.9rem;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
         }
-        
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-            .hero-title {
-                font-size: 2.5rem;
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 16px;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 13px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .footer-copyright {
+            font-size: 12px;
+            color: var(--text-secondary);
+            opacity: 0.6;
+        }
+
+        /* Status indicator */
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--primary);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--primary);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 10px;
             }
-            
-            .token-display {
-                flex-direction: column;
-                text-align: center;
+
+            .card {
+                padding: 20px;
             }
-            
-            .copy-btn {
-                margin-top: 15px;
-                width: 100%;
+
+            .key-text {
+                font-size: 13px;
             }
-            
-            .floating-popup {
-                bottom: 10px;
-                right: 10px;
-                left: 10px;
-                max-width: none;
+
+            .button-grid {
+                grid-template-columns: 1fr;
             }
-        }
-        
-        /* Animations */
-        .animate-pop-in {
-            animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        
-        @keyframes popIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
+
+            .btn-primary {
+                grid-column: span 1;
             }
-        }
-        
-        .delay-1 {
-            animation-delay: 0.2s;
-        }
-        
-        .delay-2 {
-            animation-delay: 0.4s;
-        }
-        
-        .delay-3 {
-            animation-delay: 0.6s;
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
-    <link rel="stylesheet" href="assets/css/image-optimization.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.png" alt="Scooby on Top">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="details.html">Help & FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.youtube.com/channel/UCusYWir4F6r5AY6A9Ddv7jg" target="_blank" rel="noopener noreferrer">Main YT Channel</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="telegram.html">Telegram <img src="assets/images/profile-header.png" alt="" height="20"></a>
-                    </li>
-                </ul>
+    <div class="bg-gradient"></div>
+    <div class="grid-overlay"></div>
+
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="logo-section">
+            <img src="assets/images/logo.png" alt="Scooby Menu" class="logo">
+            <h1 class="brand-name">Scooby Menu</h1>
+            <p class="brand-tagline">Premium GTA V Experience</p>
+        </div>
+
+        <!-- Status Badge -->
+        <div style="text-align: center;">
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                Key Active
             </div>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-bg" id="heroBackground"></div>
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h1 class="hero-title animate-pop-in">Scooby on Top</h1>
-                    <p class="hero-subtitle animate-pop-in delay-1">Welcome to Scooby Free Key Page & This Means Pain coming back???</p>
-                    
-                    <div class="token-container animate-pop-in delay-2">
-                        <p class="token-label">Your Free Access Key:</p>
-                        <div class="token-display">
-                            <p class="token-text" id="tokenText">UMAD-SCOOBYONTOP-FREE-bvrfCS-VRGFCS2</p>
-                            <button class="copy-btn" onclick="copyToClipboard()">
-                                <i class="fas fa-copy"></i> Copy
-                            </button>
-                        </div>
-                        <p class="text-success text-center" id="copySuccess" style="display: none;">
-                            <i class="fas fa-check-circle"></i> Token copied to clipboard!
-                        </p>
-                    </div>
-                    
-                    <div class="animate-pop-in delay-3">
-                        <button class="btn btn-custom btn-primary-custom" onclick="openLink('https://scoobycheats.net/Scooby.zip')">
-                            <i class="fas fa-download"></i> Download Scooby's Loader
-                        </button>
-                        
-                        <div class="mt-4">
-                            <button class="btn btn-custom btn-secondary-custom" onclick="openLink('https://discord.gg/yUp78V8tgM')">
-                                <i class="fab fa-discord"></i> Discord
-                            </button>
-                            <button class="btn btn-custom btn-secondary-custom" onclick="openLink('https://t.me/ScoobyOnTop')">
-                                <i class="fab fa-telegram"></i> Telegram
-                            </button>
-                            <button class="btn btn-custom btn-secondary-custom" onclick="openLink('https://scoobycheats.net/')">
-                                <i class="fas fa-globe"></i> Main Site
-                            </button>
-                        </div>
-                    </div>
-                </div>
+        <!-- Key Card -->
+        <div class="card">
+            <div class="key-header">
+                <span class="key-label">
+                    <i class="fas fa-key"></i>
+                    Free Access Key
+                </span>
+                <span class="key-timer">
+                    <i class="fas fa-clock"></i>
+                    <span id="timerDisplay">Refreshes in --:--</span>
+                </span>
+            </div>
+
+            <div class="key-box" id="keyBox" tabindex="0" title="Hover to reveal, click to copy">
+                <div class="key-text" id="keyText">LOADING...</div>
+            </div>
+
+            <div class="key-hint">
+                <i class="fas fa-eye"></i>
+                Hover to reveal • Click to copy
+            </div>
+
+            <!-- Buttons -->
+            <div class="button-grid">
+                <a href="http://scoobymenu.pro" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <i class="fas fa-globe"></i>
+                    Official Website
+                </a>
+                <a href="https://discord.gg/CQwSYeDGG8" target="_blank" rel="noopener noreferrer" class="btn btn-discord">
+                    <i class="fab fa-discord"></i>
+                    Discord
+                </a>
+                <a href="index.html" class="btn btn-secondary">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
             </div>
         </div>
-    </section>
 
-    <!-- Features Section -->
-    <section class="features-section">
-        <div class="container">
-            <h2 class="section-title">Why Choose Scooby?</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-bolt"></i>
-                        </div>
-                        <h3 class="feature-title">High Performance</h3>
-                        <p class="feature-description">Optimized for the best gaming experience with minimal resource usage.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h3 class="feature-title">Secure & Undetected</h3>
-                        <p class="feature-description">Regular updates to ensure maximum security and undetectability.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h3 class="feature-title">Active Community</h3>
-                        <p class="feature-description">Join thousands of satisfied users in our Discord and Telegram communities.</p>
-                    </div>
-                </div>
+        <!-- Stats -->
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-value" id="usersCount">10K+</div>
+                <div class="stat-label">Users</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">24/7</div>
+                <div class="stat-label">Support</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">Free</div>
+                <div class="stat-label">Forever</div>
             </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <img src="assets/images/logo.png" alt="Scooby on Top" class="footer-logo">
-                    <p>Providing premium gaming experiences with cutting-edge technology.</p>
-                    <div class="social-icons">
-                        <a href="https://discord.gg/yUp78V8tgM" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
-                        <a href="https://t.me/ScoobyOnTop" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
-                        <a href="https://www.youtube.com/channel/UCusYWir4F6r5AY6A9Ddv7jg" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <h5>Quick Links</h5>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="details.html">Help & FAQ</a></li>
-                        <li><a href="https://scoobycheats.net/">Main Site</a></li>
-                        <li><a href="telegram.html">Telegram</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <h5>Resources</h5>
-                    <ul class="footer-links">
-                        <li><a href="https://scoobycheats.net/Scooby.zip">Download Loader</a></li>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Support Center</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                    </ul>
-                </div>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-links">
+                <a href="http://scoobymenu.pro" target="_blank" rel="noopener noreferrer">Website</a>
+                <a href="https://discord.gg/CQwSYeDGG8" target="_blank" rel="noopener noreferrer">Discord</a>
+                <a href="details.html">FAQ</a>
             </div>
-            <div class="text-center copyright">
-                <p>&copy; 2023 Scooby on Top. All rights reserved.</p>
-            </div>
+            <p class="footer-copyright">&copy; 2024 Scooby Menu. All rights reserved.</p>
         </div>
-    </footer>
-
-    <!-- Floating Popup -->
-    <a href="https://scoobycheats.net/" target="_blank" class="floating-popup">
-        <img src="braindamge/scooby.png" alt="Scooby" class="popup-img">
-        <div class="popup-text">Scooby on top - Click to visit our site!</div>
-    </a>
-
-    <!-- Audio Player -->
-    <audio id="autoPlayer" src="nineyes.mp3" loop></audio>
-    <div class="audio-controls" style="position: fixed; bottom: 10px; left: 10px; z-index: 1000;">
-        <button class="btn btn-sm btn-secondary" onclick="toggleAudio()">
-            <i class="fas fa-volume-mute" id="audioIcon"></i>
-        </button>
     </div>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Copy Notice -->
+    <div class="copy-notice" id="copyNotice">
+        <i class="fas fa-check-circle"></i>
+        Key copied to clipboard!
+    </div>
+
     <script>
-        // Function to copy token to clipboard
-        function copyToClipboard() {
-            const token = "UMAD-SCOOBYONTOP-FREE-bvrfCS-VRGFCS2";
-            navigator.clipboard.writeText(token).then(() => {
-                const successMsg = document.getElementById('copySuccess');
-                successMsg.style.display = 'block';
+        // Key rotation system - changes every 4 hours
+        const KEY_ROTATION_HOURS = 4;
+
+        // Key generation based on time seed
+        function generateKey(seed) {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            const segments = [
+                'SCOOBY',
+                generateSegment(seed, 5, chars),
+                generateSegment(seed * 2, 5, chars),
+                generateSegment(seed * 3, 5, chars)
+            ];
+            return segments.join('-');
+        }
+
+        function generateSegment(seed, length, chars) {
+            let result = '';
+            let s = seed;
+            for (let i = 0; i < length; i++) {
+                s = (s * 9301 + 49297) % 233280;
+                const index = Math.floor((s / 233280) * chars.length);
+                result += chars[index];
+            }
+            return result;
+        }
+
+        // Get current time seed (changes every KEY_ROTATION_HOURS hours)
+        function getTimeSeed() {
+            const now = new Date();
+            const hours = Math.floor(now.getTime() / (1000 * 60 * 60 * KEY_ROTATION_HOURS));
+            return hours;
+        }
+
+        // Calculate time until next key rotation
+        function getTimeUntilRotation() {
+            const now = new Date();
+            const msPerRotation = KEY_ROTATION_HOURS * 60 * 60 * 1000;
+            const currentPeriodStart = Math.floor(now.getTime() / msPerRotation) * msPerRotation;
+            const nextRotation = currentPeriodStart + msPerRotation;
+            return nextRotation - now.getTime();
+        }
+
+        // Format milliseconds to HH:MM:SS
+        function formatTime(ms) {
+            const totalSeconds = Math.floor(ms / 1000);
+            const hours = Math.floor(totalSeconds / 3600);
+            const minutes = Math.floor((totalSeconds % 3600) / 60);
+            const seconds = totalSeconds % 60;
+
+            if (hours > 0) {
+                return `${hours}h ${minutes}m`;
+            }
+            return `${minutes}m ${seconds}s`;
+        }
+
+        // Current key
+        let currentKey = '';
+
+        // Initialize and update key
+        function updateKey() {
+            const seed = getTimeSeed();
+            currentKey = generateKey(seed);
+            document.getElementById('keyText').textContent = currentKey;
+        }
+
+        // Update timer display
+        function updateTimer() {
+            const remaining = getTimeUntilRotation();
+            document.getElementById('timerDisplay').textContent = `Refreshes in ${formatTime(remaining)}`;
+
+            // Check if key needs to be regenerated
+            const newSeed = getTimeSeed();
+            const newKey = generateKey(newSeed);
+            if (newKey !== currentKey) {
+                updateKey();
+            }
+        }
+
+        // Copy functionality
+        const keyBox = document.getElementById('keyBox');
+        const copyNotice = document.getElementById('copyNotice');
+
+        function copyKey() {
+            navigator.clipboard.writeText(currentKey).then(() => {
+                copyNotice.classList.add('show');
                 setTimeout(() => {
-                    successMsg.style.display = 'none';
-                }, 3000);
+                    copyNotice.classList.remove('show');
+                }, 2500);
+            }).catch(err => {
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = currentKey;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+
+                copyNotice.classList.add('show');
+                setTimeout(() => {
+                    copyNotice.classList.remove('show');
+                }, 2500);
             });
         }
 
-        // Function to open a link in a new tab
-        function openLink(url) {
-            window.open(url, "_blank");
-        }
+        keyBox.addEventListener('click', copyKey);
 
-        // Array of banner images
-        const bannerImages = [
-            "braindamge/scoobybg.png",
-            // Add more image paths here
-        ];
-
-        // Function to change the banner image
-        function setBannerImage() {
-            const randomIndex = Math.floor(Math.random() * bannerImages.length);
-            const bannerElement = document.getElementById("heroBackground");
-            bannerElement.style.backgroundImage = `url(${bannerImages[randomIndex]})`;
-        }
-
-        // Audio control
-        const audio = document.getElementById('autoPlayer');
-        const audioIcon = document.getElementById('audioIcon');
-        
-        function toggleAudio() {
-            if (audio.paused) {
-                audio.play();
-                audioIcon.classList.remove('fa-volume-mute');
-                audioIcon.classList.add('fa-volume-up');
-            } else {
-                audio.pause();
-                audioIcon.classList.remove('fa-volume-up');
-                audioIcon.classList.add('fa-volume-mute');
+        // Keyboard shortcut
+        document.addEventListener('keydown', function(e) {
+            if (e.key.toLowerCase() === 'c' && !e.ctrlKey && !e.metaKey) {
+                copyKey();
             }
-        }
+        });
 
-        // Initialize page
-        window.onload = function() {
-            setBannerImage();
-            
-            // Try to play audio with user interaction
-            document.body.addEventListener('click', function() {
-                if (audio.paused) {
-                    audio.play().catch(e => {
-                        console.log('Audio play failed:', e);
-                    });
-                }
-            }, { once: true });
+        // Initialize
+        updateKey();
+        updateTimer();
+
+        // Update timer every second
+        setInterval(updateTimer, 1000);
+
+        // Expose key info for launcher API
+        window.ScoobyKeyAPI = {
+            getKey: function() {
+                return currentKey;
+            },
+            getSeed: function() {
+                return getTimeSeed();
+            },
+            getNextRotation: function() {
+                return new Date(Date.now() + getTimeUntilRotation()).toISOString();
+            }
         };
     </script>
+
     <script src="assets/js/activity-tracker.js"></script>
-    <script src="assets/js/image-optimizer.js"></script>
 </body>
 </html>
