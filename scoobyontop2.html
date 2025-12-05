@@ -667,7 +667,7 @@
 
             // Multiple ways to verify access
             const allowedReferrers = ['bstlar.com', 'bstlar.net', 'bst.gg', 'boost.ink', 'boostink'];
-            const validRefParams = ['bstlar', 'boost', 'key'];
+            const validRefParams = ['bstlarsr4edxgyhrt6frhgrt6ffgdrddfr4e'];
             const validTokens = ['scooby2025'];
 
             // Check all verification methods
@@ -677,6 +677,11 @@
 
             const isAuthorized = isValidReferrer || hasValidRef || hasValidToken;
 
+            // Immediately clean URL if ref param exists (before anything else)
+            if (urlParams.has('ref') || urlParams.has('token')) {
+                window.history.replaceState({}, '', window.location.pathname);
+            }
+
             if (isAuthorized) {
                 // Show key content, hide blocked content
                 document.getElementById('blockedContent').classList.add('hidden');
@@ -684,12 +689,6 @@
 
                 // Set a session marker (expires when browser closes)
                 sessionStorage.setItem('scooby_verified', Date.now().toString());
-
-                // Clean the URL (remove the ref param) without reloading
-                if (urlParams.has('ref') || urlParams.has('token')) {
-                    const cleanUrl = window.location.pathname;
-                    window.history.replaceState({}, '', cleanUrl);
-                }
             } else {
                 // Check if they were recently verified in this session
                 const verified = sessionStorage.getItem('scooby_verified');
