@@ -444,13 +444,134 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* Blocked state */
+        .blocked-container {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .blocked-icon {
+            font-size: 80px;
+            color: #ef4444;
+            margin-bottom: 24px;
+            animation: shake 0.5s ease-in-out;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20% { transform: translateX(-10px); }
+            40% { transform: translateX(10px); }
+            60% { transform: translateX(-10px); }
+            80% { transform: translateX(10px); }
+        }
+
+        .blocked-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #ef4444;
+            margin-bottom: 16px;
+        }
+
+        .blocked-message {
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .blocked-message strong {
+            color: var(--text-primary);
+        }
+
+        .btn-link {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(239, 68, 68, 0.3);
+        }
+
+        .btn-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(239, 68, 68, 0.4);
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .blocked-steps {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 24px 0;
+            text-align: left;
+        }
+
+        .blocked-steps h4 {
+            color: #ef4444;
+            margin-bottom: 12px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .blocked-steps ol {
+            color: var(--text-secondary);
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .blocked-steps li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
     </style>
 </head>
 <body>
     <div class="bg-gradient"></div>
     <div class="grid-overlay"></div>
 
-    <div class="container">
+    <!-- BLOCKED CONTENT - Shows when not from correct referrer -->
+    <div class="container" id="blockedContent">
+        <div class="card blocked-container">
+            <div class="blocked-icon">
+                <i class="fas fa-hand-paper"></i>
+            </div>
+            <h2 class="blocked-title">Nice Try!</h2>
+            <p class="blocked-message">
+                You tried to access the key page directly.<br>
+                <strong>You need to complete the steps first!</strong>
+            </p>
+
+            <div class="blocked-steps">
+                <h4><i class="fas fa-list-ol"></i> How to get the key:</h4>
+                <ol>
+                    <li>Click the button below to go to the key link</li>
+                    <li>Complete any required steps on that page</li>
+                    <li>You'll be redirected here automatically</li>
+                    <li>Then you can see and copy the key!</li>
+                </ol>
+            </div>
+
+            <a href="https://bstlar.com/F/ScoobyKEY" class="btn-link" rel="noopener noreferrer">
+                <i class="fas fa-external-link-alt"></i>
+                Get Key The Right Way
+            </a>
+        </div>
+    </div>
+
+    <!-- ACTUAL KEY CONTENT - Hidden by default, shown only if from correct referrer -->
+    <div class="container hidden" id="keyContent">
         <!-- Logo Section -->
         <div class="logo-section">
             <img src="assets/images/logo.png" alt="Scooby Menu" class="logo">
@@ -528,9 +649,9 @@
                 <a href="https://discord.gg/CQwSYeDGG8" target="_blank" rel="noopener noreferrer">Discord</a>
                 <a href="details.html">FAQ</a>
             </div>
-            <p class="footer-copyright">&copy; 2024 Scooby Menu. All rights reserved.</p>
+            <p class="footer-copyright">&copy; 2025 Scooby Menu. All rights reserved.</p>
         </div>
-    </div>
+    </div><!-- End of keyContent -->
 
     <!-- Copy Notice -->
     <div class="copy-notice" id="copyNotice">
@@ -539,6 +660,34 @@
     </div>
 
     <script>
+        // Referrer check - only allow access from bstlar.com
+        (function() {
+            const referrer = document.referrer;
+            const allowedReferrers = ['bstlar.com', 'bstlar.net'];
+            const urlParams = new URLSearchParams(window.location.search);
+            const hasValidToken = urlParams.get('token') === 'scooby2025';
+
+            // Check if referrer is from allowed domain
+            const isValidReferrer = allowedReferrers.some(domain => referrer.includes(domain));
+
+            if (isValidReferrer || hasValidToken) {
+                // Show key content, hide blocked content
+                document.getElementById('blockedContent').classList.add('hidden');
+                document.getElementById('keyContent').classList.remove('hidden');
+
+                // Set a short-lived session marker (expires when tab closes)
+                sessionStorage.setItem('scooby_verified', Date.now().toString());
+            } else {
+                // Check if they were recently verified in this session
+                const verified = sessionStorage.getItem('scooby_verified');
+                if (verified) {
+                    document.getElementById('blockedContent').classList.add('hidden');
+                    document.getElementById('keyContent').classList.remove('hidden');
+                }
+                // Otherwise blocked content is shown by default
+            }
+        })();
+
         // Key rotation system - changes every 4 hours
         const KEY_ROTATION_HOURS = 4;
 
