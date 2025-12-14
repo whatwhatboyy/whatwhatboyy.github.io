@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "Bash(! grep -q \"</footer>\" \"$file\")",
-      "Bash(then echo \"Missing footer: $file\")"
+      "Bash(then echo \"Missing footer: $file\")",
+      "Bash(while read -r backup)",
+      "Bash(do original=\"$backup%.bak\" mv \"$backup\" \"$original\" echo \"Restored: $original\" done)",
+      "Bash(do original=\"$backup%.bak\" mv \"$backup\" \"$original\" done)",
+      "Bash(for f in /Users/roan/Documents/GitHub/whatwhatboyy.github.io/games/**/*.html.bak)",
+      "Bash(do mv \"$f\" \"$f%.bak\")",
+      "Bash(done)"
     ],
     "deny": [],
     "ask": []
