@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Channel Links - whatwhatboy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .channel-links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .channel-card {
+            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+            padding: 20px;
+            border-radius: 15px;
+            color: white;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .channel-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.4);
+        }
+
+        .channel-icon {
+            font-size: 2.5em;
+        }
+
+        .channel-info h2 {
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+
+        .channel-info p {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .instructions {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .instructions h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .instructions ol {
+            color: #666;
+            padding-left: 20px;
+        }
+
+        .instructions li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        code {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: #e83e8c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 whatwhatboy's YouTube Channels</h1>
+        <p class="subtitle">Subscribe to both channels for all my gaming content!</p>
+
+        <div class="channel-links">
+            <a href="https://www.youtube.com/@whatwhatboy101?sub_confirmation=1" target="_blank" class="channel-card">
+                <div class="channel-icon">▶️</div>
+                <div class="channel-info">
+                    <h2>@whatwhatboy101</h2>
+                    <p>Main gaming channel - Tutorials, cheats & more</p>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/@whatwhatboy98?sub_confirmation=1" target="_blank" class="channel-card">
+                <div class="channel-icon">▶️</div>
+                <div class="channel-info">
+                    <h2>@whatwhatboy98</h2>
+                    <p>Secondary channel - Extra content & updates</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="instructions">
+            <h3>📝 Recent Activity Feature</h3>
+            <ol>
+                <li>The <strong>Recent Activity</strong> feed is already enabled in the sidebar on your main website</li>
+                <li>It shows live updates like "New GTA V mod uploaded", "User joined Discord", etc.</li>
+                <li>Updates appear automatically every 15-25 seconds</li>
+                <li>You can see it in the sidebar under "Connect With Me" section</li>
+            </ol>
+
+            <h3>🎬 YouTube Auto-Embed Setup</h3>
+            <ol>
+                <li>I've created a configuration file at <code>assets/js/youtube-channels-config.js</code></li>
+                <li>Both YouTube channel handles are configured:
+                    <ul style="margin-top: 10px;">
+                        <li>@whatwhatboy101 (Channel ID: UCusYWir4F6r5AY6A9Ddv7jg)</li>
+                        <li>@whatwhatboy98 (needs channel ID - see step 3)</li>
+                    </ul>
+                </li>
+                <li>To get the channel ID for @whatwhatboy98:
+                    <ul style="margin-top: 10px;">
+                        <li>Visit <code>https://www.youtube.com/@whatwhatboy98</code></li>
+                        <li>Right-click → View Page Source</li>
+                        <li>Search for "channelId" in the source code</li>
+                        <li>Copy the channel ID (format: UC...)</li>
+                        <li>Update it in <code>youtube-channels-config.js</code></li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <script src="assets/js/activity-tracker.js"></script>
+    <script src="../../assets/js/image-optimizer.js"></script>
+</body>
+</html>

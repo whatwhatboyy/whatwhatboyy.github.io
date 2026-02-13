@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(! grep -q \"</footer>\" \"$file\")",
+      "Bash(then echo \"Missing footer: $file\")",
+      "Bash(while read -r backup)",
+      "Bash(do original=\"$backup%.bak\" mv \"$backup\" \"$original\" echo \"Restored: $original\" done)",
+      "Bash(do original=\"$backup%.bak\" mv \"$backup\" \"$original\" done)",
+      "Bash(for f in /Users/roan/Documents/GitHub/whatwhatboyy.github.io/games/**/*.html.bak)",
+      "Bash(do mv \"$f\" \"$f%.bak\")",
+      "Bash(done)",
+      "Bash(powershell -Command \"Get-ChildItem -Recurse -Include ''*.html'' -Exclude ''backup*'' | Where-Object { $_FullName -notmatch ''\\\\backup\\\\'' } | ForEach-Object { $content = Get-Content $_FullName -Raw -Encoding UTF8; if \\($content -match ''pl28253369\\\\.effectivegatecpm\\\\.com''\\) { $content = $content -replace ''pl28253369\\\\.effectivegatecpm\\\\.com'', ''aloudalimonyexplosion.com''; Set-Content $_FullName $content -Encoding UTF8 -NoNewline; Write-Output \\(''Updated popup domain: '' + $_Name\\) } }\")",
+      "Bash(powershell:*)",
+      "Bash(del \"c:\\\\Users\\\\whatw\\\\Documents\\\\GitHub\\\\whatwhatboyy.github.io\\\\update-ads.ps1\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

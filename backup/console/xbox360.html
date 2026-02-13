@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Xbox 360 homebrew, JTAG, RGH modifications and custom firmware. Download tools and guides for Xbox 360 modding.">
+    <title>Xbox 360 Mods - whatwhatboy's</title>
+
+    <link rel="icon" href="../assets/images/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="assets/css/site-fixes.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="../assets/images/logo.png" alt="Logo" class="nav-logo">
+                <span class="nav-title">whatwhatboy's</span>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html#games" class="nav-link">Games</a></li>
+                <li><a href="../index.html#tools" class="nav-link">Tools</a></li>
+                <li><a href="../index.html#console" class="nav-link active">Console</a></li>
+                <li><a href="../help.html" class="nav-link">Help</a></li>
+                <li><a href="https://www.youtube.com/channel/UCusYWir4F6r5AY6A9Ddv7jg" class="nav-link" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a></li>
+                <li><a href="../contact.html" class="nav-link">
+                    <i class="fab fa-telegram"></i>
+                </a></li>
+            </ul>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Xbox 360 Modifications</h1>
+            <p class="hero-subtitle">JTAG, RGH, homebrew applications, and custom firmware for Xbox 360 consoles.</p>
+
+            <div class="hero-buttons">
+                <a href="#mods" class="btn btn-primary">
+                    <i class="fas fa-gamepad"></i>
+                    Browse Mods
+                </a>
+                <a href="#guides" class="btn btn-outline">
+                    <i class="fas fa-book"></i>
+                    Installation Guides
+                </a>
+            </div>
+
+            <div class="console-warning">
+                <div class="warning-content">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <div>
+                        <h4>Hardware Modification Required</h4>
+                        <p>Xbox 360 modding requires physical modification of your console</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Xbox 360 Mods -->
+    <section class="section" id="mods">
+        <div class="container">
+            <!-- Search -->
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Search Xbox 360 content..." id="consoleSearch">
+                </div>
+            </div>
+
+            <!-- Custom Firmware -->
+            <div class="category">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <img src="../assets/images/xbox360.png" alt="Xbox 360" style="width: 48px; height: 48px; border-radius: 8px;">
+                    </div>
+                    <h2>Custom Firmware & Dashboards</h2>
+                </div>
+
+                <div class="games-grid">
+                    <div class="game-card" data-search="freestyle dash dashboard xbox360">
+                        <div class="game-image">
+                            <img src="../assets/images/xbox360.png" alt="Freestyle Dash" loading="lazy">
+                            <div class="game-overlay">
+                                <span class="game-status available">Free</span>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h4 class="game-title">Freestyle Dash</h4>
+                            <p class="game-description">Popular dashboard replacement with game management and customization features.</p>
+                            <div class="feature-tags">
+                                <span class="feature-tag">Dashboard</span>
+                                <span class="feature-tag">Game Manager</span>
+                                <span class="feature-tag">Themes</span>
+                            </div>
+                            <a href="#" onclick="showTelegramInfo('freestyle')" class="game-link">
+                                <i class="fas fa-download"></i>
+                                Get From Telegram
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="game-card" data-search="aurora dash xbox360 dashboard">
+                        <div class="game-image">
+                            <img src="../assets/images/xbox360.png" alt="Aurora Dash" loading="lazy">
+                            <div class="game-overlay">
+                                <span class="game-status available">Free</span>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h4 class="game-title">Aurora Dashboard</h4>
+                            <p class="game-description">Advanced dashboard with extensive customization and homebrew support.</p>
+                            <div class="feature-tags">
+                                <span class="feature-tag">Advanced</span>
+                                <span class="feature-tag">Homebrew</span>
+                                <span class="feature-tag">Customizable</span>
+                            </div>
+                            <a href="#" onclick="showTelegramInfo('aurora')" class="game-link">
+                                <i class="fas fa-download"></i>
+                                Get From Telegram
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="game-card" data-search="xexmenu simple dashboard">
+                        <div class="game-image">
+                            <img src="../assets/images/xbox360.png" alt="XeXMenu" loading="lazy">
+                            <div class="game-overlay">
+                                <span class="game-status available">Free</span>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h4 class="game-title">XeXMenu</h4>
+                            <p class="game-description">Simple file manager and homebrew launcher for Xbox 360.</p>
+                            <div class="feature-tags">
+                                <span class="feature-tag">Simple</span>
+                                <span class="feature-tag">File Manager</span>
+                                <span class="feature-tag">Launcher</span>
+                            </div>
+                            <a href="#" onclick="showTelegramInfo('xexmenu')" class="game-link">
+                                <i class="fas fa-download"></i>
+                                Get From Telegram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Homebrew Applications -->
+            <div class="category">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h2>Homebrew Applications</h2>
+                </div>
+
+                <div class="games-grid">
+                    <div class="game-card" data-search="xbmc media center xbox360">
+                        <div class="game-image">
+                            <img src="../assets/images/xbox360.png" alt="XBMC" loading="lazy">
+                            <div class="game-overlay">
+                                <span class="game-status available">Free</span>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h4 class="game-title">XBMC4Xbox</h4>
+                            <p class="game-description">Media center application for playing videos, music, and streaming content.</p>
+                            <div class="feature-tags">
+                                <span class="feature-tag">Media Center</span>
+                                <span class="feature-tag">Streaming</span>
+                                <span class="feature-tag">Plugins</span>
+                            </div>
+                            <a href="#" onclick="showTelegramInfo('xbmc')" class="game-link">
+                                <i class="fas fa-download"></i>
+                                Get From Telegram
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="game-card" data-search="ftp server xbox360 network">
+                        <div class="game-image">
+                            <img src="../assets/images/xbox360.png" alt="FTP Server" loading="lazy">
+                            <div class="game-overlay">
+                                <span class="game-status available">Free</span>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h4 class="game-title">FTP Server</h4>
+                            <p class="game-description">Enable FTP access to transfer files to/from your Xbox 360 over network.</p>
+                            <div class="feature-tags">
+                                <span class="feature-tag">Network</span>
+                                <span class="feature-tag">File Transfer</span>
+                                <span class="feature-tag">Remote</span>
+                            </div>
+                            <a href="#" onclick="showTelegramInfo('ftp')" class="game-link">
+                                <i class="fas fa-download"></i>
+                                Get From Telegram
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="game-card" data-search="emulators retro gaming xbox360">
+                        <div class="game-image">
+                            <img src="../assets/images/xbox360.png" alt="Emulators" loading="lazy">
+                            <div class="game-overlay">
+                                <span class="game-status available">Free</span>
+                            </div>
+                        </div>
+                        <div class="game-info">
+                            <h4 class="game-title">Retro Emulators</h4>
+                            <p class="game-description">Collection of emulators for classic consoles (NES, SNES, Genesis, etc.).</p>
+                            <div class="feature-tags">
+                                <span class="feature-tag">Retro</span>
+                                <span class="feature-tag">Multi-System</span>
+                                <span class="feature-tag">Classic Games</span>
+                            </div>
+                            <a href="#" onclick="showTelegramInfo('emulators')" class="game-link">
+                                <i class="fas fa-download"></i>
+                                Get From Telegram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Installation Guides -->
+            <div class="category" id="guides">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h2>Installation & Modification Guides</h2>
+                </div>
+
+                <div class="guide-grid">
+                    <div class="guide-card">
+                        <div class="guide-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="guide-content">
+                            <h3>JTAG Installation</h3>
+                            <p>Complete guide for installing JTAG modification on compatible Xbox 360 consoles.</p>
+                            <div class="guide-requirements">
+                                <h4>Requirements:</h4>
+                                <ul>
+                                    <li>Xbox 360 with compatible motherboard</li>
+                                    <li>Soldering equipment and skills</li>
+                                    <li>JTAG cable and programmer</li>
+                                    <li>Custom firmware files</li>
+                                </ul>
+                            </div>
+                            <a href="#" onclick="showGuideInfo('jtag')" class="btn btn-outline">
+                                <i class="fas fa-book"></i>
+                                View Guide
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="guide-card">
+                        <div class="guide-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="guide-content">
+                            <h3>RGH Installation</h3>
+                            <p>Step-by-step guide for Reset Glitch Hack (RGH) installation on newer Xbox 360 models.</p>
+                            <div class="guide-requirements">
+                                <h4>Requirements:</h4>
+                                <ul>
+                                    <li>Compatible Xbox 360 console</li>
+                                    <li>RGH chip (Coolrunner, Matrix, etc.)</li>
+                                    <li>Advanced soldering skills</li>
+                                    <li>Programming equipment</li>
+                                </ul>
+                            </div>
+                            <a href="#" onclick="showGuideInfo('rgh')" class="btn btn-outline">
+                                <i class="fas fa-book"></i>
+                                View Guide
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Warning Section -->
+            <div class="warning-section">
+                <div class="warning-card">
+                    <div class="warning-header">
+                        <div class="warning-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3>Important Warnings</h3>
+                    </div>
+                    <div class="warning-content">
+                        <ul>
+                            <li><strong>Void Warranty:</strong> Modifying your Xbox 360 will void any remaining warranty</li>
+                            <li><strong>Risk of Damage:</strong> Improper installation can permanently damage your console</li>
+                            <li><strong>Advanced Skills Required:</strong> JTAG/RGH requires advanced soldering and technical skills</li>
+                            <li><strong>Console Ban Risk:</strong> Modified consoles may be banned from Xbox Live</li>
+                            <li><strong>Legal Considerations:</strong> Only modify consoles you own, respect copyright laws</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="../assets/images/logo.png" alt="Logo" class="footer-logo">
+                        <h3>whatwhatboy's</h3>
+                    </div>
+                    <p>Xbox 360 homebrew and modification resources for educational purposes.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Console Mods</h4>
+                    <ul>
+                        <li><a href="xbox360.html">Xbox 360</a></li>
+                        <li><a href="ps3.html">PlayStation 3</a></li>
+                        <li><a href="../index.html#console">All Consoles</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="../help.html">Help Center</a></li>
+                        <li><a href="../contact.html">Community</a></li>
+                        <li><a href="#guides">Installation Guides</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 whatwhatboy's. All rights reserved.</p>
+                    <p class="disclaimer">Educational purposes only. Modify at your own risk.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        // Console search functionality
+        document.getElementById('consoleSearch').addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase().trim();
+            const consoleCards = document.querySelectorAll('.game-card[data-search]');
+
+            consoleCards.forEach(card => {
+                const searchData = card.getAttribute('data-search').toLowerCase();
+                const cardTitle = card.querySelector('.game-title').textContent.toLowerCase();
+                const cardDescription = card.querySelector('.game-description').textContent.toLowerCase();
+
+                const isMatch = searchTerm === '' ||
+                              searchData.includes(searchTerm) ||
+                              cardTitle.includes(searchTerm) ||
+                              cardDescription.includes(searchTerm);
+
+                card.style.display = isMatch ? 'flex' : 'none';
+            });
+        });
+
+        function showTelegramInfo(item) {
+            alert(`${item} is available in our Telegram community. Join our group for download links and installation support!`);
+        }
+
+        function showGuideInfo(guide) {
+            alert(`Detailed ${guide.toUpperCase()} installation guides are available in our Telegram community. Join for step-by-step instructions and video tutorials!`);
+        }
+    </script>
+
+    <style>
+        .console-warning {
+            margin-top: 2rem;
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid #ef4444;
+            border-radius: var(--border-radius);
+            padding: 1rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .warning-content {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .warning-content i {
+            color: #ef4444;
+            font-size: 1.5rem;
+        }
+
+        .guide-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+        }
+
+        .guide-card {
+            background: var(--bg-card);
+            border-radius: var(--border-radius-lg);
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+            transition: var(--transition-normal);
+        }
+
+        .guide-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .guide-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .guide-requirements {
+            margin: 1.5rem 0;
+        }
+
+        .guide-requirements h4 {
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .guide-requirements ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .guide-requirements li {
+            padding: 0.25rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-secondary);
+        }
+
+        .guide-requirements li::before {
+            content: '•';
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+
+        .warning-section {
+            margin-top: 3rem;
+        }
+
+        .warning-card {
+            background: rgba(239, 68, 68, 0.05);
+            border: 1px solid #ef4444;
+            border-radius: var(--border-radius-lg);
+            padding: 2rem;
+        }
+
+        .warning-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .warning-icon {
+            width: 50px;
+            height: 50px;
+            background: #ef4444;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            color: white;
+        }
+
+        .warning-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .warning-content li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-secondary);
+        }
+
+        .warning-content li::before {
+            content: '⚠️';
+            position: absolute;
+            left: 0;
+        }
+
+        @media (max-width: 768px) {
+            .guide-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .console-warning {
+                margin-top: 1rem;
+            }
+
+            .warning-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+    <script src="assets/js/activity-tracker.js"></script>
+</body>
+</html>

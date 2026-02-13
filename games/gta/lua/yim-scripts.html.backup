@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="YimMenu Lua scripts collection for GTA V Online. Advanced protections, custom heists, and business management scripts.">
+    <meta name="keywords" content="YimMenu Lua scripts, GTA V YimMenu, advanced scripts, protection scripts">
+    <meta name="author" content="whatwhatboy">
+    <title>YimMenu Lua Scripts Collection - whatwhatboy</title>
+
+    <link rel="icon" href="../../../assets/images/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../../style.css">
+
+    <script data-cfasync="false" src="//d1r9f6frybgiqo.cloudfront.net/?rffrd=1026305"></script>
+    <script src="../../../assets/js/anti-adblock.js"></script>
+    <link rel="stylesheet" href="assets/css/site-fixes.css">
+    <link rel="stylesheet" href="../../../assets/css/image-optimization.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-brand">
+                <img src="../../../assets/images/logo.png" alt="Logo" class="sidebar-logo">
+                <span class="sidebar-title">whatwhatboy</span>
+            </div>
+            <button class="sidebar-toggle" id="sidebar-toggle">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul class="nav-list">
+                <li><a href="../../../index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a></li>
+                <li><a href="../../../profile.html" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a></li>
+                <li><a href="../../../index.html#discord" class="nav-link">
+                    <i class="fab fa-discord"></i>
+                    <span>Discord Servers</span>
+                </a></li>
+                <li><a href="../../../index.html#games" class="nav-link active">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Free Cheats</span>
+                </a></li>
+                <li><a href="../../../youtube.html" class="nav-link">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a></li>
+                <li><a href="../../../tools/index.html" class="nav-link">
+                    <i class="fas fa-tools"></i>
+                    <span>Tools</span>
+                </a></li>
+                <li><a href="../../../console/index.html" class="nav-link">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Console</span>
+                </a></li>
+                <li><a href="../../../help.html" class="nav-link">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Help & FAQ</span>
+                </a></li>
+                <li><a href="../../../requirements.html" class="nav-link">
+                    <i class="fas fa-download"></i>
+                    <span>Requirements</span>
+                </a></li>
+            </ul>
+
+            <div class="sidebar-social">
+                <h4>Connect With Me</h4>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/channel/UCusYWir4F6r5AY6A9Ddv7jg" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="../../../profile.html" title="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="../../../profile.html" title="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="../../../profile.html" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="../../../profile.html" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-sidebar-btn" id="mobile-sidebar-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Main Content -->
+    <div class="main-content" id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <div class="hero-image" style="margin-bottom: 2rem;">
+                    <img src="https://i.imgur.com/uWddJyX.png" alt="YimMenu Lua Scripts" style="max-width: 400px; border-radius: 1rem; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+                </div>
+                <h1 class="hero-title">YimMenu Lua Scripts</h1>
+                <p class="hero-subtitle">Advanced Lua scripts for YimMenu with enhanced protections, custom heist scripts, business management tools, and comprehensive anti-griefing features.</p>
+
+                <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--border-radius); padding: 1.5rem; margin: 2rem 0; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;"><i class="fas fa-info-circle"></i> How to use?</h3>
+                    <p style="line-height: 1.6; color: var(--text-secondary);">Copy the desired code in Windows Notepad or equivalent, save it as <strong>.lua</strong> and place it inside Yim's scripts folder located at <code style="background: var(--bg-tertiary); padding: 0.2rem 0.4rem; border-radius: 4px; color: var(--primary-color);">%AppData%/Roaming/YimMenu/scripts</code>.<br><br>Once in-game, open YimMenu, go to <strong>Settings > Lua Scripts</strong> and select it from the list.</p>
+                </div>
+
+                <div class="hero-buttons">
+                    <button onclick="history.back()" class="btn btn-outline">
+                        <i class="fas fa-arrow-left"></i>
+                        Go Back
+                    </button>
+                    <a href="#all-in-one" class="btn btn-primary">
+                        <i class="fas fa-star"></i>
+                        All-in-One Scripts
+                    </a>
+                    <a href="#recovery-scripts" class="btn btn-outline">
+                        <i class="fas fa-dollar-sign"></i>
+                        Recovery Scripts
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>15+</h3>
+                        <p>Premium Scripts</p>
+                    </div>
+                    <div class="stat">
+                        <h3>1.70</h3>
+                        <p>Game Version</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Active</h3>
+                        <p>Working Scripts</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- All-in-One Scripts Section -->
+        <section class="section" id="all-in-one">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">All-in-One Scripts</h2>
+                    <p class="section-subtitle">Comprehensive scripts with multiple features</p>
+                </div>
+
+                <div class="cheats-grid">
+                    <div class="cheat-card featured">
+                        <div class="cheat-image">
+                            <img src="https://i.imgur.com/uWddJyX.png" alt="Ultimate Script" onclick="openImageModal(this.src)">
+                        </div>
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Ultimate - Recovery/Heists Editor/Unlocks/More</h3>
+                                <p>Complete all-in-one script with recovery, heist editor, unlocks, and much more</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge safe">Working 1.70</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-features">
+                            <div class="features-grid">
+                                <div class="feature">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <span>Recovery</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-mask"></i>
+                                    <span>Heist Editor</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-unlock"></i>
+                                    <span>Unlocks</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-plus"></i>
+                                    <span>Much More</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="https://bstlar.com/F/UltimateLUA" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                            <a href="https://youtu.be/ultimate-guide" class="btn btn-outline" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                                Video Guide
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recovery Scripts Section -->
+        <section class="section" id="recovery-scripts">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Recovery Scripts</h2>
+                    <p class="section-subtitle">Money generation and account recovery scripts</p>
+                </div>
+
+                <div class="cheats-grid">
+                    <div class="cheat-card">
+                        <div class="cheat-image">
+                            <img src="https://i.imgur.com/uWddJyX.png" alt="PessiV2 Script" onclick="openImageModal(this.src)">
+                        </div>
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>PessiV2 - Money Options</h3>
+                                <p>Advanced money options and recovery features</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge safe">Working 1.70</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="https://bstlar.com/F/PessiV2LUA" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cheat-card">
+                        <div class="cheat-image">
+                            <img src="https://i.imgur.com/ohRbVbl.png" alt="Pacino Lua" onclick="openImageModal(this.src)">
+                        </div>
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-dice"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Pacino Lua (Money Recovery)</h3>
+                                <p>Rig blackjack, poker and more casino games for money</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge safe">Working 1.70</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="https://workink.net/vY/lozg8zbp" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cheat-card">
+                        <div class="cheat-image">
+                            <img src="https://i.imgur.com/pess.png" alt="Pessi Script" onclick="openImageModal(this.src)">
+                        </div>
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Pessi (1million Fast loop & 50k loop)</h3>
+                                <p>Multiple money options with fast and safe loops</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge safe">Working 1.70</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="https://work.ink/vY/lk6fe5re" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                            <a href="https://youtu.be/Fj_x4Cwu2YU?si=ODW_eXhHJrX0qAac" class="btn btn-outline" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                                Video
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cheat-card">
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Yim Nightclub Loop</h3>
+                                <p>Money recovery script using nightclub mechanics</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge safe">Working 1.70</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="https://bstlar.com/F/YimNClua" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cheat-card">
+                        <div class="cheat-image">
+                            <img src="https://i.imgur.com/ohRbVbl.png" alt="WasabiWords" onclick="openImageModal(this.src)">
+                        </div>
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-unlock-alt"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>WasabiWords Lua (Unlocks)</h3>
+                                <p>Unlock all items, vehicles, and content</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge safe">Working 1.70</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="https://lootlink.org/s?eF4A" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cheat-card">
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Yim Ultimate Menu v1 LUA Script</h3>
+                                <p>Business helper and comprehensive management tools</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge safe">Working 1.70</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="https://bstlar.com/F/YimUltimateLua" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                            <a href="https://youtu.be/AvVuVxK-76s?si=gUrFeIyNyEPGGooJ" class="btn btn-outline" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                                Video
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cheat-card">
+                        <div class="cheat-image">
+                            <img src="https://i.imgur.com/UltimateController.png" alt="YIMCeo" onclick="openImageModal(this.src)">
+                        </div>
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>YIMCeo Creats lua</h3>
+                                <p>Money recovery script with 6 million loop</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge safe">Working 1.70</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="https://work.ink/vY/lk6fe5re" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                            <a href="https://youtu.be/Fj_x4Cwu2YU?si=ODW_eXhHJrX0qAac" class="btn btn-outline" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                                Video
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Scripts Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Other Scripts</h2>
+                    <p class="section-subtitle">Additional functionality and utility scripts</p>
+                </div>
+
+                <div class="cheats-grid">
+                    <div class="cheat-card">
+                        <div class="cheat-image">
+                            <img src="https://i.imgur.com/20f4ApR.png" alt="Extras Addon" onclick="openImageModal(this.src)">
+                        </div>
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-puzzle-piece"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Extras-Addon</h3>
+                                <p>Fun options, object spawner, and additional features</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge safe">Working</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="https://bstlar.com/F/ExtrasAddonYIMMM" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cheat-card">
+                        <div class="cheat-image">
+                            <img src="https://i.imgur.com/ohRbVbl.png" alt="Daytons Menu" onclick="openImageModal(this.src)">
+                        </div>
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Daytons Menu Script</h3>
+                                <p>Fun options, object spawner, and entertainment features</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge safe">Working</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="https://lootdest.com/s?p8rG" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cheat-card">
+                        <div class="cheat-image">
+                            <img src="https://i.imgur.com/noclip.png" alt="No Clip Script" onclick="openImageModal(this.src)">
+                        </div>
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-ghost"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>No Clip Script</h3>
+                                <p>Allows you to noclip through walls and objects</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge safe">Working 1.70</span>
+                            </div>
+                        </div>
+
+                        <div class="cheat-actions">
+                            <a href="https://work.ink/vY/KiddionsNoClip" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Installation Guide -->
+        <section class="section">
+            <div class="container">
+                <div class="warning-card">
+                    <div class="warning-header">
+                        <i class="fas fa-info-circle"></i>
+                        <h3>YimMenu Script Installation</h3>
+                    </div>
+                    <div class="warning-content">
+                        <ol style="color: var(--text-primary); line-height: 1.8;">
+                            <li><strong>Download YimMenu</strong> - Ensure you have the latest version from official sources</li>
+                            <li><strong>Locate Scripts Folder</strong> - Find YimMenu > scripts folder in your installation directory</li>
+                            <li><strong>Download Scripts</strong> - Save .lua files to the scripts folder</li>
+                            <li><strong>Load in YimMenu</strong> - Use the Scripts tab in YimMenu to load and configure scripts</li>
+                            <li><strong>Configure Settings</strong> - Adjust script settings and features as needed</li>
+                            <li><strong>Test Carefully</strong> - Always test scripts on alternative accounts first</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safety Information -->
+        <section class="section">
+            <div class="container">
+                <div class="warning-card">
+                    <div class="warning-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h3>Safety Guidelines</h3>
+                    </div>
+                    <div class="warning-content">
+                        <div class="warning-grid">
+                            <div class="warning-item">
+                                <h4><i class="fas fa-user-shield"></i> Use Alt Accounts</h4>
+                                <p>Always test scripts on alternative accounts first to avoid main account bans.</p>
+                            </div>
+                            <div class="warning-item">
+                                <h4><i class="fas fa-eye-slash"></i> Be Subtle</h4>
+                                <p>Don't make script usage obvious to other players. Avoid excessive displays.</p>
+                            </div>
+                            <div class="warning-item">
+                                <h4><i class="fas fa-clock"></i> Stay Updated</h4>
+                                <p>Keep scripts updated and check compatibility with latest game versions.</p>
+                            </div>
+                            <div class="warning-item">
+                                <h4><i class="fas fa-download"></i> Trusted Sources</h4>
+                                <p>Only download scripts from trusted sources to avoid malicious code.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close" onclick="closeImageModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Full Size Image">
+        </div>
+    </div>
+
+    <script src="../../../script.js"></script>
+    <script src="../../../assets/js/language-selector-enhanced.js"></script>
+    <script>
+        function openImageModal(src) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = 'block';
+            modalImg.src = src;
+
+            modal.onclick = function(event) {
+                if (event.target == modal) {
+                    closeImageModal();
+                }
+            }
+        }
+
+        function closeImageModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeImageModal();
+            }
+        });
+    </script>
+    <script src="assets/js/activity-tracker.js"></script>
+    <script src="../../../assets/js/image-optimizer.js"></script>
+</body>
+</html>

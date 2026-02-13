@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIPTIDE FREE Key</title>
+    <link rel="icon" type="image/png" href="images/freeuser.png">
+    <script data-cfasync="false" src="//d1r9f6frybgiqo.cloudfront.net/?rffrd=1026305"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #121212;
+            color: white;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            background-color: #1e1e1e;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            border: 1px solid #333;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        .image-box {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px auto;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-size: 32px;
+            background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .key-box {
+            margin: 30px auto;
+            padding: 20px;
+            background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+            border-radius: 10px;
+            font-size: 22px;
+            user-select: all;
+            cursor: pointer;
+            color: #121212;
+            font-weight: bold;
+            letter-spacing: 2px;
+            max-width: 90%;
+            box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+            transition: transform 0.2s ease;
+            position: relative;
+        }
+
+        .key-box:hover {
+            transform: scale(1.05);
+        }
+
+        .key-text {
+            filter: blur(5px);
+            transition: filter 0.3s ease;
+        }
+
+        .key-box:hover .key-text,
+        .key-box:active .key-text,
+        .key-box:focus .key-text {
+            filter: blur(0);
+        }
+
+        .copy-notice {
+            margin-top: 20px;
+            color: #00f2fe;
+            font-size: 16px;
+            display: none;
+        }
+
+        .instructions {
+            margin-top: 10px;
+            color: #888;
+            font-size: 14px;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .btn-help {
+            background: transparent;
+            border: 1px solid #4facfe;
+            color: #4facfe;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(79, 172, 254, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Image Box -->
+        <div class="image-box">
+            <img src="images/freeuser.png" alt="RIPTIDE Image">
+        </div>
+
+        <h1>NENYOOO (Free Version)</h1>
+
+        <div class="key-box" id="keyBox" title="Click to copy">
+            <span class="key-text">N3N-FREE-GWERR-GBFKIU-UTFCF-VHYTRE-WTF</span>
+        </div>
+
+        <div class="copy-notice" id="copyNotice">Key copied to clipboard!</div>
+        <div class="instructions">Click the key or press <b>C</b> to copy it.</div>
+
+        <!-- Buttons -->
+        <div class="button-group">
+            <a href="https://www.nenyoocheats.com/" target="_blank" class="btn btn-primary">Back to homepage</a>
+            <a href="https://www.nenyoocheats.com/download.html" target="_blank" class="btn btn-help">Help? Support Page</a>
+            <a href="https://www.nenyoocheats.com/download.html" target="_blank" class="btn btn-help">Loader Download</a>
+        </div>
+    </div>
+
+    <script>
+        const keyBox = document.getElementById('keyBox');
+        const copyNotice = document.getElementById('copyNotice');
+        const key = keyBox.querySelector('.key-text').textContent;
+
+        function copyKey() {
+            navigator.clipboard.writeText(key).then(() => {
+                copyNotice.style.display = 'block';
+                setTimeout(() => {
+                    copyNotice.style.display = 'none';
+                }, 1500);
+            });
+        }
+
+        keyBox.addEventListener('click', copyKey);
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key.toLowerCase() === 'c') {
+                copyKey();
+            }
+        });
+    </script>
+
+    <script src="assets/js/activity-tracker.js"></script>
+</body>
+
+</html>

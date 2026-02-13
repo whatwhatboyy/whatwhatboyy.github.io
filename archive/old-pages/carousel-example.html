@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel Example - whatwhatboy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/js/image-carousel.js"></script>
+    <link rel="stylesheet" href="assets/css/site-fixes.css">
+    <link rel="stylesheet" href="../../assets/css/image-optimization.css">
+</head>
+<body>
+    <div class="main-content">
+        <section class="section">
+            <div class="container">
+                <h1>Image Carousel Example</h1>
+                <p>This demonstrates how to add multiple images to cheat cards with arrow navigation.</p>
+
+                <h2>How to Use the Carousel System</h2>
+                <div class="example-code">
+                    <h3>1. Add the carousel script to your page</h3>
+                    <pre><code>&lt;script src="assets/js/image-carousel.js"&gt;&lt;/script&gt;</code></pre>
+
+                    <h3>2. Add data-carousel-images attribute to your cheat card</h3>
+                    <pre><code>&lt;div class="cheat-card" data-carousel-images='[
+    {"src": "image1.jpg", "alt": "First image"},
+    {"src": "image2.jpg", "alt": "Second image"},
+    {"src": "image3.jpg", "alt": "Third image"}
+]'&gt;</code></pre>
+
+                    <h3>3. The carousel will automatically be created!</h3>
+                </div>
+
+                <h2>Live Example</h2>
+                <div class="cheats-grid">
+                    <!-- Example with multiple images -->
+                    <div class="cheat-card" data-carousel-images='[
+                        {"src": "https://via.placeholder.com/400x300/FF6B6B/FFFFFF?text=Image+1", "alt": "Example Image 1"},
+                        {"src": "https://via.placeholder.com/400x300/4ECDC4/FFFFFF?text=Image+2", "alt": "Example Image 2"},
+                        {"src": "https://via.placeholder.com/400x300/45B7D1/FFFFFF?text=Image+3", "alt": "Example Image 3"},
+                        {"src": "https://via.placeholder.com/400x300/96CEB4/FFFFFF?text=Image+4", "alt": "Example Image 4"}
+                    ]'>
+                        <div class="cheat-image">
+                            <img src="https://via.placeholder.com/400x300/FF6B6B/FFFFFF?text=Image+1" alt="Example Image 1">
+                        </div>
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-images"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Multi-Image Cheat Example</h3>
+                                <p>This cheat card has 4 images that you can navigate through using the arrow buttons</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge safe">Carousel Active</span>
+                            </div>
+                        </div>
+                        <div class="cheat-features">
+                            <div class="features-grid">
+                                <div class="feature">
+                                    <i class="fas fa-arrow-left"></i>
+                                    <span>Previous Image</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-arrow-right"></i>
+                                    <span>Next Image</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Indicators</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span>Touch Swipe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single image for comparison -->
+                    <div class="cheat-card">
+                        <div class="cheat-image">
+                            <img src="https://via.placeholder.com/400x300/F7B731/FFFFFF?text=Single+Image" alt="Single Image Example">
+                        </div>
+                        <div class="cheat-header">
+                            <div class="cheat-icon">
+                                <i class="fas fa-image"></i>
+                            </div>
+                            <div class="cheat-info">
+                                <h3>Single Image Cheat</h3>
+                                <p>This cheat card has only one image (normal behavior)</p>
+                            </div>
+                            <div class="cheat-status">
+                                <span class="status-badge warning">No Carousel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Features</h2>
+                <ul>
+                    <li><strong>Arrow Navigation:</strong> Click left/right arrows to navigate between images</li>
+                    <li><strong>Indicator Dots:</strong> Click dots at the bottom to jump to specific images</li>
+                    <li><strong>Touch Swipe:</strong> Swipe left/right on mobile devices</li>
+                    <li><strong>Auto-advance:</strong> Images advance automatically every 5 seconds</li>
+                    <li><strong>Hover Pause:</strong> Auto-advance pauses when hovering over the carousel</li>
+                    <li><strong>Modal Compatibility:</strong> Images still open in modal when clicked</li>
+                </ul>
+
+                <h2>Dynamic Management</h2>
+                <p>You can also add or remove images programmatically:</p>
+                <pre><code>// Add an image to an existing carousel
+window.imageCarousel.addImageToCarousel(cardElement, {
+    src: "new-image.jpg",
+    alt: "New image"
+});
+
+// Remove an image from a carousel
+window.imageCarousel.removeImageFromCarousel(cardElement, imageIndex);</code></pre>
+            </div>
+        </section>
+    </div>
+
+    <style>
+        .example-code {
+            background: var(--bg-card);
+            padding: var(--spacing-xl);
+            border-radius: var(--border-radius-lg);
+            margin: var(--spacing-xl) 0;
+        }
+
+        .example-code h3 {
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .example-code pre {
+            background: rgba(0, 0, 0, 0.5);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius-md);
+            overflow-x: auto;
+        }
+
+        .example-code code {
+            color: #a8e6cf;
+            font-family: 'Courier New', monospace;
+        }
+
+        .status-badge.warning {
+            background: var(--warning-color);
+        }
+    </style>
+    <script src="assets/js/activity-tracker.js"></script>
+    <script src="../../assets/js/image-optimizer.js"></script>
+</body>
+</html>

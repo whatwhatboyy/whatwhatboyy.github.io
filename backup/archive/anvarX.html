@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Welcome to Brain Damage 101">
+    <link href="css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Scooby on Top</title>
+    <link rel="icon" href="icon.ico">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="swiper%407.4.1/swiper-bundle.min.css">
+    <script data-cfasync="false" src="//d1r9f6frybgiqo.cloudfront.net/?rffrd=1026305"></script>
+  </head>
+  <body style="background-color: black;">
+    <div id="main">
+      <!-- ***** Header Area Start ***** -->
+      <header class="header-area header-sticky">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav class="main-nav">
+                <a href="index.html" target="_blank" class="logo">
+                  <img src="assets/images/logo.png" alt="">
+                </a>
+                <ul class="nav">
+                  <li><a href="index.html" target="_blank" class="active">Home</a></li>
+                  <li><a href="details.html">Help & FAQ</a></li>
+                  <li><a href="https://www.youtube.com/channel/UCusYWir4F6r5AY6A9Ddv7jg" target="_blank">Main YT Channel</a></li>
+                  <li><a href="telegram.html">Telegram<img src="assets/images/profile-header.png" alt=""></a></li>
+                </ul>
+                <a class="menu-trigger">
+                  <span>Menu</span>
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- ***** Header Area End ***** -->
+
+      <!-- Main Banner with Random GIF -->
+      <div class="main-banner" id="banner">
+        <div class="overlay">
+          <div class="header-text">
+            <h6>Welcome to Anvar-X Free</h6>
+            <div class="main-button">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Centered Content Section with Token and Button Group -->
+      <div class="centered-content">
+        <!-- Top Button -->
+        <div class="top-button-group">
+          <button onclick="openLink('https://mega.nz/file/zEJE0bZL#5gSp9N8PUxSvNnEKBjINyC3aFRHHPL4IcA1orue3PEU')" target="_blank">Download Anvar-X</button>
+          <button onclick="openLink('https://anvarcheats.org/')" target="_blank">Anvar-X Site</button>
+        </div>
+
+        <p class="token-text">
+          Copy the Token: 
+          <a href="#" id="copyToken" onclick="copyToClipboard()">AnverX-FREE-U-MAD-6DR3AS22S</a>
+        </p>
+        <div class="button-group">
+          
+          <button onclick="openLink('https://discord.gg/yUp78V8tgM')" target="_blank">Discord</button>
+          <button onclick="openLink(' ')" target="_blank">Telegram</button>
+
+          <button onclick="openLink('https://scoobycheats.xyz/')" target="_blank">Scooby Menu </button>
+          <button onclick="openLink('http://yocool.xyz/')" target="_blank">Cool Menu</button>
+          <button onclick="openLink('kiddionsD.html')" target="_blank">Kiddions Menu</button>
+          <button onclick="openLink('braindamge101.html')" target="_blank">Yim Menu</button>
+          <
+          <button onclick="openLink('https://bstlar.com/F/FSLgta')" target="_blank">FSL (Allow you to Play Public Sessions)</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer with Audio Player -->
+    <footer>
+      <audio id="autoPlayer" src="babyonfire.mp3" autoplay loop></audio>
+    </footer>
+
+
+
+    <script>
+      // Function to copy token to clipboard
+      function copyToClipboard() {
+        const token = "AnverX-FREE-U-MAD-6DR3AS22S";
+        const tempInput = document.createElement("input");
+        tempInput.value = token;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        tempInput.setSelectionRange(0, 99999); // For mobile
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+        alert("Token copied to clipboard!");
+      }
+
+      // Function to open a link in a new tab
+      function openLink(url) {
+        window.open(url, "_blank");
+      }
+
+      // Array of banner GIFs
+      const bannerGifs = [
+        "braindamge/Dtk.gif", // Replace with actual paths to your GIFs
+      ];
+
+      // Function to randomly change the banner GIF
+      function setRandomBannerGif() {
+        const randomIndex = Math.floor(Math.random() * bannerGifs.length);
+        const bannerElement = document.getElementById("banner");
+        bannerElement.style.backgroundImage = `url(${bannerGifs[randomIndex]})`;
+      }
+
+      // Run the random banner function on page load
+      window.onload = setRandomBannerGif;
+
+      // Function to trigger the popup animation
+      function showPopup() {
+        const popup = document.getElementById('popup');
+        popup.classList.add('popup-moving'); // Add animation class
+      }
+
+      // Trigger the popup when the page loads
+      window.onload = function() {
+        setRandomBannerGif();
+        showPopup();
+      };
+    </script>
+
+    <style>
+      /* Sticky Header Styling */
+      .header-area {
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+      }
+
+      /* Main Banner Styling */
+      .main-banner {
+        position: relative;
+        background-size: contain; /* Adjusted to fit the entire GIF */
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+      }
+
+      .header-text {
+        position: relative;
+        z-index: 2;
+        color: white;
+        text-align: center;
+      }
+
+      /* Centered Content */
+      .centered-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        z-index: 2;
+      }
+
+      /* Token Text with Black Outline */
+      .token-text {
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px #000000;
+      }
+
+      /* Popup Styling */
+      .popup {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        z-index: 9999;
+      }
+
+      .popup img {
+        max-width: 100px;
+        max-height: 100px;
+        margin-right: 10px;
+      }
+
+      .popup-text {
+        font-size: 18px;
+      }
+
+      @keyframes popup-move {
+        0% {
+          top: 50%;
+          left: 50%;
+        }
+        25% {
+          top: 10%;
+          left: 90%;
+        }
+        50% {
+          top: 90%;
+          left: 90%;
+        }
+        75% {
+          top: 90%;
+          left: 10%;
+        }
+        100% {
+          top: 50%;
+          left: 50%;
+        }
+      }
+
+      /* Slower Animation Duration */
+      .popup-moving {
+        animation: popup-move 15s linear infinite;
+      }
+    </style>
+      <script src="assets/js/activity-tracker.js"></script>
+</body>
+</html>

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>CryCheats - Garry's Mod Cheats</title>
+  <link rel="icon" href="icon.ico">
+  
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="swiper%407.4.1/swiper-bundle.min.css">
+  
+  <style>
+    :root {
+      --primary-color: #6c5ce7;
+      --secondary-color: #a29bfe;
+      --dark-color: #2d3436;
+      --light-color: #f5f6fa;
+      --success-color: #00b894;
+      --warning-color: #fdcb6e;
+      --danger-color: #e17055;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
+      color: var(--light-color);
+      min-height: 100vh;
+    }
+    
+    .header-area {
+      background: rgba(30, 30, 46, 0.95);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      border-bottom: 1px solid rgba(108, 92, 231, 0.3);
+    }
+    
+    .logo img {
+      max-height: 40px;
+    }
+    
+    .main-nav .nav li a {
+      color: var(--light-color);
+      font-weight: 500;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    
+    .main-nav .nav li a:hover {
+      color: var(--secondary-color);
+    }
+    
+    .main-nav .nav li a:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background-color: var(--secondary-color);
+      transition: width 0.3s ease;
+    }
+    
+    .main-nav .nav li a:hover:after {
+      width: 100%;
+    }
+    
+    .search-input {
+      position: relative;
+    }
+    
+    .search-input input {
+      background: rgba(45, 52, 54, 0.7);
+      border: 1px solid rgba(108, 92, 231, 0.3);
+      border-radius: 30px;
+      color: var(--light-color);
+      padding: 10px 20px;
+      width: 250px;
+      transition: all 0.3s ease;
+    }
+    
+    .search-input input:focus {
+      outline: none;
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 2px rgba(108, 92, 231, 0.2);
+    }
+    
+    .search-input i {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--secondary-color);
+    }
+    
+    .page-content {
+      padding: 40px 0;
+    }
+    
+    .heading-section {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    
+    .heading-section h4 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--light-color);
+      margin-bottom: 10px;
+    }
+    
+    .heading-section h4 em {
+      color: var(--secondary-color);
+      font-style: normal;
+    }
+    
+    .category-badge {
+      display: inline-block;
+      background: var(--primary-color);
+      color: white;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    
+    .gaming-library {
+      background: rgba(30, 30, 46, 0.7);
+      border-radius: 15px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(108, 92, 231, 0.2);
+    }
+    
+    .gaming-library .item {
+      background: rgba(45, 52, 54, 0.5);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(108, 92, 231, 0.1);
+    }
+    
+    .gaming-library .item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+      border-color: var(--primary-color);
+    }
+    
+    .gaming-library .item ul {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .gaming-library .item ul li {
+      list-style: none;
+      flex: 1;
+      min-width: 150px;
+      margin: 10px;
+    }
+    
+    .templatemo-item {
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    
+    .gaming-library .item h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: var(--light-color);
+    }
+    
+    .gaming-library .item span {
+      color: var(--secondary-color);
+      font-size: 0.9rem;
+    }
+    
+    .status-badge {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    
+    .status-working {
+      background: var(--success-color);
+      color: white;
+    }
+    
+    .status-safe {
+      background: var(--warning-color);
+      color: var(--dark-color);
+    }
+    
+    .main-border-button {
+      display: inline-block;
+    }
+    
+    .main-border-button a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: var(--primary-color);
+      color: white;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 2px solid var(--primary-color);
+    }
+    
+    .main-border-button a:hover {
+      background: transparent;
+      color: var(--primary-color);
+    }
+    
+    .video-link {
+      color: var(--secondary-color);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .video-link:hover {
+      color: var(--primary-color);
+    }
+    
+    .divider {
+      text-align: center;
+      margin: 30px 0;
+      position: relative;
+    }
+    
+    .divider:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: rgba(108, 92, 231, 0.3);
+    }
+    
+    .divider h4 {
+      display: inline-block;
+      background: rgba(30, 30, 46, 0.9);
+      padding: 0 20px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    footer {
+      background: rgba(30, 30, 46, 0.9);
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 50px;
+      border-top: 1px solid rgba(108, 92, 231, 0.3);
+    }
+    
+    footer p {
+      margin: 0;
+      color: var(--secondary-color);
+    }
+    
+    footer a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+      .gaming-library .item ul li {
+        min-width: 120px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .gaming-library .item ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .gaming-library .item ul li {
+        margin: 5px 0;
+        min-width: auto;
+        width: 100%;
+      }
+      
+      .search-input {
+        margin-top: 15px;
+        width: 100%;
+      }
+      
+      .search-input input {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main">
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="CryCheats Logo">
+              </a>
+              <!-- ***** Logo End ***** -->
+              
+              <!-- ***** Search End ***** -->
+              <div class="search-input">
+                <form id="search" action="#">
+                  <input type="text" placeholder="Search cheats..." id="searchText" name="searchKeyword">
+                  <i class="fa fa-search"></i>
+                </form>
+              </div>
+              <!-- ***** Search End ***** -->
+              
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="details.html">Help & FAQ</a></li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UCusYWir4F6r5AY6A9Ddv7jg" target="_blank">YouTube Channel</a>
+                </li>
+                <li>
+                  <a href="discord.html" target="_blank">Discord <img src="assets/images/profile-header.png" alt="Discord Icon"></a>
+                </li>
+              </ul>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="page-content">
+            <!-- Breadcrumb -->
+            <div class="mb-4">
+              <a href="index.html" class="text-decoration-none">
+                <i class="fa fa-home"></i> Home Page
+              </a>
+            </div>
+
+            <!-- Main Heading -->
+            <div class="heading-section">
+              <h4><em>Download</em> Garry's Mod Cheats</h4>
+              <p class="lead">Find the best and most updated cheats for Garry's Mod</p>
+            </div>
+
+            <!-- Lua Cheats Section -->
+            <div class="gaming-library">
+              <div class="category-badge">LUA CHEATS</div>
+              
+              <div class="item">
+                <ul>
+                  <li><img src="https://i.imgur.com/QdAunxN.png" alt="Dedpacman" class="templatemo-item"></li>
+                  <li>
+                    <h4>Dedpacman (.lua)</h4>
+                    <span>Simple and effective Lua cheat</span>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" class="video-link">
+                      <i class="fa fa-play-circle"></i> Video Tutorial
+                    </a>
+                  </li>
+                  <li>
+                    <h4>Status:</h4>
+                    <span class="status-badge status-working">Working</span>
+                  </li>
+                  <li>
+                    <div class="main-border-button">
+                      <a href="https://bstlar.com/F/DedpacmanGMODlua" target="_blank">
+                        <i class="fa fa-download"></i> Download
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <ul>
+                  <li><img src="https://i.imgur.com/oajPg7V.png" alt="Time's Hack" class="templatemo-item"></li>
+                  <li>
+                    <h4>Time's Hack (.lua)</h4>
+                    <span>Aimbot/ESP/Movement/Gamemode stuff</span>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/Z6xmeyrfKvg" target="_blank" class="video-link">
+                      <i class="fa fa-play-circle"></i> Video Tutorial
+                    </a>
+                  </li>
+                  <li>
+                    <h4>Status:</h4>
+                    <span class="status-badge status-working">Working</span>
+                  </li>
+                  <li>
+                    <div class="main-border-button">
+                      <a href="https://bstlar.com/F/TimeHackLUA" target="_blank">
+                        <i class="fa fa-download"></i> Download
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <ul>
+                  <li><img src="assets/images/default-cheat.png" alt="Ultimate Lua" class="templatemo-item"></li>
+                  <li>
+                    <h4>Ultimate (.lua)</h4>
+                    <span>HvH/ESP/Aimbot/More features</span>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" class="video-link">
+                      <i class="fa fa-play-circle"></i> Video Tutorial
+                    </a>
+                  </li>
+                  <li>
+                    <h4>Status:</h4>
+                    <span class="status-badge status-working">Working</span>
+                  </li>
+                  <li>
+                    <div class="main-border-button">
+                      <a href="https://bstlar.com/F/Ultimategmodgmod" target="_blank">
+                        <i class="fa fa-download"></i> Download
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="divider">
+              <h4>Best & Updated Cheats</h4>
+            </div>
+
+            <!-- DLL Cheats Section -->
+            <div class="gaming-library">
+              <div class="category-badge">DLL CHEATS</div>
+              
+              <div class="item">
+                <ul>
+                  <li><img src="https://i.imgur.com/5sJmbzX.png" alt="Nixware" class="templatemo-item"></li>
+                  <li>
+                    <h4>Nixware (64bit)</h4>
+                    <span>Lua Loader/Aimbot/ESP/Movement/More</span>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/DdNB629Kuvo" target="_blank" class="video-link">
+                      <i class="fa fa-play-circle"></i> Video Tutorial
+                    </a>
+                  </li>
+                  <li>
+                    <h4>Status:</h4>
+                    <span class="status-badge status-working">Working</span>
+                  </li>
+                  <li>
+                    <div class="main-border-button">
+                      <a href="https://loot-link.com/s?11237566" target="_blank">
+                        <i class="fa fa-download"></i> Download
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <ul>
+                  <li><img src="https://i.imgur.com/hlT50iG.png" alt="FriendlyHack" class="templatemo-item"></li>
+                  <li>
+                    <h4>FriendlyHack x64 & Lua Exec</h4>
+                    <span>Aimbot/ESP/Movement/LuaSupport/More</span>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/fBlqrNSIyUw" target="_blank" class="video-link">
+                      <i class="fa fa-play-circle"></i> Video Tutorial
+                    </a>
+                  </li>
+                  <li>
+                    <h4>Status:</h4>
+                    <span class="status-badge status-working">Working</span>
+                  </li>
+                  <li>
+                    <div class="main-border-button">
+                      <a href="https://bstlar.com/F/FRIENDLYHACKgx64" target="_blank">
+                        <i class="fa fa-download"></i> Download
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <ul>
+                  <li><img src="gmod/cranium.png" alt="Cranium" class="templatemo-item"></li>
+                  <li>
+                    <h4>Cranium</h4>
+                    <span>Dll 64bit (Aimbot/ESP/Movement/LuaSupport/More)</span>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/woz-2X7xKeY" target="_blank" class="video-link">
+                      <i class="fa fa-play-circle"></i> Video Tutorial
+                    </a>
+                  </li>
+                  <li>
+                    <h4>Status:</h4>
+                    <span class="status-badge status-working">Working</span>
+                  </li>
+                  <li>
+                    <div class="main-border-button">
+                      <a href="https://workink.net/vY/lm1q15w5" target="_blank">
+                        <i class="fa fa-download"></i> Download
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <ul>
+                  <li><img src="gmod/cff.png" alt="CFF" class="templatemo-item"></li>
+                  <li>
+                    <h4>CFF</h4>
+                    <span>Dll 32bit (Aimbot/ESP/Movement/LuaSupport/More)</span>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/vdN__9C_uY0" target="_blank" class="video-link">
+                      <i class="fa fa-play-circle"></i> Video Tutorial
+                    </a>
+                  </li>
+                  <li>
+                    <h4>Status:</h4>
+                    <span class="status-badge status-working">Working</span>
+                  </li>
+                  <li>
+                    <div class="main-border-button">
+                      <a href="https://link-center.net/43271/cff-best-gmod-cheat" target="_blank">
+                        <i class="fa fa-download"></i> Download
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <ul>
+                  <li><img src="gmod/gmodSDK.png" alt="GmodSDK" class="templatemo-item"></li>
+                  <li>
+                    <h4>GmodSDK</h4>
+                    <span>Dll 64bit (Aimbot/ESP/Movement/LuaSupport/More)</span>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/VzJ6nNnW0Ss" target="_blank" class="video-link">
+                      <i class="fa fa-play-circle"></i> Video Tutorial
+                    </a>
+                  </li>
+                  <li>
+                    <h4>Status:</h4>
+                    <span class="status-badge status-working">Working</span>
+                  </li>
+                  <li>
+                    <div class="main-border-button">
+                      <a href="https://bstlar.com/F/GMODSDK" target="_blank">
+                        <i class="fa fa-download"></i> Download
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <ul>
+                  <li><img src="gmod/memoriam.gif" alt="Memoriam" class="templatemo-item"></li>
+                  <li>
+                    <h4>Memoriam</h4>
+                    <span>Dll (Aimbot/ESP/Movement/LuaSupport/More)</span>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/QWGlLY7h4yo" target="_blank" class="video-link">
+                      <i class="fa fa-play-circle"></i> Video Tutorial
+                    </a>
+                  </li>
+                  <li>
+                    <h4>Status:</h4>
+                    <span class="status-badge status-working">Working</span>
+                  </li>
+                  <li>
+                    <div class="main-border-button">
+                      <a href="https://bstlar.com/F/memoriam" target="_blank">
+                        <i class="fa fa-download"></i> Download
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <ul>
+                  <li><img src="gmod/desmod.png" alt="Desmod" class="templatemo-item"></li>
+                  <li>
+                    <h4>Desmod</h4>
+                    <span>Dll (HvH/Rage/Legit options)</span>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/NYmP-RihQac" target="_blank" class="video-link">
+                      <i class="fa fa-play-circle"></i> Video Tutorial
+                    </a>
+                  </li>
+                  <li>
+                    <h4>Status:</h4>
+                    <span class="status-badge status-working">Working</span>
+                  </li>
+                  <li>
+                    <div class="main-border-button">
+                      <a href="https://link-hub.net/43271/desmod" target="_blank">
+                        <i class="fa fa-download"></i> Download
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <ul>
+                  <li><img src="gmod/lemiproject.png" alt="Lemi Project" class="templatemo-item"></li>
+                  <li>
+                    <h4>Lemi Project</h4>
+                    <span>Dll (HvH/Rage/Legit options)</span>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/tI_HLYcEjFI" target="_blank" class="video-link">
+                      <i class="fa fa-play-circle"></i> Video Tutorial
+                    </a>
+                  </li>
+                  <li>
+                    <h4>Status:</h4>
+                    <span class="status-badge status-working">Working</span>
+                  </li>
+                  <li>
+                    <div class="main-border-button">
+                      <a href="https://link-target.net/43271/LemiGMOD" target="_blank">
+                        <i class="fa fa-download"></i> Download
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <ul>
+                  <li><img src="assets/images/default-cheat.png" alt="Hacker-Reloaded" class="templatemo-item"></li>
+                  <li>
+                    <h4>Hacker-Reloaded</h4>
+                    <span>Load any Lua script/cheat in any server</span>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/VzJ6nNnW0Ss" target="_blank" class="video-link">
+                      <i class="fa fa-play-circle"></i> Video Tutorial
+                    </a>
+                  </li>
+                  <li>
+                    <h4>Status:</h4>
+                    <span class="status-badge status-safe">Working & Safe</span>
+                  </li>
+                  <li>
+                    <div class="main-border-button">
+                      <a href="https://bstlar.com/F/HackerReloadedGmodddd" target="_blank">
+                        <i class="fa fa-download"></i> Download
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>
+            Copyright © 2036 <a href="#">CryCheats</a> All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+    // Simple search functionality
+    document.getElementById('searchText').addEventListener('keyup', function() {
+      const searchTerm = this.value.toLowerCase();
+      const items = document.querySelectorAll('.gaming-library .item');
+      
+      items.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        if (text.includes(searchTerm)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  </script>
+    <script src="assets/js/activity-tracker.js"></script>
+</body>
+</html>

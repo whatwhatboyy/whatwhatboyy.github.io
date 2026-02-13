@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | whatwhatboyy</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .error-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-lg);
+            text-align: center;
+        }
+
+        .error-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            color: var(--accent-red);
+            line-height: 1;
+            margin-bottom: var(--spacing-md);
+            text-shadow: 0 0 20px rgba(220, 38, 38, 0.3);
+        }
+
+        .error-title {
+            font-size: 2rem;
+            margin-bottom: var(--spacing-md);
+            color: var(--text-primary);
+        }
+
+        .error-description {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-xl);
+            line-height: 1.6;
+        }
+
+        .error-actions {
+            display: flex;
+            gap: var(--spacing-md);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .error-btn {
+            padding: 12px 24px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .error-btn-primary {
+            background: var(--accent-red);
+            color: white;
+        }
+
+        .error-btn-primary:hover {
+            background: #b91c1c;
+            transform: translateY(-2px);
+        }
+
+        .error-btn-secondary {
+            background: var(--card-bg);
+            color: var(--text-primary);
+            border: 2px solid var(--border-color);
+        }
+
+        .error-btn-secondary:hover {
+            border-color: var(--accent-red);
+            transform: translateY(-2px);
+        }
+
+        .popular-links {
+            margin-top: var(--spacing-xl);
+            padding-top: var(--spacing-xl);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .popular-links h3 {
+            font-size: 1.2rem;
+            margin-bottom: var(--spacing-md);
+            color: var(--text-primary);
+        }
+
+        .popular-links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: var(--spacing-sm);
+            margin-top: var(--spacing-md);
+        }
+
+        .popular-link {
+            padding: 12px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .popular-link:hover {
+            border-color: var(--accent-red);
+            background: var(--hover-bg);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 5rem;
+            }
+
+            .error-title {
+                font-size: 1.5rem;
+            }
+
+            .error-description {
+                font-size: 1rem;
+            }
+
+            .error-actions {
+                flex-direction: column;
+            }
+
+            .error-btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .popular-links-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .redirect-info {
+            margin-top: var(--spacing-md);
+            padding: var(--spacing-md);
+            background: rgba(220, 38, 38, 0.1);
+            border-radius: var(--border-radius);
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .countdown {
+            font-weight: 700;
+            color: var(--accent-red);
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1 class="error-title">Page Not Found</h1>
+            <p class="error-description">
+                The page you're looking for doesn't exist or has been moved.
+                Don't worry, you can find what you're looking for using the links below.
+            </p>
+
+            <div class="error-actions">
+                <a href="/" class="error-btn error-btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    </svg>
+                    Go Home
+                </a>
+                <a href="javascript:history.back()" class="error-btn error-btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                    Go Back
+                </a>
+            </div>
+
+            <div class="popular-links">
+                <h3>Popular Pages</h3>
+                <div class="popular-links-grid">
+                    <a href="/profile.html" class="popular-link">Profile</a>
+                    <a href="/games/gta/index.html" class="popular-link">GTA V Mods</a>
+                    <a href="/games/cs2/index.html" class="popular-link">CS2 Cheats</a>
+                    <a href="/games/rdr2/index.html" class="popular-link">RDR2 Mods</a>
+                    <a href="/games/cod/index.html" class="popular-link">COD Tools</a>
+                    <a href="/youtube.html" class="popular-link">YouTube</a>
+                </div>
+            </div>
+
+            <div class="redirect-info" id="redirectInfo" style="display: none;">
+                Redirecting to home in <span class="countdown" id="countdown">10</span> seconds...
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let countdown = 10;
+        const countdownEl = document.getElementById('countdown');
+        const redirectInfo = document.getElementById('redirectInfo');
+
+        setTimeout(() => {
+            redirectInfo.style.display = 'block';
+            countdownEl.textContent = countdown;
+
+            const interval = setInterval(() => {
+                countdown--;
+                countdownEl.textContent = countdown;
+
+                if (countdown <= 0) {
+                    clearInterval(interval);
+                    window.location.href = '/';
+                }
+            }, 1000);
+        }, 5000);
+
+        const redirectMap = {
+            '/game/': '/games/',
+            '/download/': '/downloads/',
+            '/mod/': '/games/',
+            '/cheat/': '/games/',
+            '/tool/': '/tools/',
+        };
+
+        const currentPath = window.location.pathname.toLowerCase();
+        for (const [pattern, redirect] of Object.entries(redirectMap)) {
+            if (currentPath.includes(pattern)) {
+                window.location.href = redirect;
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

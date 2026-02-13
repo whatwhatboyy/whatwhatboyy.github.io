@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Welcome to Scooby Free Key Page & This Means Pain coming back???">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Scooby on Top</title>
+    <link rel="icon" href="icon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        :root {
+            --primary-color: #ff5722;
+            --secondary-color: #2196f3;
+            --dark-bg: #0a0a0a;
+            --card-bg: rgba(30, 30, 30, 0.8);
+        }
+        
+        body {
+            background-color: var(--dark-bg);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjMWExYTFhIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiMxZDFkMWQiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=');
+        }
+        
+        /* Header Styles */
+        .navbar {
+            background-color: rgba(10, 10, 10, 0.95) !important;
+            backdrop-filter: blur(10px);
+            padding: 10px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-brand img {
+            height: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+            margin: 0 10px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .nav-link.active {
+            color: var(--primary-color) !important;
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding-top: 80px;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            transition: background-image 1s ease;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9));
+            z-index: -1;
+        }
+        
+        .hero-content {
+            text-align: center;
+            z-index: 1;
+            padding: 20px;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #ccc;
+        }
+        
+        /* Token Box */
+        .token-container {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 600px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .token-label {
+            font-size: 1rem;
+            color: #aaa;
+            margin-bottom: 10px;
+        }
+        
+        .token-display {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.3);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .token-text {
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin: 0;
+            color: var(--primary-color);
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .copy-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .copy-btn:hover {
+            background: #e64a19;
+            transform: translateY(-2px);
+        }
+        
+        /* Buttons */
+        .btn-custom {
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            margin: 10px 5px;
+            border: none;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary-custom {
+            background: linear-gradient(45deg, var(--primary-color), #ff8a65);
+            color: white;
+        }
+        
+        .btn-secondary-custom {
+            background: rgba(255,255,255,0.1);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .btn-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .btn-custom::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: all 0.5s ease;
+        }
+        
+        .btn-custom:hover::after {
+            left: 100%;
+        }
+        
+        /* Popup */
+        .floating-popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+            z-index: 1000;
+            animation: float 6s ease-in-out infinite;
+            cursor: pointer;
+            border: 1px solid rgba(255,255,255,0.1);
+            max-width: 300px;
+            transition: all 0.3s ease;
+        }
+        
+        .floating-popup:hover {
+            transform: translateY(-5px);
+        }
+        
+        .popup-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+        
+        .popup-text {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        /* Features Section */
+        .features-section {
+            padding: 80px 0;
+            background: rgba(0,0,0,0.5);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .feature-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+            height: 100%;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .feature-description {
+            color: #ccc;
+        }
+        
+        /* Footer */
+        .footer {
+            background: rgba(10, 10, 10, 0.95);
+            padding: 40px 0 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .footer-logo {
+            height: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .social-icons {
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: white;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .token-display {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .copy-btn {
+                margin-top: 15px;
+                width: 100%;
+            }
+            
+            .floating-popup {
+                bottom: 10px;
+                right: 10px;
+                left: 10px;
+                max-width: none;
+            }
+        }
+        
+        /* Animations */
+        .animate-pop-in {
+            animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        @keyframes popIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .delay-1 {
+            animation-delay: 0.2s;
+        }
+        
+        .delay-2 {
+            animation-delay: 0.4s;
+        }
+        
+        .delay-3 {
+            animation-delay: 0.6s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Scooby on Top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="details.html">Help & FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.youtube.com/channel/UCusYWir4F6r5AY6A9Ddv7jg" target="_blank">Main YT Channel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="telegram.html">Telegram <img src="assets/images/profile-header.png" alt="" height="20"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg" id="heroBackground"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="hero-title animate-pop-in">Scooby on Top</h1>
+                    <p class="hero-subtitle animate-pop-in delay-1">Welcome to Scooby Free Key Page & This Means Pain coming back???</p>
+                    
+                    <div class="token-container animate-pop-in delay-2">
+                        <p class="token-label">Your Free Access Key:</p>
+                        <div class="token-display">
+                            <p class="token-text" id="tokenText">UMAD-SCOOBYONTOP-FREE-bvrfCS-VRGFCS2</p>
+                            <button class="copy-btn" onclick="copyToClipboard()">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                        <p class="text-success text-center" id="copySuccess" style="display: none;">
+                            <i class="fas fa-check-circle"></i> Token copied to clipboard!
+                        </p>
+                    </div>
+                    
+                    <div class="animate-pop-in delay-3">
+                        <button class="btn btn-custom btn-primary-custom" onclick="openLink('https://scoobycheats.net/Scooby.zip')">
+                            <i class="fas fa-download"></i> Download Scooby's Loader
+                        </button>
+                        
+                        <div class="mt-4">
+                            <button class="btn btn-custom btn-secondary-custom" onclick="openLink('https://discord.gg/yUp78V8tgM')">
+                                <i class="fab fa-discord"></i> Discord
+                            </button>
+                            <button class="btn btn-custom btn-secondary-custom" onclick="openLink('https://t.me/ScoobyOnTop')">
+                                <i class="fab fa-telegram"></i> Telegram
+                            </button>
+                            <button class="btn btn-custom btn-secondary-custom" onclick="openLink('https://scoobycheats.net/')">
+                                <i class="fas fa-globe"></i> Main Site
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Scooby?</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="feature-title">High Performance</h3>
+                        <p class="feature-description">Optimized for the best gaming experience with minimal resource usage.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Secure & Undetected</h3>
+                        <p class="feature-description">Regular updates to ensure maximum security and undetectability.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="feature-title">Active Community</h3>
+                        <p class="feature-description">Join thousands of satisfied users in our Discord and Telegram communities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="assets/images/logo.png" alt="Scooby on Top" class="footer-logo">
+                    <p>Providing premium gaming experiences with cutting-edge technology.</p>
+                    <div class="social-icons">
+                        <a href="https://discord.gg/yUp78V8tgM" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="https://t.me/ScoobyOnTop" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCusYWir4F6r5AY6A9Ddv7jg" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="details.html">Help & FAQ</a></li>
+                        <li><a href="https://scoobycheats.net/">Main Site</a></li>
+                        <li><a href="telegram.html">Telegram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="https://scoobycheats.net/Scooby.zip">Download Loader</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Support Center</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center copyright">
+                <p>&copy; 2023 Scooby on Top. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Popup -->
+    <a href="https://scoobycheats.net/" target="_blank" class="floating-popup">
+        <img src="braindamge/scooby.png" alt="Scooby" class="popup-img">
+        <div class="popup-text">Scooby on top - Click to visit our site!</div>
+    </a>
+
+    <!-- Audio Player -->
+    <audio id="autoPlayer" src="nineyes.mp3" loop></audio>
+    <div class="audio-controls" style="position: fixed; bottom: 10px; left: 10px; z-index: 1000;">
+        <button class="btn btn-sm btn-secondary" onclick="toggleAudio()">
+            <i class="fas fa-volume-mute" id="audioIcon"></i>
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Function to copy token to clipboard
+        function copyToClipboard() {
+            const token = "UMAD-SCOOBYONTOP-FREE-bvrfCS-VRGFCS2";
+            navigator.clipboard.writeText(token).then(() => {
+                const successMsg = document.getElementById('copySuccess');
+                successMsg.style.display = 'block';
+                setTimeout(() => {
+                    successMsg.style.display = 'none';
+                }, 3000);
+            });
+        }
+
+        // Function to open a link in a new tab
+        function openLink(url) {
+            window.open(url, "_blank");
+        }
+
+        // Array of banner images
+        const bannerImages = [
+            "braindamge/scoobybg.png",
+            // Add more image paths here
+        ];
+
+        // Function to change the banner image
+        function setBannerImage() {
+            const randomIndex = Math.floor(Math.random() * bannerImages.length);
+            const bannerElement = document.getElementById("heroBackground");
+            bannerElement.style.backgroundImage = `url(${bannerImages[randomIndex]})`;
+        }
+
+        // Audio control
+        const audio = document.getElementById('autoPlayer');
+        const audioIcon = document.getElementById('audioIcon');
+        
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+                audioIcon.classList.remove('fa-volume-mute');
+                audioIcon.classList.add('fa-volume-up');
+            } else {
+                audio.pause();
+                audioIcon.classList.remove('fa-volume-up');
+                audioIcon.classList.add('fa-volume-mute');
+            }
+        }
+
+        // Initialize page
+        window.onload = function() {
+            setBannerImage();
+            
+            // Try to play audio with user interaction
+            document.body.addEventListener('click', function() {
+                if (audio.paused) {
+                    audio.play().catch(e => {
+                        console.log('Audio play failed:', e);
+                    });
+                }
+            }, { once: true });
+        };
+    </script>
+    <script src="assets/js/activity-tracker.js"></script>
+</body>
+</html>
