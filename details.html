@@ -1,155 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently asked questions about gaming cheats, mods, and tools. Learn about antivirus false positives, safety tips, and how we keep everything free.">
+    <meta name="keywords" content="cheat FAQ, mod help, antivirus false positive, gaming mods help, free cheats FAQ">
+    <meta name="author" content="whatwhatboy">
+    <meta property="og:title" content="Help & FAQ - whatwhatboy's">
+    <meta property="og:description" content="Frequently asked questions about gaming cheats, mods, and tools.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://whatwhatboyy.github.io/assets/images/logo.png">
+    <title>Help & FAQ | whatwhatboy's</title>
 
-  <head>
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=2.0.0">
+    <link rel="stylesheet" href="assets/css/site-fixes.css?v=2.0.0">
+    <link rel="stylesheet" href="assets/css/dark-theme-enhancements.css?v=2.0.0">
+    <link rel="stylesheet" href="assets/css/image-optimization.css?v=2.0.0">
+    <link rel="stylesheet" href="assets/css/mobile-tv-fixes.css?v=2.0.0">
+    <script src="assets/js/anti-adblock.js?v=2.0.0"></script>
+    <style>
+        .faq-grid {
+            display: grid;
+            gap: 1.25rem;
+            margin: 2rem 0;
+        }
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        .faq-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 0.75rem;
+            padding: 1.5rem 1.75rem;
+            transition: all 0.3s ease;
+        }
 
-    <link href="css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="icon" href="icon.ico">
-    <title>CryCheats</title>
+        .faq-card:hover {
+            border-color: rgba(99, 102, 241, 0.3);
+            background: rgba(255, 255, 255, 0.06);
+        }
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        .faq-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
 
+        .faq-card h3 i {
+            color: #6366f1;
+            font-size: 1.1rem;
+        }
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="swiper%407.4.1/swiper-bundle.min.css">
+        .faq-card p {
+            color: #999;
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
 
-    <script data-cfasync="false" src="//d1sfclevshpbro.cloudfront.net/?lcfsd=999080"></script>
-    
-    <link rel="stylesheet" href="assets/css/image-optimization.css">
-  </head>
+        .discord-cta {
+            background: linear-gradient(135deg, rgba(88, 101, 242, 0.15), rgba(99, 102, 241, 0.08));
+            border: 1px solid rgba(88, 101, 242, 0.3);
+            border-radius: 0.75rem;
+            padding: 2rem;
+            text-align: center;
+            margin: 2rem 0;
+        }
 
+        .discord-cta h3 {
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        .discord-cta p {
+            color: #999;
+            font-size: 0.95rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .discord-cta .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.75rem;
+            background: linear-gradient(135deg, #5865F2, #6366f1);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .discord-cta .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(88, 101, 242, 0.4);
+        }
+    </style>
+</head>
 <body>
-
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
-  <!-- ***** Preloader End ***** -->
-
- <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav class="main-nav">
-              <!-- ***** Logo Start ***** -->
-              <a href="index.html" class="logo">
-                <img src="assets/images/logo.png" alt="">
-              </a>
-              <!-- ***** Logo End ***** -->
-              <!-- ***** Search End ***** -->
-              <div class="search-input">
-                <form id="search" action="#">
-                  <input type="text" placeholder="Type Something" id="searchText" name="searchKeyword" onkeypress="handle">
-                  <i class="fa fa-search"></i>
-                </form>
-              </div>
-              <!-- ***** Search End ***** -->
-              <!-- ***** Menu Start ***** -->
-              <ul class="nav">
-                <li><a href="index.html">Home</a></li>
-           
-                <li><a href="details.html" class="active">Help & FAQ</a></li>
-                <li>
-                  <a href="discord.html">Discord <img src="assets/images/profile-header.png" alt=""></a>
-                </li>
-              </ul>
-              <a class="menu-trigger">
-                <span>Menu</span>
-              </a>
-              <!-- ***** Menu End ***** -->
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="page-content">
-
-
-          <div class="gaming-library">
-            <div class="col-lg-12">
-              <div class="heading-section">
-                <h4><em><a href="index.html"target="_blank" rel="noopener noreferrer">Home Page</a></em> </h4>
-              </div>
-
-          <!-- ***** Featured Start ***** -->
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="feature-banner header-text">
-                <div class="row">
-                  <div class="col-lg-4">
-                   
-                    <div class="col-lg-12">
-                      <p>Why do I have to disable my antivirus?<br>Cheats are often detected by antiviruses as viruses even tho they are not (its called false positive)<br><br></p>
-                      <p>Are all the cheats safe and undetected?<br>When you are modding there is always a risk. We are trying to bring you only the best mods out there and make sure you wont get banned.<br><br></p>
-<p>How do you earn if all the cheats are free?<br>We use ads in order to keep the content free. Support us by disabling your adblocker! Thanks.<br><br></p>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="main-border-button">
-                        <a href="https://discord.gg/DsthXP9EK4">Join Discord for More Help</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-brand">
+                <img src="assets/images/logo.png" alt="Logo" class="sidebar-logo">
+                <span class="sidebar-title">whatwhatboy</span>
             </div>
-          </div>
-          <!-- ***** Details End ***** -->
-
-         
-
+            <button class="sidebar-toggle" id="sidebar-toggle">
+                <i class="fas fa-times"></i>
+            </button>
         </div>
-      </div>
+
+        <nav class="sidebar-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a></li>
+                <li><a href="profile.html" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a></li>
+                <li><a href="index.html#discord" class="nav-link">
+                    <i class="fab fa-discord"></i>
+                    <span>Discord Servers</span>
+                </a></li>
+                <li><a href="index.html#games" class="nav-link">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Free Cheats</span>
+                </a></li>
+                <li><a href="youtube.html" class="nav-link">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a></li>
+                <li><a href="tools/index.html" class="nav-link">
+                    <i class="fas fa-tools"></i>
+                    <span>Tools</span>
+                </a></li>
+                <li><a href="index.html#console" class="nav-link">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Console</span>
+                </a></li>
+                <li><a href="help.html" class="nav-link active">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Help & FAQ</span>
+                </a></li>
+                <li><a href="safety.html" class="nav-link">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Safety</span>
+                </a></li>
+            </ul>
+
+            <div class="sidebar-social">
+                <h4>Connect With Me</h4>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/channel/UCusYWir4F6r5AY6A9Ddv7jg" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="profile.html" title="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="profile.html" title="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="profile.html" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="profile.html" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
     </div>
-  </div>
-  
-  <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <p>
-              Copyright © 2036 <a href="#">SkyedCheats</a> All rights
-              reserved.
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
 
+    <!-- Mobile Menu Button -->
+    <button class="mobile-sidebar-btn" id="mobile-sidebar-btn">
+        <i class="fas fa-bars"></i>
+    </button>
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Main Content -->
+    <div class="main-content" id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Help & FAQ</h1>
+                <p class="hero-subtitle">Common questions about cheats, mods, and how to stay safe while using them.</p>
+            </div>
+        </section>
 
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/tabs.js"></script>
-  <script src="assets/js/popup.js"></script>
-  <script src="assets/js/custom.js"></script>
+        <!-- FAQ Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Find answers to the most common questions</p>
+                </div>
 
-      <script src="assets/js/activity-tracker.js"></script>
-    <script src="assets/js/image-optimizer.js"></script>
+                <div class="faq-grid">
+                    <div class="faq-card">
+                        <h3><i class="fas fa-shield-virus"></i> Why do I have to disable my antivirus?</h3>
+                        <p>Cheats are often detected by antivirus programs as viruses even though they are not. This is called a "false positive." Cheat software uses injection techniques similar to malware, which triggers security warnings. Always scan files with VirusTotal before running them, and only download from trusted sources.</p>
+                    </div>
+
+                    <div class="faq-card">
+                        <h3><i class="fas fa-user-shield"></i> Are all the cheats safe and undetected?</h3>
+                        <p>When you are modding there is always a risk. We try to bring you only the best mods out there and make sure you won't get banned. However, no cheat is 100% undetectable forever. Always use cheats responsibly and check our Safety page for best practices.</p>
+                    </div>
+
+                    <div class="faq-card">
+                        <h3><i class="fas fa-hand-holding-usd"></i> How do you earn if all the cheats are free?</h3>
+                        <p>We use ads in order to keep the content free. Support us by disabling your adblocker! Your support helps us maintain the website and provide updated, quality content for the community. Thanks!</p>
+                    </div>
+                </div>
+
+                <div class="discord-cta">
+                    <h3><i class="fab fa-discord"></i> Need More Help?</h3>
+                    <p>Join our Discord community for live support and to connect with other users.</p>
+                    <a href="https://discord.gg/DsthXP9EK4" target="_blank" rel="noopener noreferrer" class="cta-btn">
+                        <i class="fab fa-discord"></i> Join Discord
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js?v=2.0.0"></script>
+    <script src="assets/js/mobile-enhancements.js"></script>
+    <script src="assets/js/global-search.js"></script>
+    <script src="assets/js/error-handling.js"></script>
+    <script src="assets/js/performance-optimizer.js"></script>
+    <script src="assets/js/dark-mode.js?v=2.0.0"></script>
+    <script src="assets/js/activity-tracker.js?v=2.0.0"></script>
+    <script src="assets/js/image-optimizer.js?v=2.0.0"></script>
 </body>
-
 </html>

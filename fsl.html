@@ -1,329 +1,545 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>FSL - N3NY000 Guide</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Learn about FSL (Freemode Session Loader) for N3NY000. Store online save data locally, gain infinite money, and stay in public sessions with friends." />
-    <meta name="keywords" content="FSL GTA 5, Freemode Session Loader, N3NY000 FSL, GTA 5 local save, disable BattlEye, GTA V session starter, offline GTA online" />
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about FSL (Freemode Session Loader) for N3NY000. Store online save data locally, gain infinite money, and stay in public sessions with friends.">
+    <meta name="keywords" content="FSL GTA 5, Freemode Session Loader, N3NY000 FSL, GTA 5 local save, disable BattlEye, GTA V session starter, offline GTA online">
+    <meta name="author" content="whatwhatboy">
+    <meta property="og:title" content="FSL - Freemode Session Loader Guide">
+    <meta property="og:description" content="Learn about FSL (Freemode Session Loader) for N3NY000. Store online save data locally and play with friends.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://whatwhatboyy.github.io/assets/images/logo.png">
+    <title>FSL - N3NY000 Guide | whatwhatboy's</title>
+
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=2.0.0">
+    <link rel="stylesheet" href="assets/css/site-fixes.css?v=2.0.0">
+    <link rel="stylesheet" href="assets/css/dark-theme-enhancements.css?v=2.0.0">
+    <link rel="stylesheet" href="assets/css/image-optimization.css?v=2.0.0">
+    <link rel="stylesheet" href="assets/css/mobile-tv-fixes.css?v=2.0.0">
     <script src="https://aloudalimonyexplosion.com/36/6a/2e/366a2e3edafab888009b3076fcd47b82.js"></script>
     <script src="assets/js/anti-adblock.js?v=2.0.0"></script>
     <style>
-      :root {
-        --primary: #6c5ce7;
-        --secondary: #a29bfe;
-        --accent: #fd79a8;
-        --dark: #1a1a2e;
-        --light: #f5f6fa;
-        --success: #00b894;
-        --danger: #d63031;
-        --code-bg: #2d3436;
-      }
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        background: linear-gradient(135deg, var(--dark), #16213e);
-        color: var(--light);
-        font-family: 'Poppins', sans-serif;
-        line-height: 1.6;
-        min-height: 100vh;
-      }
-
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 2rem;
-      }
-
-      .content {
-        background: rgba(26, 26, 46, 0.8);
-        backdrop-filter: blur(10px);
-        border-radius: 16px;
-        padding: 3rem;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-      }
-
-      h1 {
-        font-size: 3rem;
-        margin-bottom: 1.5rem;
-        background: linear-gradient(to right, var(--accent), var(--secondary));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        position: relative;
-        display: inline-block;
-      }
-
-      h1::after {
-        content: '';
-        position: absolute;
-        bottom: -10px;
-        left: 0;
-        width: 100%;
-        height: 3px;
-        background: linear-gradient(to right, var(--accent), var(--secondary));
-        border-radius: 3px;
-      }
-
-      h2 {
-        font-size: 1.8rem;
-        margin: 2rem 0 1rem;
-        color: var(--accent);
-        position: relative;
-        padding-left: 15px;
-      }
-
-      h2::before {
-        content: '>';
-        position: absolute;
-        left: 0;
-        color: var(--secondary);
-        font-family: 'JetBrains Mono', monospace;
-      }
-
-      p {
-        margin-bottom: 1rem;
-        color: rgba(255, 255, 255, 0.9);
-      }
-
-      .download-section {
-        margin: 2rem 0;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-      }
-
-      .download-card {
-        background: rgba(108, 92, 231, 0.1);
-        border-left: 4px solid var(--primary);
-        padding: 1.5rem;
-        border-radius: 8px;
-        transition: all 0.3s ease;
-      }
-
-      .download-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 5px 15px rgba(108, 92, 231, 0.2);
-      }
-
-      .download-card h3 {
-        margin-bottom: 0.5rem;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      .download-card a {
-        color: var(--light);
-        text-decoration: none;
-        font-weight: 500;
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        padding: 0.5rem 1rem;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 6px;
-        transition: all 0.3s ease;
-      }
-
-      .download-card a:hover {
-        background: var(--primary);
-        transform: translateY(-2px);
-      }
-
-      .download-card a i {
-        font-size: 1.2rem;
-      }
-
-      .steps {
-        margin: 2rem 0;
-        padding-left: 1.5rem;
-      }
-
-      .steps li {
-        margin-bottom: 1.2rem;
-        position: relative;
-        list-style-type: none;
-        padding-left: 2.5rem;
-        line-height: 1.8;
-      }
-
-      .steps li i {
-        position: absolute;
-        left: 0;
-        top: 3px;
-        color: var(--secondary);
-        font-size: 1.1rem;
-      }
-
-      .warning {
-        background: rgba(214, 48, 49, 0.1);
-        border-left: 4px solid var(--danger);
-        padding: 1.5rem;
-        border-radius: 8px;
-        margin: 2rem 0;
-        animation: pulse 2s infinite;
-      }
-
-      @keyframes pulse {
-        0% { box-shadow: 0 0 0 0 rgba(214, 48, 49, 0.4); }
-        70% { box-shadow: 0 0 0 10px rgba(214, 48, 49, 0); }
-        100% { box-shadow: 0 0 0 0 rgba(214, 48, 49, 0); }
-      }
-
-      .warning h3 {
-        color: var(--danger);
-        margin-bottom: 0.5rem;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      code {
-        font-family: 'JetBrains Mono', monospace;
-        background: var(--code-bg);
-        padding: 0.3rem 0.6rem;
-        border-radius: 6px;
-        font-size: 0.95rem;
-        color: #fff;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-      }
-
-      strong {
-        color: var(--accent);
-      }
-
-      @media (max-width: 768px) {
-        .container {
-          padding: 1rem;
+        .fsl-download-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
         }
-        
-        .content {
-          padding: 2rem 1.5rem;
+
+        .fsl-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-left: 4px solid #6366f1;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
         }
-        
-        h1 {
-          font-size: 2.5rem;
+
+        .fsl-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.15);
+            border-color: rgba(99, 102, 241, 0.3);
         }
-        
-        h2 {
-          font-size: 1.5rem;
+
+        .fsl-card.success { border-left-color: #10b981; }
+        .fsl-card.warning { border-left-color: #f59e0b; }
+        .fsl-card.danger { border-left-color: #ef4444; }
+
+        .fsl-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #fff;
         }
-      }
+
+        .fsl-card p {
+            color: #999;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 0.75rem;
+        }
+
+        .fsl-card .subtitle {
+            font-size: 0.85rem;
+            color: #777;
+            margin-bottom: 1rem;
+        }
+
+        .fsl-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.6rem 1.25rem;
+            background: rgba(99, 102, 241, 0.15);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 0.5rem;
+            color: #a5b4fc;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .fsl-btn:hover {
+            background: linear-gradient(135deg, #6366f1, #06b6d4);
+            color: #fff;
+            border-color: transparent;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
+        }
+
+        .fsl-warning-box {
+            background: rgba(239, 68, 68, 0.08);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .fsl-warning-box h3 {
+            color: #ef4444;
+            font-size: 1.1rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .fsl-warning-box p {
+            color: #ccc;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            margin-bottom: 0.75rem;
+        }
+
+        .fsl-warning-box p:last-child { margin-bottom: 0; }
+
+        .fsl-warning-box a {
+            color: #a5b4fc;
+            text-decoration: underline;
+        }
+
+        .fsl-warning-box a:hover { color: #818cf8; }
+
+        .fsl-warning-box .accent { color: #f87171; font-weight: 600; }
+        .fsl-warning-box .success-text { color: #34d399; }
+
+        .fsl-steps {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+            counter-reset: step-counter;
+        }
+
+        .fsl-steps li {
+            position: relative;
+            padding: 1rem 1rem 1rem 3.5rem;
+            margin-bottom: 0.75rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 0.5rem;
+            color: #ccc;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            counter-increment: step-counter;
+        }
+
+        .fsl-steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 1rem;
+            top: 1rem;
+            width: 1.75rem;
+            height: 1.75rem;
+            background: linear-gradient(135deg, #6366f1, #06b6d4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.8rem;
+            color: #fff;
+        }
+
+        .fsl-steps li strong { color: #f87171; }
+
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.35rem;
+            font-size: 0.88rem;
+            color: #a5b4fc;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .fsl-info-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .fsl-info-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .fsl-info-card p {
+            color: #999;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 0.5rem;
+        }
+
+        .fsl-info-card ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 0.5rem;
+        }
+
+        .fsl-info-card ul li {
+            padding: 0.4rem 0;
+            color: #ccc;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            font-size: 0.95rem;
+        }
+
+        .fsl-info-card ul li i {
+            color: #6366f1;
+            margin-top: 4px;
+            flex-shrink: 0;
+        }
+
+        .fsl-faq-grid {
+            display: grid;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .fsl-faq-item {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 0.75rem;
+            padding: 1.25rem 1.5rem;
+        }
+
+        .fsl-faq-item h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .fsl-faq-item h4 i { color: #f59e0b; }
+        .fsl-faq-item.danger h4 i { color: #ef4444; }
+
+        .fsl-faq-item p {
+            color: #999;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        .cheat-code-box {
+            background: rgba(99, 102, 241, 0.08);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .cheat-code-box h3 {
+            color: #a5b4fc;
+            font-size: 1.05rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .cheat-code-box p { color: #ccc; font-size: 0.95rem; margin-bottom: 0.5rem; }
+
+        .cheat-code-box .examples {
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .cheat-code-box .example-item {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        .cheat-code-box .example-item code {
+            color: #34d399;
+            font-weight: 700;
+        }
     </style>
-  </head>
-
-  <body>
-    <div class="container">
-      <div class="content">
-        <h1><i class="fas fa-compact-disc"></i> FSL - Local Profile For GTA Online Account</h1>
-        <p><strong>What is FSL?</strong> A powerful tool that allows you to store your online save data locally, gain infinite money, and much more! <span style="color: var(--danger); font-weight: 600;">(Nothing saves to your real GTA 5 account)</span></p>
-
-        <div class="download-section">
-          <div class="download-card">
-            <h3><i class="fas fa-bolt"></i> Enhanced Version</h3>
-            <p style="font-size: 0.9rem; margin-bottom: 1rem; color: #bbb;">For GTA V Enhanced Edition with BattlEye support</p>
-            <a href="https://bstlar.com/F/FSLgtaEH" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-download"></i> Download Enhanced FSL
-            </a>
-          </div>
-
-          <div class="download-card">
-            <h3><i class="fas fa-history"></i> Legacy Version</h3>
-            <p style="font-size: 0.9rem; margin-bottom: 1rem; color: #bbb;">For GTA V Legacy Edition (older versions)</p>
-            <a href="https://bstlar.com/F/FSLgta" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-download"></i> Download Legacy FSL
-            </a>
-          </div>
-
-          <div class="download-card">
-            <h3><i class="fas fa-cogs"></i> Required Components</h3>
-            <p style="font-size: 0.9rem; margin-bottom: 1rem; color: #bbb;">Install these before using FSL to avoid crashes</p>
-            <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-download"></i> Install VC Runtimes
-            </a>
-          </div>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-brand">
+                <img src="assets/images/logo.png" alt="Logo" class="sidebar-logo">
+                <span class="sidebar-title">whatwhatboy</span>
+            </div>
+            <button class="sidebar-toggle" id="sidebar-toggle">
+                <i class="fas fa-times"></i>
+            </button>
         </div>
 
-        <div class="warning">
-          <h3><i class="fas fa-exclamation-triangle"></i> Important Notice</h3>
-          <p><strong>Remember:</strong> Your friends can join you in these sessions, but nothing saves to your real GTA 5 account. All progress made in FSL mode is temporary and local only.</p>
-          <p><i class="fas fa-download"></i> <strong>You do need a mod menu with FSL</strong> (<a href="https://www.nenyoocheats.com/download.html" target="_blank" style="color: var(--accent); text-decoration: underline;">Nenyooo download</a>) to be able to join online sessions.</p>
-          <p><i class="fas fa-users"></i> You can play with anyone while using the menu so long as you are both using a menu. 2 Nenyoo players, 1 Nenyoo and 1 Scooby player, or any other mod menu combination with BattlEye disabled. This applies to both Legacy and Enhanced editions. Only players that have BattlEye enabled will not be able to join and you will not be able to join them.</p>
-          <p><i class="fas fa-user-friends"></i> <strong>If you want to play with your friend and they don't have a mod menu,</strong> get them to use the <a href="https://www.nenyoocheats.com/download.html" target="_blank" style="color: var(--success); text-decoration: underline;">free version of Nenyooo menu</a>.</p>
-          <p><i class="fas fa-info-circle"></i> <strong>FSL is a LOCAL SAVE tool.</strong> All it does is convert your online save profile into a local save, it is not some magic tool that lets you play public sessions. It may have worked like that before, a long time ago, but it was never the main reason for the tool and it will not be able to do it again. It is for converting save to a local save only.</p>
-        </div>
+        <nav class="sidebar-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a></li>
+                <li><a href="profile.html" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a></li>
+                <li><a href="index.html#discord" class="nav-link">
+                    <i class="fab fa-discord"></i>
+                    <span>Discord Servers</span>
+                </a></li>
+                <li><a href="index.html#games" class="nav-link">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Free Cheats</span>
+                </a></li>
+                <li><a href="youtube.html" class="nav-link">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a></li>
+                <li><a href="tools/index.html" class="nav-link">
+                    <i class="fas fa-tools"></i>
+                    <span>Tools</span>
+                </a></li>
+                <li><a href="index.html#console" class="nav-link">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Console</span>
+                </a></li>
+                <li><a href="help.html" class="nav-link">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Help & FAQ</span>
+                </a></li>
+                <li><a href="safety.html" class="nav-link">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Safety</span>
+                </a></li>
+            </ul>
 
-        <div class="download-card" style="border-left-color: var(--success); margin-top: 2rem;">
-          <h3><i class="fas fa-ban"></i> Playing on Banned Accounts</h3>
-          <p style="margin-bottom: 1rem;">FSL allows you to continue playing even if your account has been banned:</p>
-          <ul style="list-style: none; padding-left: 0;">
-            <li style="padding: 0.5rem 0; display: flex; align-items: flex-start; gap: 10px;">
-              <i class="fas fa-user" style="color: var(--accent); margin-top: 4px;"></i>
-              <span><strong>Rockstar Banned:</strong> You can play in solo sessions only. Since FSL uses local save data, Rockstar's ban doesn't prevent you from loading into the game.</span>
-            </li>
-            <li style="padding: 0.5rem 0; display: flex; align-items: flex-start; gap: 10px;">
-              <i class="fas fa-users" style="color: var(--success); margin-top: 4px;"></i>
-              <span><strong>BattlEye Global Ban:</strong> You can still play with other FSL users, modders, and cheaters in their lobbies. As long as everyone has BattlEye disabled, you can join sessions together regardless of BattlEye ban status.</span>
-            </li>
-          </ul>
-        </div>
-
-        <h2><i class="fas fa-shield-alt"></i> How To Disable The BattlEye</h2>
-        <p style="margin-bottom: 1.5rem; color: #bbb;">Follow these steps carefully to disable BattlEye and use FSL:</p>
-        <ol class="steps">
-          <li><i class="fas fa-toggle-off"></i> Make sure BattlEye is disabled in the Rockstar Games Launcher settings.</li>
-          <li><i class="fas fa-terminal"></i> Input the command <code>-nobattleeye</code> in <code>commandline.txt</code> located in your game directory (EPIC GAMES/STEAM etc.).</li>
-          <li><i class="fas fa-user-shield"></i> Start the Command Prompt as Administrator and enter <code>sc delete BEService</code> to remove BattleEye service completely.</li>
-          <li><i class="fas fa-gamepad"></i> Let the game load to the main menu. Do not load story mode or online.</li>
-          <li><i class="fas fa-cog"></i> If auto-loading into story or online mode is enabled, disable it in the game settings. After disabling auto-loading, restart the game.</li>
-          <li><i class="fas fa-syringe"></i> Once the game is at the main menu, inject N3NY000.</li>
-          <li><i class="fas fa-exclamation-circle"></i> <strong style="color: var(--warning);">IMPORTANT:</strong> AFTER THE DLL IS INJECTED SELECT TO GO TO STORY MODE FIRST.</li>
-          <li><i class="fas fa-network-wired"></i> Once you are in story mode, open N3NY000, select <strong>Network > Session Starter</strong> and join a public or invite-only session.</li>
-        </ol>
-
-        <div class="download-card" style="border-left-color: var(--success); margin-top: 2rem;">
-          <h3><i class="fas fa-keyboard"></i> FSL Cheat Code Input</h3>
-          <p><strong>Press <code>`</code> (backtick key)</strong> to open the cheat code input. This allows you to quickly add money and more!</p>
-          <p style="margin-top: 1rem;"><i class="fas fa-dollar-sign"></i> <strong>Examples:</strong></p>
-          <ul style="list-style: none; padding-left: 1.5rem; margin-top: 0.5rem;">
-            <li style="padding: 0.3rem 0;"><code>1b</code> = 1 billion dollars</li>
-            <li style="padding: 0.3rem 0;"><code>10b</code> = 10 billion dollars</li>
-          </ul>
-        </div>
-
-        <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
-
-        <div class="download-card" style="border-left-color: var(--danger);">
-          <h3><i class="fas fa-sync-alt"></i> I keep getting desynced from public sessions every five minutes</h3>
-          <p>We currently do not have a BattlEye bypass, and legitimate hosts will eventually remove you due to a heartbeat failure. There is currently no way to stop this other than using an actual (private) bypass. RIPTIDE or Infamous have this, while N3NYOOO needs a recode before it can support BattlEye.</p>
-        </div>
-
-        <div class="download-card" style="border-left-color: #f39c12;">
-          <h3><i class="fas fa-folder-open"></i> I removed FSL and all my progress disappeared!</h3>
-          <p>FSL reroutes account save data to disk, so any progress made with FSL will only show up if you have FSL enabled. If you don't want this, you can also use NENY000 without FSL.</p>
-        </div>
-
-        <div class="download-card" style="border-left-color: var(--danger);">
-          <h3><i class="fas fa-times-circle"></i> I removed FSL and the game doesn't start up anymore</h3>
-          <p>This is a known issue; delete <code>Documents/GTAV Enhanced/Profiles</code> to fix. Make sure you have latest FSL file.</p>
-        </div>
-      </div>
-
-      <!-- Footer -->
-      <footer style="text-align: center; padding: 2rem 0; margin-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.6);">
-        <p>&copy; 2024 whatwhatboy's. <a href="index.html" style="color: var(--secondary);">Back to Home</a></p>
-      </footer>
+            <div class="sidebar-social">
+                <h4>Connect With Me</h4>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/channel/UCusYWir4F6r5AY6A9Ddv7jg" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="profile.html" title="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="profile.html" title="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="profile.html" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="profile.html" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
     </div>
-  
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-sidebar-btn" id="mobile-sidebar-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Main Content -->
+    <div class="main-content" id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">FSL - Freemode Session Loader</h1>
+                <p class="hero-subtitle">Store your GTA Online save data locally, gain infinite money, and play with friends. Nothing saves to your real GTA 5 account.</p>
+                <div class="hero-buttons">
+                    <a href="https://bstlar.com/F/FSLgtaEH" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                        <i class="fas fa-download"></i> Download Enhanced FSL
+                    </a>
+                    <a href="https://bstlar.com/F/FSLgta" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                        <i class="fas fa-history"></i> Download Legacy FSL
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Downloads Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Download FSL</h2>
+                    <p class="section-subtitle">Choose the right version for your game edition</p>
+                </div>
+
+                <div class="fsl-download-grid">
+                    <div class="fsl-card">
+                        <h3><i class="fas fa-bolt" style="color: #6366f1;"></i> Enhanced Version</h3>
+                        <p class="subtitle">For GTA V Enhanced Edition with BattlEye support</p>
+                        <a href="https://bstlar.com/F/FSLgtaEH" target="_blank" rel="noopener noreferrer" class="fsl-btn">
+                            <i class="fas fa-download"></i> Download Enhanced FSL
+                        </a>
+                    </div>
+
+                    <div class="fsl-card">
+                        <h3><i class="fas fa-history" style="color: #06b6d4;"></i> Legacy Version</h3>
+                        <p class="subtitle">For GTA V Legacy Edition (older versions)</p>
+                        <a href="https://bstlar.com/F/FSLgta" target="_blank" rel="noopener noreferrer" class="fsl-btn">
+                            <i class="fas fa-download"></i> Download Legacy FSL
+                        </a>
+                    </div>
+
+                    <div class="fsl-card">
+                        <h3><i class="fas fa-cogs" style="color: #f59e0b;"></i> Required Components</h3>
+                        <p class="subtitle">Install these before using FSL to avoid crashes</p>
+                        <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank" rel="noopener noreferrer" class="fsl-btn">
+                            <i class="fas fa-download"></i> Install VC Runtimes
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Important Notice -->
+        <section class="section">
+            <div class="container">
+                <div class="fsl-warning-box">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Important Notice</h3>
+                    <p><span class="accent">Remember:</span> Your friends can join you in these sessions, but nothing saves to your real GTA 5 account. All progress made in FSL mode is temporary and local only.</p>
+                    <p><i class="fas fa-download"></i> <span class="accent">You do need a mod menu with FSL</span> (<a href="https://www.nenyoocheats.com/download.html" target="_blank">Nenyooo download</a>) to be able to join online sessions.</p>
+                    <p><i class="fas fa-users"></i> You can play with anyone while using the menu so long as you are both using a menu. 2 Nenyoo players, 1 Nenyoo and 1 Scooby player, or any other mod menu combination with BattlEye disabled. This applies to both Legacy and Enhanced editions. Only players that have BattlEye enabled will not be able to join and you will not be able to join them.</p>
+                    <p><i class="fas fa-user-friends"></i> <span class="accent">If you want to play with your friend and they don't have a mod menu,</span> get them to use the <a href="https://www.nenyoocheats.com/download.html" target="_blank" class="success-text">free version of Nenyooo menu</a>.</p>
+                    <p><i class="fas fa-info-circle"></i> <span class="accent">FSL is a LOCAL SAVE tool.</span> All it does is convert your online save profile into a local save, it is not some magic tool that lets you play public sessions. It may have worked like that before, a long time ago, but it was never the main reason for the tool and it will not be able to do it again. It is for converting save to a local save only.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banned Accounts & Cheat Codes -->
+        <section class="section">
+            <div class="container">
+                <div class="fsl-info-card">
+                    <h3><i class="fas fa-ban" style="color: #10b981;"></i> Playing on Banned Accounts</h3>
+                    <p>FSL allows you to continue playing even if your account has been banned:</p>
+                    <ul>
+                        <li>
+                            <i class="fas fa-user" style="color: #f87171;"></i>
+                            <span><strong style="color: #f87171;">Rockstar Banned:</strong> You can play in solo sessions only. Since FSL uses local save data, Rockstar's ban doesn't prevent you from loading into the game.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-users" style="color: #34d399;"></i>
+                            <span><strong style="color: #34d399;">BattlEye Global Ban:</strong> You can still play with other FSL users, modders, and cheaters in their lobbies. As long as everyone has BattlEye disabled, you can join sessions together regardless of BattlEye ban status.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="cheat-code-box">
+                    <h3><i class="fas fa-keyboard"></i> FSL Cheat Code Input</h3>
+                    <p>Press <code>`</code> (backtick key) to open the cheat code input. This allows you to quickly add money and more!</p>
+                    <div class="examples">
+                        <div class="example-item"><code>1b</code> = 1 billion dollars</div>
+                        <div class="example-item"><code>10b</code> = 10 billion dollars</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BattlEye Guide -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">How To Disable BattlEye</h2>
+                    <p class="section-subtitle">Follow these steps carefully to disable BattlEye and use FSL</p>
+                </div>
+
+                <ol class="fsl-steps">
+                    <li>Make sure BattlEye is disabled in the Rockstar Games Launcher settings.</li>
+                    <li>Input the command <code>-nobattleeye</code> in <code>commandline.txt</code> located in your game directory (EPIC GAMES/STEAM etc.).</li>
+                    <li>Start the Command Prompt as Administrator and enter <code>sc delete BEService</code> to remove BattleEye service completely.</li>
+                    <li>Let the game load to the main menu. Do not load story mode or online.</li>
+                    <li>If auto-loading into story or online mode is enabled, disable it in the game settings. After disabling auto-loading, restart the game.</li>
+                    <li>Once the game is at the main menu, inject N3NY000.</li>
+                    <li><strong>IMPORTANT:</strong> AFTER THE DLL IS INJECTED SELECT TO GO TO STORY MODE FIRST.</li>
+                    <li>Once you are in story mode, open N3NY000, select <strong style="color: #a5b4fc;">Network > Session Starter</strong> and join a public or invite-only session.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Common issues and solutions for FSL users</p>
+                </div>
+
+                <div class="fsl-faq-grid">
+                    <div class="fsl-faq-item danger">
+                        <h4><i class="fas fa-sync-alt"></i> I keep getting desynced from public sessions every five minutes</h4>
+                        <p>We currently do not have a BattlEye bypass, and legitimate hosts will eventually remove you due to a heartbeat failure. There is currently no way to stop this other than using an actual (private) bypass. RIPTIDE or Infamous have this, while N3NYOOO needs a recode before it can support BattlEye.</p>
+                    </div>
+
+                    <div class="fsl-faq-item">
+                        <h4><i class="fas fa-folder-open"></i> I removed FSL and all my progress disappeared!</h4>
+                        <p>FSL reroutes account save data to disk, so any progress made with FSL will only show up if you have FSL enabled. If you don't want this, you can also use NENY000 without FSL.</p>
+                    </div>
+
+                    <div class="fsl-faq-item danger">
+                        <h4><i class="fas fa-times-circle"></i> I removed FSL and the game doesn't start up anymore</h4>
+                        <p>This is a known issue; delete <code>Documents/GTAV Enhanced/Profiles</code> to fix. Make sure you have latest FSL file.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js?v=2.0.0"></script>
+    <script src="assets/js/language-system.js"></script>
+    <script src="assets/js/mobile-enhancements.js"></script>
+    <script src="assets/js/global-search.js"></script>
+    <script src="assets/js/error-handling.js"></script>
+    <script src="assets/js/performance-optimizer.js"></script>
+    <script src="assets/js/dark-mode.js?v=2.0.0"></script>
+    <script src="assets/js/activity-tracker.js?v=2.0.0"></script>
+    <script src="assets/js/image-optimizer.js?v=2.0.0"></script>
+
     <!-- Ad Banner -->
     <script async="async" data-cfasync="false" src="https://aloudalimonyexplosion.com/fd0a4dcec74a63f4d2662af5273f9d5b/invoke.js"></script>
     <div id="container-fd0a4dcec74a63f4d2662af5273f9d5b"></div>

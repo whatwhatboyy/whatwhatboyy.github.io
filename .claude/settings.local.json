@@ -11,7 +11,9 @@
       "Bash(done)",
       "Bash(powershell -Command \"Get-ChildItem -Recurse -Include ''*.html'' -Exclude ''backup*'' | Where-Object { $_FullName -notmatch ''\\\\backup\\\\'' } | ForEach-Object { $content = Get-Content $_FullName -Raw -Encoding UTF8; if \\($content -match ''pl28253369\\\\.effectivegatecpm\\\\.com''\\) { $content = $content -replace ''pl28253369\\\\.effectivegatecpm\\\\.com'', ''aloudalimonyexplosion.com''; Set-Content $_FullName $content -Encoding UTF8 -NoNewline; Write-Output \\(''Updated popup domain: '' + $_Name\\) } }\")",
       "Bash(powershell:*)",
-      "Bash(del \"c:\\\\Users\\\\whatw\\\\Documents\\\\GitHub\\\\whatwhatboyy.github.io\\\\update-ads.ps1\")"
+      "Bash(del \"c:\\\\Users\\\\whatw\\\\Documents\\\\GitHub\\\\whatwhatboyy.github.io\\\\update-ads.ps1\")",
+      "Bash(grep:*)",
+      "Bash(find:*)"
     ],
     "deny": [],
     "ask": []
