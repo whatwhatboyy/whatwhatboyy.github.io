@@ -3,58 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Page not found - whatwhatboy's gaming tools and modifications website.">
+    <meta name="description" content="Page not found - whatwhatboy gaming tools and modifications.">
     <meta name="robots" content="noindex">
-    <title>404 - Page Not Found | whatwhatboy's</title>
-
-    <meta property="og:title" content="404 - Page Not Found">
-    <meta property="og:description" content="The page you're looking for doesn't exist or has been moved.">
-    <meta property="og:type" content="website">
-
+    <title>404 - Page Not Found | whatwhatboy</title>
     <link rel="icon" href="/assets/images/logo.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/style.css?v=2.0.0">
+    <link rel="stylesheet" href="/style.css?v=3.0.0">
     <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            background: #0a0a0f;
+            background: #0b0f19;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0;
             font-family: 'Inter', sans-serif;
-            color: #e0e0e0;
-            overflow: hidden;
+            color: #f1f5f9;
+            overflow-x: hidden;
         }
 
         .error-bg {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(ellipse at 50% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 70%),
-                        radial-gradient(ellipse at 80% 80%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 50% 0%, rgba(99, 102, 241, 0.12) 0%, transparent 65%),
+                radial-gradient(ellipse at 80% 90%, rgba(129, 140, 248, 0.08) 0%, transparent 50%);
+            pointer-events: none;
             z-index: 0;
         }
 
         .error-container {
             position: relative;
             z-index: 1;
-            max-width: 650px;
+            max-width: 620px;
+            width: 100%;
             padding: 2rem;
             text-align: center;
         }
 
         .error-logo {
-            width: 60px;
-            height: 60px;
-            border-radius: 1rem;
+            width: 56px;
+            height: 56px;
+            border-radius: 0.75rem;
             margin-bottom: 2rem;
-            opacity: 0.8;
+            opacity: 0.85;
         }
 
         .error-code {
@@ -62,7 +65,7 @@
             font-weight: 800;
             line-height: 1;
             margin-bottom: 0.5rem;
-            background: linear-gradient(135deg, #6366f1, #06b6d4);
+            background: linear-gradient(135deg, #6366f1, #818cf8);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -71,15 +74,15 @@
         .error-title {
             font-size: 1.75rem;
             font-weight: 700;
+            color: #f1f5f9;
             margin-bottom: 1rem;
-            color: #fff;
         }
 
         .error-description {
             font-size: 1.05rem;
-            color: #999;
-            margin-bottom: 2.5rem;
+            color: #94a3b8;
             line-height: 1.7;
+            margin-bottom: 2.5rem;
         }
 
         .error-actions {
@@ -105,36 +108,36 @@
         }
 
         .error-btn-primary {
-            background: linear-gradient(135deg, #6366f1, #06b6d4);
-            color: white;
+            background: linear-gradient(135deg, #6366f1, #818cf8);
+            color: #fff;
         }
 
         .error-btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+            box-shadow: 0 8px 24px rgba(99, 102, 241, 0.35);
         }
 
         .error-btn-secondary {
-            background: rgba(255, 255, 255, 0.08);
-            color: #e0e0e0;
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            background: rgba(241, 245, 249, 0.06);
+            color: #f1f5f9;
+            border: 1px solid rgba(241, 245, 249, 0.12);
         }
 
         .error-btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(241, 245, 249, 0.12);
             transform: translateY(-2px);
         }
 
         .popular-links {
             padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(241, 245, 249, 0.08);
         }
 
         .popular-links h3 {
-            font-size: 1rem;
+            font-size: 0.95rem;
             font-weight: 600;
+            color: #94a3b8;
             margin-bottom: 1rem;
-            color: #aaa;
         }
 
         .popular-links-grid {
@@ -144,21 +147,21 @@
         }
 
         .popular-link {
-            padding: 0.75rem 1rem;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 0.7rem 1rem;
+            background: rgba(241, 245, 249, 0.04);
+            border: 1px solid rgba(241, 245, 249, 0.08);
             border-radius: 0.5rem;
             text-decoration: none;
-            color: #ccc;
-            transition: all 0.3s ease;
+            color: #cbd5e1;
             font-size: 0.9rem;
             font-weight: 500;
+            transition: all 0.3s ease;
         }
 
         .popular-link:hover {
-            background: rgba(99, 102, 241, 0.15);
+            background: rgba(99, 102, 241, 0.12);
             border-color: rgba(99, 102, 241, 0.3);
-            color: #fff;
+            color: #f1f5f9;
             transform: translateY(-2px);
         }
 
@@ -171,16 +174,16 @@
         .redirect-info {
             margin-top: 1.5rem;
             padding: 0.75rem 1.25rem;
-            background: rgba(99, 102, 241, 0.1);
+            background: rgba(99, 102, 241, 0.08);
             border-radius: 0.5rem;
             font-size: 0.85rem;
-            color: #999;
+            color: #94a3b8;
             display: none;
         }
 
         .countdown {
             font-weight: 700;
-            color: #6366f1;
+            color: #818cf8;
         }
 
         @media (max-width: 768px) {
@@ -201,23 +204,18 @@
     <div class="error-bg"></div>
     <div class="error-container">
         <a href="/">
-            <img src="/assets/images/logo.png" alt="whatwhatboy's" class="error-logo">
+            <img src="/assets/images/logo.png" alt="whatwhatboy" class="error-logo">
         </a>
         <div class="error-code">404</div>
         <h1 class="error-title">Page Not Found</h1>
-        <p class="error-description">
-            The page you're looking for doesn't exist or has been moved.
-            Don't worry, you can find what you need using the links below.
-        </p>
+        <p class="error-description">The page you are looking for does not exist or has been moved. Use the links below to find what you need.</p>
 
         <div class="error-actions">
             <a href="/" class="error-btn error-btn-primary">
-                <i class="fas fa-home"></i>
-                Go Home
+                <i class="fas fa-home"></i> Go Home
             </a>
             <a href="javascript:history.back()" class="error-btn error-btn-secondary">
-                <i class="fas fa-arrow-left"></i>
-                Go Back
+                <i class="fas fa-arrow-left"></i> Go Back
             </a>
         </div>
 
@@ -227,51 +225,34 @@
                 <a href="/games/gta/index.html" class="popular-link"><i class="fas fa-car"></i> GTA V</a>
                 <a href="/games/cs2/index.html" class="popular-link"><i class="fas fa-crosshairs"></i> CS2</a>
                 <a href="/games/cod/index.html" class="popular-link"><i class="fas fa-skull-crossbones"></i> COD</a>
-                <a href="/games/fortnite/index.html" class="popular-link"><i class="fas fa-bolt"></i> Fortnite</a>
                 <a href="/youtube.html" class="popular-link"><i class="fab fa-youtube"></i> YouTube</a>
                 <a href="/help.html" class="popular-link"><i class="fas fa-question-circle"></i> Help</a>
             </div>
         </div>
 
         <div class="redirect-info" id="redirectInfo">
-            Redirecting to home in <span class="countdown" id="countdown">10</span> seconds...
+            Redirecting to home in <span class="countdown" id="countdown">15</span> seconds...
         </div>
     </div>
 
     <script>
-        let countdown = 10;
-        const countdownEl = document.getElementById('countdown');
-        const redirectInfo = document.getElementById('redirectInfo');
+        (function () {
+            var seconds = 15;
+            var countdownEl = document.getElementById('countdown');
+            var redirectInfo = document.getElementById('redirectInfo');
 
-        setTimeout(() => {
             redirectInfo.style.display = 'block';
-            countdownEl.textContent = countdown;
+            countdownEl.textContent = seconds;
 
-            const interval = setInterval(() => {
-                countdown--;
-                countdownEl.textContent = countdown;
-                if (countdown <= 0) {
-                    clearInterval(interval);
+            var timer = setInterval(function () {
+                seconds--;
+                countdownEl.textContent = seconds;
+                if (seconds <= 0) {
+                    clearInterval(timer);
                     window.location.href = '/';
                 }
             }, 1000);
-        }, 5000);
-
-        const redirectMap = {
-            '/game/': '/games/',
-            '/download/': '/downloads/',
-            '/mod/': '/games/',
-            '/cheat/': '/games/',
-            '/tool/': '/tools/',
-        };
-
-        const currentPath = window.location.pathname.toLowerCase();
-        for (const [pattern, redirect] of Object.entries(redirectMap)) {
-            if (currentPath.includes(pattern)) {
-                window.location.href = redirect;
-                break;
-            }
-        }
+        })();
     </script>
 </body>
 </html>

@@ -1,15 +1,12 @@
-# robots.txt for whatwhatboyy.github.io
+# robots.txt for whatwhatboy.com
 
 User-agent: *
 Allow: /
 
-# Disallow admin, backup, and archive directories
-Disallow: /backup/
-Disallow: /archive/
+# Disallow vendor assets
 Disallow: /assets/vendor/
 
-# Sitemap location
-Sitemap: https://whatwhatboyy.github.io/sitemap.xml
+# Sitemap
+Sitemap: https://whatwhatboy.com/sitemap.xml
 
-# Crawl delay (optional - be nice to servers)
 Crawl-delay: 1
