@@ -53,8 +53,11 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
 
 .sidebar.collapsed { width: var(--sc); }
 .sidebar.collapsed .sidebar-title, .sidebar.collapsed .nav-link span, .sidebar.collapsed .sidebar-social h4 { opacity: 0; pointer-events: none; }
-.sidebar.collapsed .sidebar-brand { justify-content: center; }
-.sidebar.collapsed .nav-link { justify-content: center; padding: 10px; }
+.sidebar.collapsed .sidebar-header { padding: 20px 16px; justify-content: center; }
+.sidebar.collapsed .sidebar-brand { display: none; }
+.sidebar.collapsed .nav-list li { margin: 2px 4px; }
+.sidebar.collapsed .nav-link { justify-content: center; padding: 10px; overflow: visible; }
+.sidebar.collapsed .nav-link i { font-size: 18px; }
 .sidebar.collapsed .nav-link.active { padding-left: 10px; border-left: none; border-bottom: 2px solid var(--accent); }
 .sidebar.collapsed .sidebar-social .social-links { flex-direction: column; align-items: center; }
 .sidebar.collapsed .nav-link[data-tooltip] { position: relative; }
