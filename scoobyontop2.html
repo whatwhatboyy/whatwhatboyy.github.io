@@ -228,7 +228,10 @@
             text-align: center;
             filter: blur(8px);
             transition: filter 0.3s ease;
-            user-select: all;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
             word-break: break-all;
         }
 
@@ -552,30 +555,77 @@
     <div class="container" id="blockedContent">
         <div class="card blocked-container">
             <div class="blocked-icon">
-                <i class="fas fa-hand-paper"></i>
+                <i class="fas fa-skull-crossbones"></i>
             </div>
-            <h2 class="blocked-title">Nice Try!</h2>
-            <p class="blocked-message">
-                You tried to access the key page directly.<br>
-                <strong>You need to complete the steps first!</strong>
+            <h2 class="blocked-title" id="mockTitle">Nice Try Buddy!</h2>
+            <p class="blocked-message" id="mockMsg">
+                You really thought you could just skip the steps? <strong>That's embarrassing.</strong><br><br>
+                The key is right there... you just gotta earn it like everyone else.<br>
+                <strong>No shortcuts, no hacks, no begging in Discord.</strong>
             </p>
 
             <div class="blocked-steps">
-                <h4><i class="fas fa-list-ol"></i> How to get the key:</h4>
+                <h4><i class="fas fa-list-ol"></i> Since you clearly need help:</h4>
                 <ol>
-                    <li>Click the button below to go to the key link</li>
-                    <li>Complete any required steps on that page</li>
-                    <li>You'll be redirected here automatically</li>
-                    <li>Then you can see and copy the key!</li>
+                    <li>Click the button below (yes, the big obvious one)</li>
+                    <li>Complete the steps like a normal person</li>
+                    <li>Get redirected here automatically (magic, right?)</li>
+                    <li>Copy the key and stop trying to be slick</li>
                 </ol>
             </div>
 
+            <p style="font-size: 11px; color: rgba(239,68,68,0.6); margin-bottom: 20px; font-style: italic;" id="mockCounter">
+                You and <span id="failCount">4,832</span> other people tried this today. None of you got in.
+            </p>
+
             <a href="https://bstlar.com/F/ScoobyKEY" class="btn-link" rel="noopener noreferrer">
                 <i class="fas fa-external-link-alt"></i>
-                Get Key The Right Way
+                Fine, I'll Do It The Right Way
             </a>
         </div>
     </div>
+
+    <script>
+    // Mock system for bypass attempts
+    (function(){
+        var bl = document.getElementById('blockedContent');
+        if(!bl || bl.classList.contains('hidden')) return;
+
+        // Track repeat offenders
+        var attempts = parseInt(localStorage.getItem('_sba')||'0') + 1;
+        localStorage.setItem('_sba', attempts.toString());
+
+        var title = document.getElementById('mockTitle');
+        var msg = document.getElementById('mockMsg');
+        var fc = document.getElementById('failCount');
+
+        // Fake fail counter (random but consistent per day)
+        var today = new Date().toDateString();
+        var dayHash = 0;
+        for(var i=0;i<today.length;i++) dayHash = ((dayHash<<5)-dayHash)+today.charCodeAt(i);
+        fc.textContent = (Math.abs(dayHash % 8000) + 3000).toLocaleString();
+
+        // Escalating roasts based on how many times they've tried
+        if(attempts === 1) {
+            // First time - default message is fine
+        } else if(attempts === 2) {
+            title.textContent = 'Back Again?';
+            msg.innerHTML = 'You came back thinking it would work this time? <strong>It won\'t.</strong><br><br>The key system has been updated. Your old tricks are dead.<br><strong>Just do the steps. It takes 30 seconds.</strong>';
+        } else if(attempts === 3) {
+            title.textContent = 'Bro... Seriously?';
+            msg.innerHTML = 'This is attempt #' + attempts + '. At this point you could have gotten the key <strong>5 times over</strong> if you just did the steps.<br><br>We admire the persistence though. <strong>Too bad it\'s completely pointless.</strong>';
+        } else if(attempts <= 5) {
+            title.textContent = 'You Again? 💀';
+            msg.innerHTML = 'Attempt #' + attempts + '. You\'ve spent more time trying to bypass this than it takes to actually get the key.<br><br><strong>This is genuinely sad at this point.</strong> The button is RIGHT THERE.';
+        } else if(attempts <= 10) {
+            title.textContent = 'Certified Clown 🤡';
+            msg.innerHTML = '<strong>Attempt #' + attempts + '</strong>. Bro you\'re a whole circus at this point.<br><br>The key page is literally free. The steps take 30 seconds. You\'ve wasted more time refreshing this page than every other user combined.<br><br><strong>We\'re genuinely concerned about you.</strong>';
+        } else {
+            title.textContent = 'Legend of Failure';
+            msg.innerHTML = '<strong>' + attempts + ' attempts.</strong> You should get an award for this level of dedication to doing things the wrong way.<br><br>At this point we think you just enjoy reading these messages.<br><br><strong>We respect the grind. Now click the button.</strong>';
+        }
+    })();
+    </script>
 
     <!-- ACTUAL KEY CONTENT - Hidden by default, shown only if from correct referrer -->
     <div class="container hidden" id="keyContent">
@@ -673,9 +723,10 @@
             const urlParams = new URLSearchParams(window.location.search);
 
             // Multiple ways to verify access
-            const allowedReferrers = ['bstlar.com', 'bstlar.net', 'bst.gg', 'boost.ink', 'boostink'];
-            const validRefParams = ['bstlarsr4edxgyhrt6frhgrt6ffgdrddfr4euyjhfgg'];
-            const validTokens = ['scooby2025'];
+            const _dc = function(s){return atob(s)};
+            const allowedReferrers = ['YnN0bGFyLmNvbQ==','YnN0bGFyLm5ldA==','YnN0Lmdn','Ym9vc3QuaW5r','Ym9vc3Rpbms='].map(_dc);
+            const validRefParams = [_dc('YnN0bGFyc3I0ZWR4Z3locnQ2ZnJoZ3J0NmZmZ2RyZGRmcjRldXlqaGZnZw=='),_dc('djJfazN5XzRjYzNzc18yMDI2')];
+            const validTokens = [_dc('c2Nvb2J5MjAyNQ=='),_dc('c2Nvb2J5X3YyXzIwMjY=')];
 
             // Check all verification methods
             const isValidReferrer = allowedReferrers.some(domain => referrer.toLowerCase().includes(domain));
@@ -710,28 +761,17 @@
         // Key rotation system - changes every 4 hours
         const KEY_ROTATION_HOURS = 4;
 
-        // Key generation based on time seed
+        // Key engine v2
         function generateKey(seed) {
-            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-            const segments = [
-                'SCOOBY',
-                generateSegment(seed, 5, chars),
-                generateSegment(seed * 2, 5, chars),
-                generateSegment(seed * 3, 5, chars)
-            ];
-            return segments.join('-');
+            var _e=[9,57,106,106,56,35,23,105,52,47,17,105,35,104,106,104,108,123],_s='';
+            for(var i=0;i<_e.length;i++)_s+=String.fromCharCode(_e[i]^90);
+            var sd=seed.toString();
+            function _fh(d){var h=2166136261;for(var j=0;j<d.length;j++){h^=d.charCodeAt(j);h=Math.imul(h,16777619);}return h>>>0;}
+            function _sg(v,n){var c='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',r='';for(var j=0;j<n;j++){r+=c[v%36];v=Math.floor(v/36);}return r;}
+            return 'SCOOBY-'+_sg(_fh(sd+'|1|'+_s),5)+'-'+_sg(_fh(sd+'|2|'+_s),5)+'-'+_sg(_fh(sd+'|3|'+_s),5);
         }
 
-        function generateSegment(seed, length, chars) {
-            let result = '';
-            let s = seed;
-            for (let i = 0; i < length; i++) {
-                s = (s * 9301 + 49297) % 233280;
-                const index = Math.floor((s / 233280) * chars.length);
-                result += chars[index];
-            }
-            return result;
-        }
+        function generateSegment() { return ''; }
 
         // Get current time seed (changes every KEY_ROTATION_HOURS hours)
         function getTimeSeed() {
@@ -827,18 +867,40 @@
         // Update timer every second
         setInterval(updateTimer, 1000);
 
-        // Expose key info for launcher API
-        window.ScoobyKeyAPI = {
-            getKey: function() {
-                return currentKey;
-            },
-            getSeed: function() {
-                return getTimeSeed();
-            },
-            getNextRotation: function() {
-                return new Date(Date.now() + getTimeUntilRotation()).toISOString();
-            }
-        };
+        // Anti-extraction measures
+        (function(){
+            try{Object.defineProperty(window,'ScoobyKeyAPI',{get:function(){return void 0},set:function(){},configurable:false});}catch(x){}
+            var kt=document.getElementById('keyText'),kb=document.getElementById('keyBox');
+            kt.addEventListener('dragstart',function(e){e.preventDefault()});
+            kt.addEventListener('selectstart',function(e){e.preventDefault()});
+            if(navigator.webdriver){kt.textContent='ACCESS DENIED';kb.style.pointerEvents='none';}
+            var ci=new Image();Object.defineProperty(ci,'id',{get:function(){kt.textContent='[PROTECTED]';kt.style.filter='blur(20px)';}});
+            setInterval(function(){console.log('%c',ci);},5000);
+        })();
+
+        // Block DevTools keyboard shortcuts
+        document.addEventListener('keydown',function(e){
+            if(e.key==='F12'){e.preventDefault();return false;}
+            if(e.ctrlKey&&e.shiftKey&&['I','i','J','j','C','c'].indexOf(e.key)!==-1){e.preventDefault();return false;}
+            if(e.ctrlKey&&(e.key==='U'||e.key==='u')){e.preventDefault();return false;}
+        });
+
+        // Disable right-click
+        document.addEventListener('contextmenu',function(e){e.preventDefault();return false;});
+
+        // Iframe protection
+        if(window.self!==window.top){document.body.innerHTML='';window.top.location=window.self.location;}
+
+        // Hide key when tab is not visible
+        document.addEventListener('visibilitychange',function(){
+            var k=document.getElementById('keyText');
+            if(!k)return;
+            if(document.hidden){k.setAttribute('data-r',k.textContent);k.textContent='\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022';k.style.filter='blur(8px)';}
+            else{var r=k.getAttribute('data-r');if(r)k.textContent=r;k.removeAttribute('data-r');}
+        });
+
+        // Console poisoning
+        (function(){var n=function(){};try{Object.defineProperty(window,'console',{get:function(){return{log:n,warn:n,error:n,info:n,debug:n,dir:n,table:n,trace:n,assert:n,clear:n,group:n,groupEnd:n};},set:function(){}});}catch(e){}})();
     </script>
 
     <!-- Native Banner Ad -->
