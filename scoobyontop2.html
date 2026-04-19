@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <link rel="icon" href="icon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        
+
 
 
     <style>
@@ -615,10 +615,10 @@
             title.textContent = 'Bro... Seriously?';
             msg.innerHTML = 'This is attempt #' + attempts + '. At this point you could have gotten the key <strong>5 times over</strong> if you just did the steps.<br><br>We admire the persistence though. <strong>Too bad it\'s completely pointless.</strong>';
         } else if(attempts <= 5) {
-            title.textContent = 'You Again? 💀';
+            title.textContent = 'You Again? \u{1F480}';
             msg.innerHTML = 'Attempt #' + attempts + '. You\'ve spent more time trying to bypass this than it takes to actually get the key.<br><br><strong>This is genuinely sad at this point.</strong> The button is RIGHT THERE.';
         } else if(attempts <= 10) {
-            title.textContent = 'Certified Clown 🤡';
+            title.textContent = 'Certified Clown \u{1F921}';
             msg.innerHTML = '<strong>Attempt #' + attempts + '</strong>. Bro you\'re a whole circus at this point.<br><br>The key page is literally free. The steps take 30 seconds. You\'ve wasted more time refreshing this page than every other user combined.<br><br><strong>We\'re genuinely concerned about you.</strong>';
         } else {
             title.textContent = 'Legend of Failure';
@@ -663,7 +663,7 @@
 
             <div class="key-hint">
                 <i class="fas fa-eye"></i>
-                Hover to reveal • Click to copy • Press <kbd style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace;">C</kbd> to copy
+                Hover to reveal &#8226; Click to copy &#8226; Press <kbd style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace;">C</kbd> to copy
             </div>
 
             <!-- Buttons -->
@@ -768,7 +768,7 @@
             var sd=seed.toString();
             function _fh(d){var h=2166136261;for(var j=0;j<d.length;j++){h^=d.charCodeAt(j);h=Math.imul(h,16777619);}return h>>>0;}
             function _sg(v,n){var c='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',r='';for(var j=0;j<n;j++){r+=c[v%36];v=Math.floor(v/36);}return r;}
-            return 'SCOOBY-'+_sg(_fh(sd+'|1|'+_s),5)+'-'+_sg(_fh(sd+'|2|'+_s),5)+'-'+_sg(_fh(sd+'|3|'+_s),5);
+            return 'SCOOBY-FREE-'+_sg(_fh(sd+'|1|'+_s),4)+'-'+_sg(_fh(sd+'|2|'+_s),4)+'-'+_sg(_fh(sd+'|3|'+_s),4);
         }
 
         function generateSegment() { return ''; }
