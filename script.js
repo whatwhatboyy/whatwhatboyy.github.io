@@ -217,6 +217,12 @@ function initHeroAnimations() {
 
     const fullText = heroTitle.dataset.text || heroTitle.textContent;
 
+    // Reduced-motion / no data-text: show the title immediately, skip typing.
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        heroTitle.textContent = fullText;
+        return;
+    }
+
     // Clear current content and set up cursor
     heroTitle.textContent = '';
     const cursor = document.createElement('span');
@@ -251,14 +257,26 @@ function initStatsCounters() {
     const statElements = document.querySelectorAll('.stat h3');
     if (statElements.length === 0) return;
 
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     let animated = false;
 
     /**
-     * Parse a stat string like "70K+" into { value: 70, suffix: "K+" }.
+     * Resolve the target number and suffix for a stat element.
+     *
+     * Priority:
+     *   1. Explicit data-target / data-suffix attributes (e.g. <h3 data-target="70" data-suffix="K+">0</h3>)
+     *   2. A numeric text value like "70K+" or "1,000+"
+     *   3. Non-numeric text ("Enhanced", "JTAG", ...) -> not animatable, left untouched.
      */
-    const parseStat = (text) => {
-        const match = text.trim().match(/^([\d,.]+)\s*(.*)/);
-        if (!match) return { value: 0, suffix: text };
+    const resolveStat = (el) => {
+        if (el.dataset.target != null) {
+            return {
+                value: parseFloat(String(el.dataset.target).replace(/,/g, '')) || 0,
+                suffix: el.dataset.suffix || ''
+            };
+        }
+        const match = el.textContent.trim().match(/^([\d,.]+)\s*(.*)$/);
+        if (!match) return null; // purely textual stat — don't animate or it becomes "0Enhanced"
         return {
             value: parseFloat(match[1].replace(/,/g, '')),
             suffix: match[2]
@@ -272,7 +290,17 @@ function initStatsCounters() {
         const duration = 2000; // ms
 
         statElements.forEach((el) => {
-            const { value: target, suffix } = parseStat(el.textContent);
+            const stat = resolveStat(el);
+            if (!stat) return; // leave non-numeric stats exactly as authored
+
+            const { value: target, suffix } = stat;
+
+            // Honor reduced-motion: jump straight to the final value.
+            if (reduceMotion) {
+                el.textContent = target + suffix;
+                return;
+            }
+
             const start = performance.now();
 
             const step = (now) => {

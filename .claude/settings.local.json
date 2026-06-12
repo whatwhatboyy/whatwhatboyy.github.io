@@ -14,7 +14,15 @@
       "Bash(del \"c:\\\\Users\\\\whatw\\\\Documents\\\\GitHub\\\\whatwhatboyy.github.io\\\\update-ads.ps1\")",
       "Bash(grep:*)",
       "Bash(find:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(node --check script.js)",
+      "Bash(node --check service-worker.js)",
+      "Bash(node -e \"const c=require\\('fs'\\).readFileSync\\('style.css','utf8'\\);const o=\\(c.match\\(/{/g\\)||[]\\).length,cl=\\(c.match\\(/}/g\\)||[]\\).length;console.log\\('open',o,'close',cl, o===cl?'BALANCED':'MISMATCH'\\);\")",
+      "Bash(node -e \"const c=require\\('fs'\\).readFileSync\\('style.css','utf8'\\);const o=\\(c.match\\(/{/g\\)||[]\\).length,cl=\\(c.match\\(/}/g\\)||[]\\).length;console.log\\('CSS braces:',o,cl,o===cl?'BALANCED':'MISMATCH'\\);\")",
+      "Bash(node _seo_fix.cjs)",
+      "Bash(sed -n '1,14p' api/scooby-key.html)",
+      "Bash(sed -n '1,14p' riptide344TRFVDV5key.html)",
+      "Bash(node _sitemap_gen.cjs)"
     ],
     "deny": [],
     "ask": []
