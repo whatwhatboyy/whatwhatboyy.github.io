@@ -22,7 +22,15 @@
       "Bash(node _seo_fix.cjs)",
       "Bash(sed -n '1,14p' api/scooby-key.html)",
       "Bash(sed -n '1,14p' riptide344TRFVDV5key.html)",
-      "Bash(node _sitemap_gen.cjs)"
+      "Bash(node _sitemap_gen.cjs)",
+      "Read(//c/Users/whatw/Documents/GitHub/**)",
+      "Bash(which python *)",
+      "Bash(ls /c/Users/whatw/Documents/GitHub/whatwhatboy.github.io/games/gta/index.html 2>/dev/null; ls /mnt/c/Users/whatw/Documents/GitHub/whatwhatboy.github.io/games/gta/index.html 2>/dev/null; echo \"PWD=$\\(pwd\\)\"; ls 2>/dev/null | head)",
+      "Read(//mnt/c/Users/whatw/Documents/GitHub/whatwhatboy.github.io/games/gta/**)",
+      "Bash(command -v python3)",
+      "Bash(command -v python)",
+      "Bash(python3 -c \"print\\('py-ok'\\)\")",
+      "Bash(python3 \"C:/Users/whatw/AppData/Local/Temp/claude/c--Users-whatw-Documents-GitHub-whatwhatboyy-github-io/11451246-9b39-4a3b-8a62-81decdbab8d5/scratchpad/reorder.py\")"
     ],
     "deny": [],
     "ask": []
