@@ -31,7 +31,8 @@
       "Bash(command -v python)",
       "Bash(python3 -c \"print\\('py-ok'\\)\")",
       "Bash(python3 \"C:/Users/whatw/AppData/Local/Temp/claude/c--Users-whatw-Documents-GitHub-whatwhatboyy-github-io/11451246-9b39-4a3b-8a62-81decdbab8d5/scratchpad/reorder.py\")",
-      "Bash(python3 -)"
+      "Bash(python3 -)",
+      "Bash(powershell -Command \"New-Item -ItemType Directory -Force -Path games/fivem | Out-Null\")"
     ],
     "deny": [],
     "ask": []
