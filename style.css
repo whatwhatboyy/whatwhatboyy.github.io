@@ -619,6 +619,11 @@ body::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
     .cheat-header { flex-wrap: wrap; }
     .cheat-actions { flex-direction: column; }
     .cheat-actions .btn { width: 100%; justify-content: center; }
+    .safety-pro-grid { grid-template-columns: 1fr !important; }
+
+    /* Bump small icon-only tap targets closer to the ~44px minimum on touch screens */
+    .sidebar-toggle, .copy-btn, .sidebar-social .social-links a, .footer .social-links a { width: 40px; height: 40px; }
+    .mobile-sidebar-btn { width: 44px; height: 44px; }
 }
 
 @media (max-width: 480px) {
